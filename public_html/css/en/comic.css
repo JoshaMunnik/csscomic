@@ -1,0 +1,320 @@
+html {
+  width: max-content;
+  height: max-content;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  width: inherit;
+}
+
+span, em, strong {
+  display: inline-block;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-pink {
+  color: pink;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-brown {
+  color: brown;
+}
+
+.back-white {
+  background-color: white;
+}
+
+.back-black {
+  background-color: black;
+}
+
+.back-red {
+  background-color: red;
+}
+
+.back-blue {
+  background-color: blue;
+}
+
+.back-green {
+  background-color: green;
+}
+
+.back-yellow {
+  background-color: yellow;
+}
+
+.back-pink {
+  background-color: pink;
+}
+
+.back-purple {
+  background-color: purple;
+}
+
+.back-orange {
+  background-color: orange;
+}
+
+.back-gray {
+  background-color: gray;
+}
+
+.back-brown {
+  background-color: brown;
+}
+
+.bubble {
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateY(0%) translateX(-50%);
+
+  &::before {
+    left: 50%;
+    transform: translate(-2em, -0.2em)
+  }
+
+  & div {
+    position: relative;
+  }
+}
+
+.pos-x-0 {
+  position: absolute;
+  left: 2%;
+  transform: translateX(0%);
+}
+
+.pos-x-1 {
+  position: absolute;
+  left: 11.8%;
+  transform: translateX(-10%);
+}
+
+.pos-x-2 {
+  position: absolute;
+  left: 21.6%;
+  transform: translateX(-20%);
+}
+
+.pos-x-3 {
+  position: absolute;
+  left: 31.4%;
+  transform: translateX(-30%);
+}
+
+.pos-x-4 {
+  position: absolute;
+  left: 41.2%;
+  transform: translateX(-40%);
+}
+
+.pos-x-5 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pos-x-6 {
+  position: absolute;
+  left: 59.8%;
+  transform: translateX(-60%);
+}
+
+.pos-x-7 {
+  position: absolute;
+  left: 69.6%;
+  transform: translateX(-70%);
+}
+
+.pos-x-8 {
+  position: absolute;
+  left: 79.4%;
+  transform: translateX(-80%);
+}
+
+.pos-x-9 {
+  position: absolute;
+  left: 89.2%;
+  transform: translateX(-90%);
+}
+
+.pos-x-10 {
+  position: absolute;
+  left: 98%;
+  transform: translateX(-100%);
+}
+
+.pos-y-0 {
+  position: absolute;
+  top: 2%;
+  transform: translateY(0%);
+}
+
+.pos-y-1 {
+  position: absolute;
+  top: 11.8%;
+  transform: translateY(-10%);
+}
+
+.pos-y-2 {
+  position: absolute;
+  top: 21.6%;
+  transform: translateY(-20%);
+}
+
+.pos-y-3 {
+  position: absolute;
+  top: 30.4%;
+  transform: translateY(-30%);
+}
+
+.pos-y-4 {
+  position: absolute;
+  top: 40.2%;
+  transform: translateY(-40%);
+}
+
+.pos-y-5 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pos-y-6 {
+  position: absolute;
+  top: 59.8%;
+  transform: translateY(-60%);
+}
+
+.pos-y-7 {
+  position: absolute;
+  top: 69.6%;
+  transform: translateY(-70%);
+}
+
+.pos-y-8 {
+  position: absolute;
+  top: 79.4%;
+  transform: translateY(-80%);
+}
+
+.pos-y-9 {
+  position: absolute;
+  top: 89.2%;
+  transform: translateY(-90%);
+}
+
+.pos-y-10 {
+  position: absolute;
+  top: 98%;
+  transform: translateY(-100%);
+}
+
+.pos-tail-0 {
+  &::before {
+    left: 0;
+  }
+}
+
+.pos-tail-1 {
+  &::before {
+    left: 10%;
+  }
+}
+
+.pos-tail-2 {
+  &::before {
+    left: 20%;
+  }
+}
+
+.pos-tail-3 {
+  &::before {
+    left: 30%;
+  }
+}
+
+.pos-tail-4 {
+  &::before {
+    left: 40%;
+  }
+}
+
+.pos-tail-5 {
+  &::before {
+    left: 50%;
+  }
+}
+
+.pos-tail-6 {
+  &::before {
+    left: 60%;
+  }
+}
+
+.pos-tail-7 {
+  &::before {
+    left: 70%;
+  }
+}
+
+.pos-tail-8 {
+  &::before {
+    left: 80%;
+  }
+}
+
+.pos-tail-9 {
+  &::before {
+    left: 90%;
+  }
+}
+
+.pos-tail-10 {
+  &::before {
+    left: 100%;
+  }
+}

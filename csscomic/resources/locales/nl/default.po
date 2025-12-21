@@ -1,0 +1,845 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-12-21 08:26+0000\n"
+"PO-Revision-Date: 2025-12-21 09:28+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#: src/Controller/AccountController.php:186
+msgid "Your account has been created. Please login."
+msgstr "Je account is aangemaakt. Gelieve in te loggen."
+
+#: src/Controller/AccountController.php:189
+msgid "An error occurred with the database, your account has not been created."
+msgstr ""
+"Er is een fout opgetreden met de database, het account is niet aangemaakt."
+
+#: src/Controller/AccountController.php:214
+msgid ""
+"An error occurred with the database, your reset token has not been created."
+msgstr ""
+"Er is een fout opgetreden met de database, het reset-token is niet gemaakt."
+
+#: src/Controller/AccountController.php:221
+msgid ""
+"An email has been sent to you with instructions how to reset your password."
+msgstr ""
+"Er is een e-mail verzonden met instructies om je wachtwoord opnieuw in te "
+"stellen."
+
+#: src/Controller/AccountController.php:238
+msgid "Your password has been reset. Please login."
+msgstr "Je hebt je wachtwoord gewijzigd. Je kan nu inloggen."
+
+#: src/Controller/AccountController.php:241
+msgid "An error occurred with the database, your password has not been reset."
+msgstr ""
+"Er is een fout opgetreden met de database, het wachtwoord is niet ingesteld."
+
+#: src/Controller/AccountController.php:266
+msgid "Your account has been deleted."
+msgstr "Je account is verwijderd."
+
+#: src/Controller/AccountController.php:269
+msgid "An error occurred with the database, your account has not been deleted."
+msgstr ""
+"Er is een fout opgetreden met de database, je account is niet verwijderd."
+
+#: src/Controller/AccountController.php:292
+msgid "Invalid or unknown credentials."
+msgstr "Ongeldige of onbekende inloggegevens."
+
+#: src/Controller/AdministratorController.php:52
+msgid "Caches have been cleared."
+msgstr "De caches zijn opgeschoond."
+
+#: src/Controller/UsersController.php:69
+msgid "User \"{0}\" has been removed."
+msgstr "Gebruiker \"{0}\" is verwijderd."
+
+#: src/Controller/UsersController.php:107
+msgid "User \"{0}\" has been updated."
+msgstr "Gebruiker \"{0}\" is bijgewerkt"
+
+#: src/Controller/UsersController.php:108
+msgid "User \"{0}\" has been created."
+msgstr "Gebruiker \"{0}\" is aangemaakt"
+
+#: src/Controller/UsersController.php:112
+msgid "Failed to save the user to the database."
+msgstr "Kan de gebruiker niet opslaan in de database."
+
+#: src/Lib/Controller/AdministratorControllerBase.php:25
+msgid "You must be logged in to access this page."
+msgstr "Je moet ingelogd zijn om toegang te krijgen tot deze pagina."
+
+#: src/Lib/Controller/AdministratorControllerBase.php:30
+msgid "You do not have the right credentials to access this page."
+msgstr ""
+"U beschikt niet over de authorizatie om toegang te krijgen tot deze pagina."
+
+#: src/Lib/Controller/ApplicationControllerBase.php:222
+msgid "You are not logged in."
+msgstr "Je bent niet ingelogd."
+
+#: src/Lib/Model/View/ViewModelBase.php:64
+msgid "The {0} is required"
+msgstr "De {0} is vereist"
+
+#: src/Lib/Trait/AccountActionsTrait.php:42
+msgid "Your profile has been updated."
+msgstr "Uw profiel is aangepast."
+
+#: src/Lib/Trait/AccountActionsTrait.php:47
+msgid "Your profile could not be saved."
+msgstr "Het profiel kon niet worden opgeslagen."
+
+#: src/Lib/Trait/AccountActionsTrait.php:77
+msgid "Your password has been updated."
+msgstr "Je wachtwoord is bijgewerkt."
+
+#: src/Lib/Trait/AccountActionsTrait.php:80
+msgid "An error occurred with the database, your password has not changed."
+msgstr ""
+"Er is een fout opgetreden met de database, het wachtwoord is niet gewijzigd."
+
+#: src/Lib/Trait/AccountActionsTrait.php:84
+msgid "The current password is invalid."
+msgstr "Het huidige wachtwoord is ongeldig."
+
+#: src/Lib/Trait/AccountActionsTrait.php:113
+msgid ""
+"An error occurred with the database, your delete token has not been created."
+msgstr ""
+"Er is een fout opgetreden met de database, je delete-token is niet "
+"aangemaakt."
+
+#: src/Lib/Trait/AccountActionsTrait.php:119
+msgid ""
+"An email has been sent to you with instructions how to delete your account."
+msgstr ""
+"Er is een e-mail verzonden met instructies om je account te verwijderen."
+
+#: src/Model/Constant/Lesson.php:10
+msgid "Introduction to HTML"
+msgstr "Beginnen met HTML"
+
+#: src/Model/Constant/Lesson.php:11
+msgid "Multiple spaces"
+msgstr "Meerdere spaties"
+
+#: src/Model/Constant/Lesson.php:12
+msgid "First HTML tag: div"
+msgstr "Eerste HTML-tag: div"
+
+#: src/Model/Constant/Lesson.php:13
+msgid "Nesting tags"
+msgstr "Geneste tags"
+
+#: src/Model/Constant/Lesson.php:14
+msgid "Multiple spaces inside tags"
+msgstr "Meerdere spaties binnen tags"
+
+#: src/Model/Constant/Lesson.php:15
+msgid "Basic styling with HTML tags"
+msgstr "Stijlen met HTML tags"
+
+#: src/Model/Constant/Lesson.php:16
+msgid "Adding background color"
+msgstr "Achtergrondkleur toevoegen"
+
+#: src/Model/Constant/Lesson.php:17
+msgid "Adding text color"
+msgstr "Tekstkleur toevoegen"
+
+#: src/Model/Constant/Lesson.php:18
+msgid "Multiple text colors"
+msgstr "Meerdere tekstkleuren"
+
+#: src/Model/Constant/Lesson.php:19
+msgid "Single panel"
+msgstr "Enkel paneel"
+
+#: src/Model/Constant/Lesson.php:20
+msgid "Multiple panels"
+msgstr "Meerdere panelen"
+
+#: src/Model/Constant/Lesson.php:21
+msgid "Panels side by side"
+msgstr "Panelen naast elkaar"
+
+#: src/Model/Constant/Lesson.php:22
+msgid "Introducing Batman"
+msgstr "Kennismaking met Batman"
+
+#: src/Model/Constant/Lesson.php:23
+msgid "Introducing Robin"
+msgstr "Kennismaking met Robin"
+
+#: src/Model/Constant/Lesson.php:24
+msgid "Characters eyes"
+msgstr "Personages ogen"
+
+#: src/Model/Constant/Lesson.php:25
+msgid "Characters mouth"
+msgstr "Personages mond"
+
+#: src/Model/Constant/Lesson.php:26
+msgid "Characters head"
+msgstr "Personages hoofd"
+
+#: src/Model/Constant/Lesson.php:27
+msgid "Speech bubbles"
+msgstr "Tekstballonnen"
+
+#: src/Model/Constant/Lesson.php:28
+msgid "Positions within a panel"
+msgstr "Posities binnen een panel"
+
+#: src/Model/Constant/Lesson.php:29
+msgid "Speech bubble tail positions"
+msgstr "Posities van de staart van de tekstballonnen"
+
+#: src/Model/Constant/Lesson.php:30
+msgid "Speech bubble text styling"
+msgstr "Tekststijl van tekstballonnen"
+
+#: src/Model/Constant/Lesson.php:31
+msgid "Create your first css comic"
+msgstr "Maak je eerste eigen css strip"
+
+#: src/Model/Constant/Lesson.php:32
+msgid "Second css comic"
+msgstr "Tweede css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:33
+msgid "Third css comic"
+msgstr "Derde css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:34
+msgid "Fourth css comic"
+msgstr "Vierde css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:35
+msgid "Fifth css comic"
+msgstr "Vijfde css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:36
+msgid "Sixth css comic"
+msgstr "Zesde css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:37
+msgid "Seventh css comic"
+msgstr "Zevende css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:38
+msgid "Eighth css comic"
+msgstr "Achtste css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:39
+msgid "Ninth css comic"
+msgstr "Negende css stripverhaal"
+
+#: src/Model/Constant/Lesson.php:40
+msgid "Tenth css comic"
+msgstr "Tiende css stripverhaal"
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:63
+msgid "current password"
+msgstr "huidig wachtwoord"
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:64
+#: src/Model/View/Account/ResetPasswordViewModel.php:62
+msgid "new password"
+msgstr "nieuw wachtwoord"
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:65
+msgid "confirm new password"
+msgstr "bevestig wachtwoord"
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:80
+#: src/Model/View/Account/ResetPasswordViewModel.php:78
+msgid "The new password can not be empty."
+msgstr "Het nieuwe wachtwoord mag niet leeg zijn."
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:81
+#: src/Model/View/Account/RegistrationViewModel.php:116
+#: src/Model/View/Account/ResetPasswordViewModel.php:79
+msgid "The confirm password can not be empty."
+msgstr "Het bevestigingswachtwoord mag niet leeg zijn."
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:82
+msgid "The current password can not be empty."
+msgstr "Het huidige wachtwoord mag niet leeg zijn."
+
+#: src/Model/View/Account/ChangePasswordViewModel.php:84
+#: src/Model/View/Account/ResetPasswordViewModel.php:81
+msgid "The new passwords are not equal."
+msgstr "De nieuwe wachtwoorden zijn niet gelijk."
+
+#: src/Model/View/Account/EditProfileViewModel.php:67
+#: src/Model/View/Account/RegistrationViewModel.php:82
+#: src/Model/View/Users/EditUserViewModel.php:80
+msgid "name"
+msgstr "naam"
+
+#: src/Model/View/Account/EditProfileViewModel.php:82
+#: src/Model/View/Account/RegistrationViewModel.php:114
+msgid "The name can not be empty."
+msgstr "De naam mag niet leeg zijn."
+
+#: src/Model/View/Account/EmailViewModel.php:41
+#: src/Model/View/Account/LoginViewModel.php:61
+#: src/Model/View/Account/RegistrationViewModel.php:79
+#: src/Model/View/Users/EditUserViewModel.php:79
+msgid "email"
+msgstr "e-mail"
+
+#: src/Model/View/Account/EmailViewModel.php:56
+#: src/Model/View/Account/LoginViewModel.php:78
+#: src/Model/View/Account/RegistrationViewModel.php:112
+msgid "The email can not be empty."
+msgstr "De e-mail mag niet leeg zijn."
+
+#: src/Model/View/Account/EmailViewModel.php:57
+#: src/Model/View/Account/LoginViewModel.php:79
+#: src/Model/View/Account/RegistrationViewModel.php:113
+msgid "The email is not valid."
+msgstr "De e-mail is niet geldig."
+
+#: src/Model/View/Account/LoginViewModel.php:62
+#: src/Model/View/Account/RegistrationViewModel.php:80
+#: src/Model/View/Users/EditUserViewModel.php:81
+msgid "password"
+msgstr "wachtwoord"
+
+#: src/Model/View/Account/LoginViewModel.php:63
+msgid "remember me"
+msgstr "onthoud mij"
+
+#: src/Model/View/Account/LoginViewModel.php:80
+#: src/Model/View/Account/RegistrationViewModel.php:115
+msgid "The password can not be empty."
+msgstr "Het wachtwoord mag niet leeg zijn."
+
+#: src/Model/View/Account/RegistrationViewModel.php:81
+#: src/Model/View/Account/ResetPasswordViewModel.php:63
+msgid "confirm password"
+msgstr "wachtwoord bevestigen"
+
+#: src/Model/View/Account/RegistrationViewModel.php:118
+msgid "The passwords are not equal."
+msgstr "De wachtwoorden zijn niet gelijk."
+
+#: src/Model/View/Account/RegistrationViewModel.php:120
+msgid "You must agree to the terms."
+msgstr "U moet akkoord gaan met de voorwaarden."
+
+#: src/Model/View/Account/RegistrationViewModel.php:145
+msgid "There is already a registration for the email address."
+msgstr "Er is al een registratie voor het e-mailadres."
+
+#: src/Model/View/Users/EditUserViewModel.php:82
+msgid "administrator"
+msgstr "beheerder"
+
+#: src/Model/View/Users/EditUserViewModel.php:125
+msgid "There is already a user for the email address."
+msgstr "Er is al een gebruiker voor dit e-mailadres."
+
+#: src/Service/EmailService.php:32
+msgid "Reset Password for css comic site"
+msgstr "Wachtwoord resetten voor css comic site"
+
+#: src/Service/EmailService.php:57
+msgid "Delete account at css comic site"
+msgstr "Verwijder account van de css comic site"
+
+#: src/Service/EmailService.php:81
+msgid "Welcome at the css comic site"
+msgstr "Welkom op de css comic site"
+
+#: templates/Account/delete_account.php:14
+#: templates/element/dialog/request_delete_account.php:15
+#: templates/element/user_actions.php:38
+msgid "Delete account"
+msgstr "Account verwijderen"
+
+#: templates/Account/delete_account.php:18
+msgid ""
+"Warning: Deleting your account is permanent and cannot be undone! All your "
+"data will be lost."
+msgstr ""
+"Waarschuwing: Het verwijderen van je account is permanent en kan niet "
+"ongedaan worden gemaakt! Al je data zal verdwenen zijn."
+
+#: templates/Account/delete_account.php:22
+msgid "I understand, delete my account"
+msgstr "Ik begrijp het, verwijder mijn account"
+
+#: templates/Account/delete_account_error.php:3
+#: templates/Account/reset_password_error.php:3
+msgid ""
+"The provided code is no longer valid. It either has expired or an another "
+"code has been requested."
+msgstr ""
+"De code is niet langer geldig. De code is verlopen of er is hierna een "
+"nieuwe code aangevraagd."
+
+#: templates/Account/login.php:27
+msgid "Login"
+msgstr "Inloggen"
+
+#: templates/Account/login.php:34 templates/Users/edit.php:24
+#: templates/Users/index.php:49 templates/element/dialog/forgot_password.php:23
+#: templates/element/dialog/register_user.php:31
+msgid "Email"
+msgstr "E-mail"
+
+#: templates/Account/login.php:42 templates/Users/edit.php:41
+#: templates/element/dialog/register_user.php:40
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: templates/Account/login.php:50
+msgid "Keep me logged in."
+msgstr "Onthoud mijn inlog."
+
+#: templates/Account/login.php:55 templates/element/user.php:41
+msgid "Sign in"
+msgstr "Inloggen"
+
+#: templates/Account/login.php:58
+msgid "Forgot your password?"
+msgstr "Wachtwoord vergeten?"
+
+#: templates/Account/login.php:67
+msgid "Don't have an account yet? Click:"
+msgstr "Heb je nog geen account? Klik:"
+
+#: templates/Account/login.php:70
+msgid "Create account"
+msgstr "Account aanmaken"
+
+#: templates/Account/reset_password.php:14
+msgid "Reset password"
+msgstr "Nieuw wachtwoord"
+
+#: templates/Account/reset_password.php:21
+#: templates/element/dialog/change_password.php:28
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+#: templates/Account/reset_password.php:29
+#: templates/element/dialog/change_password.php:37
+#: templates/element/dialog/register_user.php:49
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"
+
+#: templates/Account/reset_password.php:35
+#: templates/element/dialog/change_password.php:46
+#: templates/element/dialog/edit_profile.php:30
+msgid "Update"
+msgstr "Bijwerken"
+
+#: templates/Administrator/index.php:22
+msgid "Home for administrator"
+msgstr "Home voor beheerder"
+
+#: templates/Administrator/index.php:26 templates/Users/index.php:27
+msgid "Users"
+msgstr "Gebruikers"
+
+#: templates/Administrator/index.php:32
+msgid "Clear caches"
+msgstr "Cache wissen"
+
+#: templates/Administrator/index.php:36 templates/element/user_actions.php:24
+msgid "Edit profile"
+msgstr "Wijzig je profiel"
+
+#: templates/Administrator/index.php:43 templates/element/user_actions.php:31
+msgid "Change password"
+msgstr "Wachtwoord wijzigen"
+
+#: templates/Home/index.php:12
+msgid "Welcome"
+msgstr "Welkom"
+
+#: templates/Home/index.php:14
+msgid "To go to first lesson click:"
+msgstr "Om naar de eerste les te gaan klik:"
+
+#: templates/Home/index.php:16
+msgid "First lesson"
+msgstr "Eerste les"
+
+#: templates/Home/privacy.php:11 templates/element/footer.php:20
+msgid "Privacy Policy"
+msgstr "Privacy informatie"
+
+#: templates/Home/terms.php:11 templates/element/footer.php:24
+msgid "Terms and conditions"
+msgstr "Algemene voorwaarden"
+
+#: templates/Lesson/view.php:56
+msgid "Loading..."
+msgstr "Laden…"
+
+#: templates/Lesson/view.php:74
+msgid "update"
+msgstr "update"
+
+#: templates/Lesson/view.php:107
+msgid "full width"
+msgstr "volledige breedte"
+
+#: templates/Lesson/view.php:112
+msgid "everything"
+msgstr "alles"
+
+#: templates/Lesson/view.php:119
+msgid "full page"
+msgstr "voledige pagina"
+
+#: templates/Lesson/view.php:124
+msgid "exit full page"
+msgstr "verlaat volledige pagina"
+
+#: templates/Users/edit.php:17
+msgid "Create user"
+msgstr "Gebruiker toevoegen"
+
+#: templates/Users/edit.php:17
+msgid "Edit user"
+msgstr "Gebruiker aanpassen"
+
+#: templates/Users/edit.php:32 templates/Users/index.php:50
+msgid "Name"
+msgstr "Naam"
+
+#: templates/Users/edit.php:42
+msgid "Password (leave empty to keep current password)"
+msgstr "Wachtwoord (laat leeg om het huidige wachtwoord te behouden)"
+
+#: templates/Users/edit.php:51
+msgid "User is an administrator"
+msgstr "De gebruiker is een beheerder"
+
+#: templates/Users/edit.php:57 templates/Users/index.php:51
+msgid "Language"
+msgstr "Taal"
+
+#: templates/Users/edit.php:64
+msgid "Save"
+msgstr "Opslaan"
+
+#: templates/Users/edit.php:66 templates/element/dialog/change_password.php:48
+#: templates/element/dialog/edit_profile.php:34
+#: templates/element/dialog/forgot_password.php:36
+#: templates/element/dialog/register_user.php:82
+#: templates/element/dialog/request_delete_account.php:25
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: templates/Users/index.php:30
+msgid "Add user"
+msgstr "Gebruiker toevoegen"
+
+#: templates/Users/index.php:32 templates/element/footer.php:16
+#: templates/element/user.php:31
+msgid "Home"
+msgstr "Home"
+
+#: templates/Users/index.php:36
+msgid "Normal"
+msgstr "Normaal"
+
+#: templates/Users/index.php:36
+msgid "Administrators"
+msgstr "Beheerder"
+
+#: templates/Users/index.php:42
+msgid "No users"
+msgstr "Geen gebruikers"
+
+#: templates/Users/index.php:52
+msgid "Created"
+msgstr "Aangemaakt"
+
+#: templates/Users/index.php:53
+msgid "Last visit"
+msgstr "Laatste bezoek"
+
+#: templates/Users/index.php:54
+msgid "Lessons"
+msgstr "Lessen"
+
+#: templates/Users/index.php:55
+msgid "Comics"
+msgstr "Strips"
+
+#: templates/Users/index.php:71
+msgid "edit"
+msgstr "bewerken"
+
+#: templates/Users/index.php:75
+msgid "remove"
+msgstr "verwijderen"
+
+#: templates/element/code_block.php:29
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: templates/element/dialog/change_password.php:14
+msgid "Change your password"
+msgstr "Wachtwoord wijzigen"
+
+#: templates/element/dialog/change_password.php:19
+msgid "Current password"
+msgstr "Huidig wachtwoord"
+
+#: templates/element/dialog/edit_profile.php:16
+msgid "Edit your profile"
+msgstr "Wijzig je profiel"
+
+#: templates/element/dialog/edit_profile.php:21
+#: templates/element/dialog/register_user.php:58
+msgid "Fantasy name"
+msgstr "Fantasienaam"
+
+#: templates/element/dialog/forgot_password.php:15
+msgid "Forgot password"
+msgstr "Wachtwoord vergeten"
+
+#: templates/element/dialog/forgot_password.php:17
+msgid ""
+"Please enter your email address. An email will be sent with instructions on "
+"how to reset your password."
+msgstr ""
+"Er is een e-mail naar u verzonden met instructies om uw wachtwoord opnieuw "
+"in te stellen."
+
+#: templates/element/dialog/forgot_password.php:32
+#: templates/element/dialog/request_delete_account.php:21
+msgid "Send email"
+msgstr "Verstuur email"
+
+#: templates/element/dialog/register_user.php:16
+msgid "the terms and conditions"
+msgstr "de algemene voorwaarden"
+
+#: templates/element/dialog/register_user.php:26
+#: templates/element/dialog/register_user.php:80
+msgid "Register"
+msgstr "Registreren"
+
+#: templates/element/dialog/register_user.php:65
+msgid ""
+"You can choose any name you want, it does not have to be your real name."
+msgstr ""
+"Je kunt elke naam kiezen die je wilt, het hoeft niet je echte naam te zijn."
+
+#: templates/element/dialog/register_user.php:70
+msgid "Agree to {0}"
+msgstr "Akkoord met {0}"
+
+#: templates/element/dialog/remove_user.php:20
+msgid "Confirm remove"
+msgstr "Bevestig het verwijderen"
+
+#: templates/element/dialog/remove_user.php:27
+msgid "Are you sure you want to remove the user \"{0}\"?"
+msgstr "Weet je zeker dat je de gebruiker\" {0}\" wilt verwijderen?"
+
+#: templates/element/dialog/remove_user.php:30
+msgid "Related lesson code and texts will also be removed."
+msgstr "Gerelateerde lescodes en teksten worden ook verwijderd."
+
+#: templates/element/dialog/remove_user.php:34
+msgid "Yes, remove"
+msgstr "Ja, verwijderen"
+
+#: templates/element/dialog/remove_user.php:35
+msgid "No, cancel"
+msgstr "Nee, annuleer"
+
+#: templates/element/dialog/request_delete_account.php:17
+msgid ""
+"Click the button to sent an email with instructions on how to delete your "
+"account."
+msgstr ""
+"Klik op de button om een e-mail te versturen met instructies hoe je je "
+"account kan verwijderen."
+
+#: templates/element/lesson_navigation.php:17
+msgid "Previous comic"
+msgstr "Vorige stripverhaal"
+
+#: templates/element/lesson_navigation.php:17
+msgid "Previous lesson"
+msgstr "Vorige les"
+
+#: templates/element/lesson_navigation.php:23
+msgid "Next comic"
+msgstr "Volgende stripverhaal"
+
+#: templates/element/lesson_navigation.php:23
+msgid "Next lesson"
+msgstr "Volgende les"
+
+#: templates/element/translations.php:13
+msgid "The html element name of [ ** ] must be in lowercase."
+msgstr "De html-elementnaam [ ** ] moet kleine letters gebruiken."
+
+#: templates/element/translations.php:16
+msgid "The attribute name of [ ** ] must be in lowercase."
+msgstr "De attribuutnaam [ ** ] moet kleine letters gebruiken."
+
+#: templates/element/translations.php:19
+msgid "The value of attribute [ ** ] must be in double quotes."
+msgstr ""
+"De waarde van attribuut [ ** ] moet tussen dubbele aanhalingstekens staan."
+
+#: templates/element/translations.php:22
+msgid ""
+"Tag must be paired, missing: [ ** ], start tag match failed [ ** ] on line "
+"**."
+msgstr ""
+"Tag moet gepaard zijn, ontbreekt: [ ** ], start tag paring mislukt [ ** ] op "
+"regel **."
+
+#: templates/element/translations.php:24
+msgid "Tag must be paired, no start tag: [ ** ]"
+msgstr "Tag moet gepaard zijn, geen start tag: [ ** ]"
+
+#: templates/element/translations.php:26
+msgid ""
+"Tag must be paired, missing: [ ** ], open tag match failed [ ** ] on line **."
+msgstr ""
+"Tag moet gepaard zijn, ontbreekt: [ ** ], open tag paring mislukt [ ** ] op "
+"regel **."
+
+#: templates/element/translations.php:29
+msgid "Special characters must be escaped : [ ** ]."
+msgstr "Speciale tekens moeten worden escaped: [ ** ]."
+
+#: templates/element/translations.php:32
+msgid "Duplicate of attribute name [ ** ] was found."
+msgstr "Duplicaat van attribuutnaam [ ** ] gevonden."
+
+#: templates/element/translations.php:35
+msgid "Duplicate value [ ** ] was found in attribute [ ** ]."
+msgstr "Dubbele waarde [ ** ] gevonden in attribuut [ ** ]."
+
+#: templates/element/translations.php:38
+msgid "The attribute [ ** ] must have a value."
+msgstr "Het attribuut [ ** ] moet een waarde hebben."
+
+#: templates/element/translations.php:41
+msgid "Inline script [ ** ] cannot be used."
+msgstr "Inline script [ ** ] mag niet worden gebruikt."
+
+#: templates/element/translations.php:44
+msgid "The <script> tag cannot be used."
+msgstr "De <script> tag mag niet gebruikt worden."
+
+#: templates/element/translations.php:48
+msgid "line"
+msgstr "regel"
+
+#: templates/element/translations.php:49
+msgid "col"
+msgstr "kolom"
+
+#: templates/element/user.php:23
+msgid "Welcome {0}"
+msgstr "Welkom {0}"
+
+#: templates/element/user.php:35
+msgid "Sign out"
+msgstr "Uitloggen"
+
+#: templates/element/user_actions.php:21
+msgid "To manage your account, click one of the actions:"
+msgstr "Om je account te beheren, klik op een van de acties:"
+
+#: templates/element/user_actions.php:46
+msgid "Administration"
+msgstr "Beheerder"
+
+#: templates/layout/default.php:29
+msgid ""
+"This site requires Javascript to function; please enable it for this domain."
+msgstr ""
+"Deze site vereist Javascript om te functioneren; activeer het alstublieft "
+"voor dit domein."
+
+#: templates/layout/error.php:36
+msgid "Back"
+msgstr "Terug"
+
+#~ msgid "phone"
+#~ msgstr "telefoon"
+
+#~ msgid "mailing list"
+#~ msgstr "mailinglijst"
+
+#~ msgid "The provided code is no longer valid."
+#~ msgstr "De verstrekte code is niet meer geldig."
+
+#~ msgid "Participant {0} removed"
+#~ msgstr "Deelnemer {0} is verwijderd"
+
+#~ msgid "Absent for event at {0} removed"
+#~ msgstr "Absentie voor evenement op {0} is verwijderd"
+
+#~ msgid "Phone"
+#~ msgstr "Telefoon"
+
+#~ msgid "Participants"
+#~ msgstr "Deelnemers"
+
+#~ msgid "Absents"
+#~ msgstr "Absenties"
+
+#~ msgid "Mailing list"
+#~ msgstr "Mailing lijst"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "disable emails"
+#~ msgstr "geen e-mails"
+
+#~ msgid "100%"
+#~ msgstr "100%"
+
+#~ msgid ""
+#~ "Related participants for pending events will removed, other related "
+#~ "participants will be anonymized."
+#~ msgstr ""
+#~ "Gerelateerde deelnemers voor toekomstige evenementen worden verwijderd. "
+#~ "Alle andere gerelateerde deelnemers worden geanonimiseerd."
+
+#~ msgid "Layout 3x2"
+#~ msgstr "3x2 indeling"
+
+#~ msgid "Layout 3x3"
+#~ msgstr "3x3 indeling"
+
+#~ msgid "Layout 4x3"
+#~ msgstr "4x3 indeling"
+
+#~ msgid "Layout 4x4"
+#~ msgstr "4x4 indeling"

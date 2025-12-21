@@ -1,0 +1,36 @@
+{
+  "name": "csscomic",
+  "version": "1.0.0",
+  "description": "A site that contains lessons to learn a bit about html and styling while building a comic using css classes.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch"
+  },
+  "author": "Josha Munnik",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "rollup": "^4.53.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@codemirror/lang-html": "^6.4.11",
+    "@codemirror/language": "^6.11.3",
+    "@codemirror/lint": "^6.9.2",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.8",
+    "@types/htmlhint": "^1.1.5",
+    "@ultraforce/ts-dom-lib": "^1.0.102",
+    "@ultraforce/ts-general-lib": "^1.0.26",
+    "codemirror": "^6.0.2",
+    "htmlhint": "^1.7.1"
+  }
+}
