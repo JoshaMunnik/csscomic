@@ -285,7 +285,7 @@ class StylingHelper extends Helper
     string $name = '',
     array $attributes = [],
   ): string {
-    return $this->Form->button(
+    return $this->Form->submit(
       $title,
       $this->mergeAttributes(
         [
