@@ -10,7 +10,7 @@ use Cake\Event\EventInterface;
  * {@link AdministratorControllerBase} add a check for every action if the user is logged in and
  * is an administrator. It should be used as base class for administrator related controllers.
  */
-class AdministratorControllerBase extends AuthenticatedControllerBase
+class AdministratorControllerBase extends ApplicationControllerBase
 {
   #region cakephp callbacks
 

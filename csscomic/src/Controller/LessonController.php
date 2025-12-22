@@ -15,6 +15,7 @@ class LessonController extends ApplicationControllerBase
 {
   #region public constants
 
+  public const INDEX = [self::class, 'index'];
   public const VIEW = [self::class, 'view'];
   public const SAVE = [self::class, 'save'];
 
@@ -85,6 +86,22 @@ class LessonController extends ApplicationControllerBase
       return $this->getResponse()->withStatus(200);
     }
     return $this->getResponse()->withStatus(503);
+  }
+
+  #endregion
+
+  #region protected methods
+
+  /**
+   * @inheritDoc
+   */
+  protected function getAnonymousActions(): array
+  {
+    return [
+      self::INDEX[1],
+      self::VIEW[1],
+      self::SAVE[1],
+    ];
   }
 
   #endregion

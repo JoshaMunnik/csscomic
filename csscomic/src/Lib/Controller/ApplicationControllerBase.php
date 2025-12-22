@@ -11,6 +11,7 @@ use App\Model\Entity\UserEntity;
 use App\Model\Tables;
 use App\Tool\UrlTool;
 use App\View\ApplicationView;
+use Authentication\Controller\Component\AuthenticationComponent;
 use Cake\Controller\Component\FlashComponent;
 use Cake\Controller\Component\FormProtectionComponent;
 use Cake\Controller\Controller;
@@ -25,6 +26,7 @@ use ReflectionClass;
 /**
  * Bases class for all controllers in the application.
  *
+ * @property AuthenticationComponent $Authentication
  * @property FlashComponent $Flash
  * @property FormProtectionComponent $FormProtection
  */
@@ -76,6 +78,8 @@ class ApplicationControllerBase extends Controller
       $user->last_visit_date = new DateTime();
       Tables::users()->save($user);
     }
+    $this->loadComponent('Authentication.Authentication');
+    $this->Authentication->allowUnauthenticated($this->getAnonymousActions());
 
     /*
      * Enable the following component for recommended CakePHP form protection settings.
@@ -115,6 +119,18 @@ class ApplicationControllerBase extends Controller
   #region protected methods
 
   /**
+   * Gets the actions that can be performed without the user being authenticated.
+   *
+   * The default implementation returns an empty array. Subclasses can override this method.
+   *
+   * @return string[] List of actions
+   */
+  protected function getAnonymousActions(): array
+  {
+    return [];
+  }
+
+  /**
    * Returns the current logged-in user or null if there is no user logged in.
    *
    * @return UserEntity|null Current user
@@ -144,6 +160,7 @@ class ApplicationControllerBase extends Controller
     if (isset($currentUser) && ($currentUser->id === $updatedUser->id)) {
       $this->m_user = $updatedUser;
     }
+    $this->Authentication->setIdentity($updatedUser);
   }
 
   /**

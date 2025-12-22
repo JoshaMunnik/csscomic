@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Lib\Controller\AuthenticatedControllerBase;
+use App\Lib\Controller\ApplicationControllerBase;
 use App\Model\Entity\UserEntity;
 use App\Model\Tables;
 use App\Model\View\Account\DeleteAccountViewModel;
@@ -17,7 +17,7 @@ use Random\RandomException;
 /**
  * {@link AccountController} handles the login, logout and account related actions.
  */
-class AccountController extends AuthenticatedControllerBase
+class AccountController extends ApplicationControllerBase
 {
   #region public constants
 

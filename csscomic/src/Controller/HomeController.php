@@ -52,4 +52,20 @@ class HomeController extends ApplicationControllerBase
   }
 
   #endregion
+
+  #region protected methods
+
+  /**
+   * @inheritDoc
+   */
+  protected function getAnonymousActions(): array
+  {
+    return [
+      self::INDEX[1],
+      self::PRIVACY[1],
+      self::TERMS[1],
+    ];
+  }
+
+  #endregion
 }
