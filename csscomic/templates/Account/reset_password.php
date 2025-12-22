@@ -12,7 +12,6 @@ use App\View\ApplicationView;
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title(__('Reset password')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->Form->create($resetPasswordData, ['templates' => 'form_styles']) ?>
   <?= $this->Styling->beginFormContainer() ?>
   <?= $this->Form->control(

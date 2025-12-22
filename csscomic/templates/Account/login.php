@@ -25,7 +25,6 @@ $registerId = 'register';
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title(__('Login')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->createForm($loginData, AccountController::LOGIN) ?>
   <?= $this->Styling->beginFormContainer() ?>
   <?= $this->Form->control(

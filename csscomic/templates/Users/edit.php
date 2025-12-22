@@ -15,7 +15,6 @@ use App\View\ApplicationView;
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title($data->isNew() ? __('Create user') : __('Edit user')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->createForm($data) ?>
   <?= $this->Styling->beginFormContainer() ?>
   <?= $this->Form->control(

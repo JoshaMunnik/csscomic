@@ -39,7 +39,7 @@ $title = 'CSS Comic';
       </div>
     </header>
     <main class="cc-main__container">
-        <?= $this->Flash->render() ?>
+        <?= $this->element('messages') ?>
         <?= $this->fetch('content') ?>
     </main>
     <?= $this->element('footer') ?>

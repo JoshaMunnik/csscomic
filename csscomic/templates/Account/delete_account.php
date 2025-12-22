@@ -12,7 +12,6 @@ use App\View\ApplicationView;
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title(__('Delete account')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->Form->create($deleteAccountData, ['templates' => 'form_styles']) ?>
   <?= $this->Styling->textBlock(
     __('Warning: Deleting your account is permanent and cannot be undone! All your data will be lost.')

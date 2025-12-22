@@ -20,7 +20,6 @@ const CHANGE_PASSWORD = 'change-password';
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title(__('Home for administrator')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->Styling->beginPageButtons() ?>
   <?= $this->Styling->linkButton(
     __('Users'),

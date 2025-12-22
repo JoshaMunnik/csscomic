@@ -25,7 +25,6 @@ const REMOVE_DIALOG = 'remove';
 ?>
 <div class="cc-main__page">
   <?= $this->Styling->title(__('Users')) ?>
-  <?= $this->element('messages') ?>
   <?= $this->Styling->beginPageButtons() ?>
   <?= $this->Styling->linkButton(__('Add user'), [UsersController::EDIT]) ?>
   <?= $this->Styling->linkButton(
