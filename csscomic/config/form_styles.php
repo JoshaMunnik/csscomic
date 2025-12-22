@@ -14,7 +14,7 @@ return [
   'label' => '<label class="cc-form__label"{{attrs}} >{{text}}</label>',
   'inputContainer' => '<div class="cc-form__input-container {{containerClass}}"{{attrs}}>{{content}}{{extraContent}}</div>',
   'inputContainerError' => '<div class="cc-form__input-container {{containerClass}}"{{attrs}}>{{content}}{{extraContent}}{{error}}</div>',
-  'inputSubmit' => '<input type="{{type}}" class="cc-button__normal cc-button__normal--is-primary"{{attrs}}/>',
+  'inputSubmit' => '<input type="{{type}}" class="cc-button__normal {{buttonClass}}"{{attrs}}/>',
   'nestingLabel' => '{{hidden}}<label class="cc-form__nesting-label-container"{{attrs}}>{{input}}<span class="cc-form__nesting-label-text">{{text}}</span></label>',
   'option' => '<option value="{{value}}"{{attrs}}>{{text}}</option>',
   'optgroup' => '<optgroup label="{{label}}"{{attrs}}>{{content}}</optgroup>',
