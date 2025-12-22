@@ -8,7 +8,6 @@ use App\View\ApplicationView;
  * @var ApplicationView $this
  */
 
-$year = date('Y');
 ?>
 <footer class="cc-footer__container">
   <div class="cc-footer__links">
@@ -24,9 +23,18 @@ $year = date('Y');
       __('Terms and conditions'),
       HomeController::TERMS,
     ) ?>
+    <?= $this->Styling->footerLinkButton(
+      'Source at Github',
+      'https://github.com/JoshaMunnik/csscomic',
+      ButtonColorEnum::PRIMARY,
+      [
+        'target' => '_blank',
+        'rel' => 'noopener noreferrer'
+      ]
+    ) ?>
   </div>
   <div class="cc-footer__copyright">
-    &copy; <?= $year ?>
+    &copy; 2025
     <?= $this->Styling->footerLinkButton(
       'Ultra Force Development',
       'https://www.ultraforce.com',
