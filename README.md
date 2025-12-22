@@ -30,7 +30,8 @@ administrator interface to manage the users.
   in the `users` table.
 
 The folder `/public_html/` must be accessible via the web. To use a different name, rename the 
-folder and also update the `/csscomic/config/paths.php` file accordingly.
+folder and update the `/csscomic/config/paths.php` and `/csscomic/rollup.config.mjs` files 
+accordingly.
  
 ## Technologies
 
@@ -48,7 +49,13 @@ The project uses local copies of the libraries.
 
 The database uses uuid for the primary keys. 
 
-To improve the stability the database defines foreign key relationships between the tables. 
+To improve the stability the database defines foreign key relationships between the tables.
+
+## Front end scripts
+
+Edit the TypeScript files in the `/csscomic/scripts/` folder. To compile the scripts use 
+`npm run build` or `npm run watch` from within the `/csscomic/` folder. This will create the bundle
+files using `rollup` and place them in the `/public_html/js/` folder.
 
 ## Localization
 
