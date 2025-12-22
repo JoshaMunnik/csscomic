@@ -21,7 +21,7 @@ class AdministratorController extends AdministratorControllerBase
   #region public constants
 
   public const INDEX = [self::class, 'index'];
-  public const CLEAR_CACHE = [self::class, 'clear-cache'];
+  public const CLEAR_CACHE = [self::class, 'clearCache'];
 
   #endregion
 

@@ -23,10 +23,10 @@ class AccountController extends ApplicationControllerBase
 
   public const LOGIN = [self::class, 'login'];
   public const LOGOUT = [self::class, 'logout'];
-  public const RESET_PASSWORD = [self::class, 'reset-password'];
-  public const DELETE_ACCOUNT = [self::class, 'delete-account'];
-  public const RESET_PASSWORD_ERROR = [self::class, 'reset-password-error'];
-  public const DELETE_ACCOUNT_ERROR = [self::class, 'delete-account-error'];
+  public const RESET_PASSWORD = [self::class, 'resetPassword'];
+  public const DELETE_ACCOUNT = [self::class, 'deleteAccount'];
+  public const RESET_PASSWORD_ERROR = [self::class, 'resetPasswordError'];
+  public const DELETE_ACCOUNT_ERROR = [self::class, 'deleteAccountError'];
 
   public const SUBMIT_FORGOT_PASSWORD = 'submit_forgot_password';
   public const SUBMIT_REGISTER = 'submit_register';
