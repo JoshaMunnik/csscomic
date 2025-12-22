@@ -67,7 +67,7 @@ class UserEntity extends Entity implements IEntityWithId, IEntityWithTimestamp
   public function assignNewPassword($password): void
   {
     $this->password_date = new DateTime();
-    $this->password = (new DefaultPasswordHasher())->hash($password);
+    $this->password = $password;
     $this->password_reset_date = null;
     $this->password_reset_token = null;
   }
