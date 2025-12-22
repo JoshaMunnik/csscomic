@@ -26,6 +26,8 @@ use ReflectionClass;
 /**
  * Bases class for all controllers in the application.
  *
+ * Override {@link getAnonymousActions()} to allow unauthenticated access to certain actions.
+ *
  * @property AuthenticationComponent $Authentication
  * @property FlashComponent $Flash
  * @property FormProtectionComponent $FormProtection
@@ -34,6 +36,10 @@ class ApplicationControllerBase extends Controller
 {
   #region public constants
 
+  /**
+   * Form submit actions. These are defined here, since a trait cannot be referenced to access a
+   * constant.
+   */
   const SUBMIT_EDIT_PROFILE = 'submit_edit_profile';
   const SUBMIT_CHANGE_PASSWORD = 'submit_change_password';
   const SUBMIT_REQUEST_DELETE_ACCOUNT = 'submit_request_delete_account';
