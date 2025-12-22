@@ -30,6 +30,7 @@ use App\View\ApplicationView;
       'required' => true
     ],
   ) ?>
+  <?= $this->Form->hidden(ResetPasswordViewModel::RESET_TOKEN) ?>
   <?= $this->Styling->beginFormButtons() ?>
   <?= $this->Form->button(__('Update'), ['type' => 'submit']) ?>
   <?= $this->Styling->endFormButtons() ?>
