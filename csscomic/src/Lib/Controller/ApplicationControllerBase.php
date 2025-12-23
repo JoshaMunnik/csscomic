@@ -120,7 +120,9 @@ class ApplicationControllerBase extends Controller
     return self::$s_controllerNames[$called] ??= preg_replace(
       '/Controller$/', '', (new ReflectionClass($called))->getShortName()
     );
-  }  #endregion
+  }
+
+  #endregion
 
   #region protected methods
 
