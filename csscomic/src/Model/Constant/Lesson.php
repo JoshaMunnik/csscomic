@@ -2,7 +2,7 @@
 
 namespace App\Model\Constant;
 
-class Lesson
+readonly class Lesson
 {
   static public function getList(): array
   {

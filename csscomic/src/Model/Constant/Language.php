@@ -5,7 +5,7 @@ namespace App\Model\Constant;
 /**
  * Defines the languages and support methods.
  */
-class Language
+readonly class Language
 {
   #region constants
 
