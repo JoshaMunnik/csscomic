@@ -18,7 +18,7 @@ echo $this->element('styles_list', [
     'achter-grijs',
     'achter-oranje',
     'achter-paars',
-    'achter-pink',
+    'achter-roze',
     'achter-bruin',
   ],
 ]);

@@ -19,5 +19,6 @@ echo $this->element('styles_list', [
     'tekst-oranje',
     'tekst-paars',
     'tekst-roze',
+    'tekst-bruin',
   ],
 ]);
