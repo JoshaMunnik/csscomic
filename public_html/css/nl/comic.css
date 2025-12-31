@@ -14,7 +14,7 @@ body {
 
 span, strong, em {
   display: inline-block;
-  position: initial;
+  vertical-align: unset;
 }
 
 .tekst-wit {

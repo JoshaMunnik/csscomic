@@ -45,8 +45,12 @@ readonly class Lesson
     if ($index === null) {
       return false;
     }
-    $list = array_keys(self::getList());
+    $list = self::getIndexValues();
     return in_array($index, $list, true);
+  }
+
+  static public function getIndexValues(): array {
+    return array_keys(self::getList());
   }
 
   static public function getIndex(string $index = null): string {

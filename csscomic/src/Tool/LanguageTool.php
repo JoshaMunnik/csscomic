@@ -9,7 +9,7 @@ use Closure;
 /**
  * {@link LanguageTool} provides language related utility functions.
  */
-class LanguageTool
+readonly class LanguageTool
 {
   /**
    * Runs the given closure for the specified language.

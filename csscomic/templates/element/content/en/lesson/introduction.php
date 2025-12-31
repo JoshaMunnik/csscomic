@@ -40,7 +40,7 @@ use App\View\ApplicationView;
     <li>
       The bottom-right shows the output of the processed HTML code. With the buttons above the
       output you can zoom in and out. You can use the right-most button to let the output cover
-      the whole page.
+      the whole page. Use the download button to download an HTML file from the output.
     </li>
   </ul>
   <div class="cc-lesson__exercise-container">

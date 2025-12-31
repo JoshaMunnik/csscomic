@@ -40,7 +40,7 @@ use App\View\ApplicationView;
     <li>
       Rechtsonder staat de uitvoer van de verwerkte HTML code. Met de buttons erboven kan je in- en
       uitzoomen. De meeste rechter button kan je gebruiken om de uitvoer over de gehele pagina
-      te tonen.
+      te tonen. Gebruik de download button om een HTML bestand te downloaden van de uitvoer.
     </li>
   </ul>
   <div class="cc-lesson__exercise-container">

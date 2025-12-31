@@ -35631,6 +35631,7 @@ class Lesson {
         this.m_noScaleButton = UFHtml.getForId('no-scaling-button');
         this.m_fullWidthButton = UFHtml.getForId('full-width-button');
         this.m_everythingButton = UFHtml.getForId('everything-button');
+        this.m_downloadButton = UFHtml.getForId('download-button');
         this.m_showFullPageButton = UFHtml.getForId('show-full-page-button');
         this.m_exitFullPageButton = UFHtml.getForId('exit-full-page-button');
         this.m_outputOuterContainer = UFHtml.getForId('output-outer-container');
@@ -35667,6 +35668,7 @@ class Lesson {
         this.m_busySendingCode = false;
         this.m_saveTimeoutId = null;
         this.m_csrfToken = '';
+        this.m_downloadUrl = '';
         // endregion
     }
     // endregion
@@ -35677,6 +35679,8 @@ class Lesson {
      *   Lesson index
      * @param {string} template
      *   Html template to assign to the iframe, with $body$ as placeholder for user code
+     * @param {string} downloadUrl
+     *   Url to download the output as pdf
      * @param {string} saveUrl
      *   Url to use to save code to server or empty string if the code should not be saved to server
      * @param {string} text
@@ -35684,15 +35688,17 @@ class Lesson {
      * @param {string} csrfToken
      *   CSRF token to use when saving code to server
      */
-    init(index, template, saveUrl, text, csrfToken) {
+    init(index, template, downloadUrl, saveUrl, text, csrfToken) {
         this.m_index = index;
         this.m_template = template;
+        this.m_downloadUrl = downloadUrl;
         this.m_saveUrl = saveUrl.length ? saveUrl : false;
         this.m_csrfToken = csrfToken;
         this.m_updateButton.addEventListener('click', () => this.handleUpdateOutputClick());
         this.m_noScaleButton.addEventListener('click', () => this.handleNoScaleClick());
         this.m_fullWidthButton.addEventListener('click', () => this.handleFullWidthClick());
         this.m_everythingButton.addEventListener('click', () => this.handleEverythingClick());
+        this.m_downloadButton.addEventListener('click', () => this.handleDownloadClick());
         this.m_showFullPageButton.addEventListener('click', () => this.handleShowFullPageClick());
         this.m_exitFullPageButton.addEventListener('click', () => this.handleExitFullPageClick());
         this.m_outputFrame.addEventListener('load', () => this.handleOutputFrameLoad());
@@ -35991,6 +35997,13 @@ class Lesson {
         this.m_saveTimeoutId = setTimeout(() => this.savePendingCodeToServer(), SAVE_INTERVAL_TIME - timeSinceLastSave);
         return true;
     }
+    createHiddenInput(name, value) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        return input;
+    }
     // endregion
     // region event handlers
     handleUpdateOutputClick() {
@@ -36003,6 +36016,7 @@ class Lesson {
         this.m_outputFrame.style.width = 10 + 'px';
         this.m_outputFrame.style.height = 10 + 'px';
         this.m_outputFrame.srcdoc = this.m_template.replace('$body$', userCode);
+        this.m_downloadButton.disabled = false;
     }
     handleNoScaleClick() {
         this.setScaling(Scaling.NONE);
@@ -36047,6 +36061,19 @@ class Lesson {
         else {
             this.saveCodeToServer(code);
         }
+    }
+    handleDownloadClick() {
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = this.m_downloadUrl;
+        form.target = '_blank';
+        form.style.display = 'none';
+        form.appendChild(this.createHiddenInput('index', this.m_index));
+        form.appendChild(this.createHiddenInput('text', this.m_outputFrame.srcdoc));
+        form.appendChild(this.createHiddenInput('_csrfToken', this.m_csrfToken));
+        document.body.appendChild(form);
+        form.submit();
+        form.remove();
     }
 }
 // endregion

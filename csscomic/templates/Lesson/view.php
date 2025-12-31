@@ -11,26 +11,29 @@ use App\Model\Constant\Lesson;
 use App\Model\Enum\ButtonColorEnum;
 use App\View\ApplicationView;
 
-$url = $this->isLoggedIn() ? $this->Url->build($this->url(LessonController::SAVE)) : false;
+$downloadUrl = $this->Url->build($this->url(LessonController::DOWNLOAD));
+$saveUrl = $this->isLoggedIn() ? $this->Url->build($this->url(LessonController::SAVE)) : false;
 
 $language = $this->language();
 $template = '
-  <html lang="'.$language.'">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Lesson Output</title>
-      '.$this->Html->css(['normalize.min', $language.'/batman-comic', $language.'/comic']).'
-    </head>
-    <body>
-      $body$
-    </body>
-  </html>
+<!doctype html>
+<html lang="'.$language.'">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson Output</title>
+    '.$this->Html->css(['normalize.min', $language.'/batman-comic', $language.'/comic']).'
+  </head>
+  <body>
+    $body$
+  </body>
+</html>
 ';
 
 $templateString = $this->javascriptString($template);
 $indexString = $this->javascriptString($index);
-$urlString = $this->javascriptString($url);
+$downloadUrlString = $this->javascriptString($downloadUrl);
+$saveUrlString = $this->javascriptString($saveUrl);
 $codeString = $this->javascriptString($code);
 $csrfTokenString = $this->javascriptString($this->getRequest()->getAttribute('csrfToken'));
 $this->Html->scriptBlock(
@@ -38,7 +41,8 @@ $this->Html->scriptBlock(
   'lesson.init('
   .$indexString.', '
   .$templateString.', '
-  .$urlString.', '
+  .$downloadUrlString.', '
+  .$saveUrlString.', '
   .$codeString.', '
   .$csrfTokenString
   .');',
@@ -115,6 +119,14 @@ $this->assign('title', Lesson::getName($index));
           ) ?>
         </div>
         <div class="cc-lesson-action__right">
+          <?= $this->Styling->smallButton(
+            __('download'),
+            ButtonColorEnum::PRIMARY,
+            [
+              'id' => 'download-button',
+              'disabled' => 'disabled',
+            ]
+          ) ?>
           <?= $this->Styling->smallButton(
             __('full page'),
             ButtonColorEnum::PRIMARY,

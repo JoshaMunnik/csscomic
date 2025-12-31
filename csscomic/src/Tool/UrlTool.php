@@ -9,7 +9,7 @@ use Cake\Utility\Inflector;
 /**
  * {@link UrlTool} provides utility functions for urls.
  */
-class UrlTool
+readonly class UrlTool
 {
   #region public constants
 
