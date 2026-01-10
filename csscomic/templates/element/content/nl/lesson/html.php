@@ -17,8 +17,8 @@ use App\View\ApplicationView;
   </p>
   <p>
     Om HTML zelf te maken kan je een eenvoudige tekst editor gebruiken zoals Kladblok op Windows of
-    Teksteditor op Mac. HTML is kale tekst zonder enig opmaak. HTML bestaat uit een mix van tekst en
-    speciale codes die de structuur van een webpagina bepalen.
+    Teksteditor op Mac. HTML gebruikt kale tekst zonder enig opmaak. HTML bestaat uit een mix van
+    tekst en speciale codes die de structuur van een webpagina bepalen.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

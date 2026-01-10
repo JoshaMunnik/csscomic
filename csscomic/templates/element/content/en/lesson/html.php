@@ -17,7 +17,7 @@ use App\View\ApplicationView;
   </p>
   <p>
     To create HTML yourself you can use a simple text editor such as Notepad on Windows or
-    TextEdit on Mac. HTML is plain text without any formatting. HTML consists of a mix of text and
+    TextEdit on Mac. HTML uses plain text without any formatting. HTML consists of a mix of text and
     special codes that determine the structure of a web page.
   </p>
   <div class="cc-lesson__exercise-container">
