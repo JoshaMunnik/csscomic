@@ -9,16 +9,8 @@ use App\View\ApplicationView;
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Welcome to the first lesson.
-  </p>
-  <p>
-    HTML code is plain text without any styling. It consists of text and special codes that define the
-    structure of a web page. To view HTML as a web page you need a browser app, such as the one
-    you are using now. Because HTML is plain text, you can create HTML files with any text editor,
-    such as Notepad on Windows or TextEdit on Mac.
-  </p>
-  <p>
-    With all lessons this page will have the same layout:
+    Welcome to the first lesson. Before we dive into the world of HTML and CSS, we will briefly
+    explain how these lesson pages are structured:
   </p>
   <ul>
     <li>
@@ -43,11 +35,7 @@ use App\View\ApplicationView;
       the whole page. Use the download button to download an HTML file from the output.
     </li>
   </ul>
-  <div class="cc-lesson__exercise-container">
-    <p>
-      <strong>Exercise:</strong> Enter some words in the code editor and press the
-      <code>update</code> button to see what happens. The entered text should appear
-      in the output.
-    </p>
-  </div>
+  <p>
+    Click the <code>next lesson</code> button to start with the next lesson.
+  </p>
 </div>

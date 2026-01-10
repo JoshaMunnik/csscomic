@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-12-21 08:26+0000\n"
+"POT-Creation-Date: 2026-01-10 07:57+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -54,6 +54,14 @@ msgstr ""
 msgid "Caches have been cleared."
 msgstr ""
 
+#: ./src/Controller/LessonController.php:108
+msgid "Invalid request method."
+msgstr ""
+
+#: ./src/Controller/LessonController.php:111
+msgid "Missing and/or invalid form fields."
+msgstr ""
+
 #: ./src/Controller/UsersController.php:69
 msgid "User \"{0}\" has been removed."
 msgstr ""
@@ -78,7 +86,7 @@ msgstr ""
 msgid "You do not have the right credentials to access this page."
 msgstr ""
 
-#: ./src/Lib/Controller/ApplicationControllerBase.php:222
+#: ./src/Lib/Controller/ApplicationControllerBase.php:247
 msgid "You are not logged in."
 msgstr ""
 
@@ -115,126 +123,130 @@ msgid "An email has been sent to you with instructions how to delete your accoun
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:10
-msgid "Introduction to HTML"
+msgid "Introduction"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:11
-msgid "Multiple spaces"
+msgid "HTML"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:12
-msgid "First HTML tag: div"
+msgid "Multiple spaces"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:13
-msgid "Nesting tags"
+msgid "First HTML tag: div"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:14
-msgid "Multiple spaces inside tags"
+msgid "Nesting tags"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:15
-msgid "Basic styling with HTML tags"
+msgid "Multiple spaces inside tags"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:16
-msgid "Adding background color"
+msgid "Basic styling with HTML tags"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:17
-msgid "Adding text color"
+msgid "Adding background color"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:18
-msgid "Multiple text colors"
+msgid "Adding text color"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:19
-msgid "Single panel"
+msgid "Multiple text colors"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:20
-msgid "Multiple panels"
+msgid "Single panel"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:21
-msgid "Panels side by side"
+msgid "Multiple panels"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:22
-msgid "Introducing Batman"
+msgid "Panels side by side"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:23
-msgid "Introducing Robin"
+msgid "Introducing Batman"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:24
-msgid "Characters eyes"
+msgid "Introducing Robin"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:25
-msgid "Characters mouth"
+msgid "Characters eyes"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:26
-msgid "Characters head"
+msgid "Characters mouth"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:27
-msgid "Speech bubbles"
+msgid "Characters head"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:28
-msgid "Positions within a panel"
+msgid "Speech bubbles"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:29
-msgid "Speech bubble tail positions"
+msgid "Positions within a panel"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:30
-msgid "Speech bubble text styling"
+msgid "Speech bubble tail positions"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:31
-msgid "Create your first css comic"
+msgid "Speech bubble text styling"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:32
-msgid "Second css comic"
+msgid "Create your first css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:33
-msgid "Third css comic"
+msgid "Second css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:34
-msgid "Fourth css comic"
+msgid "Third css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:35
-msgid "Fifth css comic"
+msgid "Fourth css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:36
-msgid "Sixth css comic"
+msgid "Fifth css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:37
-msgid "Seventh css comic"
+msgid "Sixth css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:38
-msgid "Eighth css comic"
+msgid "Seventh css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:39
-msgid "Ninth css comic"
+msgid "Eighth css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:40
+msgid "Ninth css comic"
+msgstr ""
+
+#: ./src/Model/Constant/Lesson.php:41
 msgid "Tenth css comic"
 msgstr ""
 
@@ -333,6 +345,18 @@ msgstr ""
 msgid "There is already a registration for the email address."
 msgstr ""
 
+#: ./src/Model/View/Lesson/DownloadViewModel.php:34
+msgid "The index can not be empty."
+msgstr ""
+
+#: ./src/Model/View/Lesson/DownloadViewModel.php:35
+msgid "The index is an unknown value."
+msgstr ""
+
+#: ./src/Model/View/Lesson/DownloadViewModel.php:36
+msgid "The text can not be empty."
+msgstr ""
+
 #: ./src/Model/View/Users/EditUserViewModel.php:82
 msgid "administrator"
 msgstr ""
@@ -359,11 +383,11 @@ msgstr ""
 msgid "Delete account"
 msgstr ""
 
-#: ./templates/Account/delete_account.php:18
+#: ./templates/Account/delete_account.php:17
 msgid "Warning: Deleting your account is permanent and cannot be undone! All your data will be lost."
 msgstr ""
 
-#: ./templates/Account/delete_account.php:22
+#: ./templates/Account/delete_account.php:21
 msgid "I understand, delete my account"
 msgstr ""
 
@@ -376,38 +400,38 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: ./templates/Account/login.php:34
-#: ./templates/Users/edit.php:24
-#: ./templates/Users/index.php:49
+#: ./templates/Account/login.php:33
+#: ./templates/Users/edit.php:23
+#: ./templates/Users/index.php:48
 #: ./templates/element/dialog/forgot_password.php:23
 #: ./templates/element/dialog/register_user.php:31
 msgid "Email"
 msgstr ""
 
-#: ./templates/Account/login.php:42
-#: ./templates/Users/edit.php:41
+#: ./templates/Account/login.php:41
+#: ./templates/Users/edit.php:40
 #: ./templates/element/dialog/register_user.php:40
 msgid "Password"
 msgstr ""
 
-#: ./templates/Account/login.php:50
+#: ./templates/Account/login.php:49
 msgid "Keep me logged in."
 msgstr ""
 
-#: ./templates/Account/login.php:55
+#: ./templates/Account/login.php:54
 #: ./templates/element/user.php:41
 msgid "Sign in"
 msgstr ""
 
-#: ./templates/Account/login.php:58
+#: ./templates/Account/login.php:57
 msgid "Forgot your password?"
 msgstr ""
 
-#: ./templates/Account/login.php:67
+#: ./templates/Account/login.php:66
 msgid "Don't have an account yet? Click:"
 msgstr ""
 
-#: ./templates/Account/login.php:70
+#: ./templates/Account/login.php:69
 msgid "Create account"
 msgstr ""
 
@@ -415,12 +439,12 @@ msgstr ""
 msgid "Reset password"
 msgstr ""
 
-#: ./templates/Account/reset_password.php:21
+#: ./templates/Account/reset_password.php:20
 #: ./templates/element/dialog/change_password.php:28
 msgid "New password"
 msgstr ""
 
-#: ./templates/Account/reset_password.php:29
+#: ./templates/Account/reset_password.php:28
 #: ./templates/element/dialog/change_password.php:37
 #: ./templates/element/dialog/register_user.php:49
 msgid "Confirm password"
@@ -436,21 +460,21 @@ msgstr ""
 msgid "Home for administrator"
 msgstr ""
 
-#: ./templates/Administrator/index.php:26
+#: ./templates/Administrator/index.php:25
 #: ./templates/Users/index.php:27
 msgid "Users"
 msgstr ""
 
-#: ./templates/Administrator/index.php:32
+#: ./templates/Administrator/index.php:31
 msgid "Clear caches"
 msgstr ""
 
-#: ./templates/Administrator/index.php:36
+#: ./templates/Administrator/index.php:35
 #: ./templates/element/user_actions.php:24
 msgid "Edit profile"
 msgstr ""
 
-#: ./templates/Administrator/index.php:43
+#: ./templates/Administrator/index.php:42
 #: ./templates/element/user_actions.php:31
 msgid "Change password"
 msgstr ""
@@ -468,36 +492,40 @@ msgid "First lesson"
 msgstr ""
 
 #: ./templates/Home/privacy.php:11
-#: ./templates/element/footer.php:20
+#: ./templates/element/footer.php:19
 msgid "Privacy Policy"
 msgstr ""
 
 #: ./templates/Home/terms.php:11
-#: ./templates/element/footer.php:24
+#: ./templates/element/footer.php:23
 msgid "Terms and conditions"
 msgstr ""
 
-#: ./templates/Lesson/view.php:56
+#: ./templates/Lesson/view.php:60
 msgid "Loading..."
 msgstr ""
 
-#: ./templates/Lesson/view.php:74
+#: ./templates/Lesson/view.php:78
 msgid "update"
 msgstr ""
 
-#: ./templates/Lesson/view.php:107
+#: ./templates/Lesson/view.php:111
 msgid "full width"
 msgstr ""
 
-#: ./templates/Lesson/view.php:112
+#: ./templates/Lesson/view.php:116
 msgid "everything"
 msgstr ""
 
-#: ./templates/Lesson/view.php:119
+#: ./templates/Lesson/view.php:123
+msgid "download"
+msgstr ""
+
+#: ./templates/Lesson/view.php:131
 msgid "full page"
 msgstr ""
 
-#: ./templates/Lesson/view.php:124
+#: ./templates/Lesson/view.php:136
 msgid "exit full page"
 msgstr ""
 
@@ -509,29 +537,29 @@ msgstr ""
 msgid "Edit user"
 msgstr ""
 
-#: ./templates/Users/edit.php:32
-#: ./templates/Users/index.php:50
+#: ./templates/Users/edit.php:31
+#: ./templates/Users/index.php:49
 msgid "Name"
 msgstr ""
 
-#: ./templates/Users/edit.php:42
+#: ./templates/Users/edit.php:41
 msgid "Password (leave empty to keep current password)"
 msgstr ""
 
-#: ./templates/Users/edit.php:51
+#: ./templates/Users/edit.php:50
 msgid "User is an administrator"
 msgstr ""
 
-#: ./templates/Users/edit.php:57
-#: ./templates/Users/index.php:51
+#: ./templates/Users/edit.php:56
+#: ./templates/Users/index.php:50
 msgid "Language"
 msgstr ""
 
-#: ./templates/Users/edit.php:64
+#: ./templates/Users/edit.php:63
 msgid "Save"
 msgstr ""
 
-#: ./templates/Users/edit.php:66
+#: ./templates/Users/edit.php:65
 #: ./templates/element/dialog/change_password.php:48
 #: ./templates/element/dialog/edit_profile.php:34
 #: ./templates/element/dialog/forgot_password.php:36
@@ -540,49 +568,49 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ./templates/Users/index.php:30
+#: ./templates/Users/index.php:29
 msgid "Add user"
 msgstr ""
 
-#: ./templates/Users/index.php:32
-#: ./templates/element/footer.php:16
+#: ./templates/Users/index.php:31
+#: ./templates/element/footer.php:15
 #: ./templates/element/user.php:31
 msgid "Home"
 msgstr ""
 
-#: ./templates/Users/index.php:36
+#: ./templates/Users/index.php:35
 msgid "Normal"
 msgstr ""
 
-#: ./templates/Users/index.php:36
+#: ./templates/Users/index.php:35
 msgid "Administrators"
 msgstr ""
 
-#: ./templates/Users/index.php:42
+#: ./templates/Users/index.php:41
 msgid "No users"
 msgstr ""
 
-#: ./templates/Users/index.php:52
+#: ./templates/Users/index.php:51
 msgid "Created"
 msgstr ""
 
-#: ./templates/Users/index.php:53
+#: ./templates/Users/index.php:52
 msgid "Last visit"
 msgstr ""
 
-#: ./templates/Users/index.php:54
+#: ./templates/Users/index.php:53
 msgid "Lessons"
 msgstr ""
 
-#: ./templates/Users/index.php:55
+#: ./templates/Users/index.php:54
 msgid "Comics"
 msgstr ""
 
-#: ./templates/Users/index.php:71
+#: ./templates/Users/index.php:70
 msgid "edit"
 msgstr ""
 
-#: ./templates/Users/index.php:75
+#: ./templates/Users/index.php:74
 msgid "remove"
 msgstr ""
 
@@ -753,7 +781,7 @@ msgstr ""
 msgid "This site requires Javascript to function; please enable it for this domain."
 msgstr ""
 
-#: ./templates/layout/error.php:36
+#: ./templates/layout/error.php:28
 msgid "Back"
 msgstr ""
 

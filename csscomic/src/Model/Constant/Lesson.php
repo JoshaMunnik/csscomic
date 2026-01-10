@@ -7,7 +7,8 @@ readonly class Lesson
   static public function getList(): array
   {
     return [
-      'introduction' => __('Introduction to HTML'),
+      'introduction' => __('Introduction'),
+      'html' => __('HTML'),
       'spaces' => __('Multiple spaces'),
       'first_tag' => __('First HTML tag: div'),
       'nesting_tags' => __('Nesting tags'),

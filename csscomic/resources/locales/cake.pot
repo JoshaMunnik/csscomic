@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CakePHP 5.2.7\n"
-"POT-Creation-Date: 2025-11-26 11:08+0000\n"
+"POT-Creation-Date: 2026-01-10 07:57+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,16 +14,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ./templates/Error/error400.php:24
-#: ./templates/Error/error500.php:34
+#: ./templates/Error/error400.php:26
+#: ./templates/Error/error500.php:37
 msgid "Error"
 msgstr ""
 
-#: ./templates/Error/error400.php:25
+#: ./templates/Error/error400.php:27
 msgid "The requested address {0} was not found on this server."
 msgstr ""
 
-#: ./templates/Error/error500.php:32
+#: ./templates/Error/error500.php:35
 msgid "An Internal Error Has Occurred."
 msgstr ""
 
