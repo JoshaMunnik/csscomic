@@ -81,7 +81,7 @@ $layout4x4 = '
 </div>
 ';
 $layout4x3 = '
-<div class="panels-vier">
+<div class="panelen-vier">
   <div class="paneel">
   </div>
   <div class="paneel">

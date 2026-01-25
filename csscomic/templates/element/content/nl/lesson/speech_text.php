@@ -25,7 +25,7 @@ $code = '
   </div>
   <div class="paneel">
     <div class="ballon">
-      I ben <span class="tekst-rood">boos!</span>
+      Ik ben <span class="tekst-rood">boos!</span>
     </div>
   </div>
 </div>
