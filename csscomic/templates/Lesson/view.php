@@ -108,7 +108,7 @@ $this->assign('title', Lesson::getName($index));
             ['id' => 'no-scaling-button']
           ) ?>
           <?= $this->Styling->smallButton(
-            __('full width'),
+            '⟷', //__('full width'),
             ButtonColorEnum::PRIMARY,
             ['id' => 'full-width-button']
           ) ?>
@@ -128,7 +128,7 @@ $this->assign('title', Lesson::getName($index));
             ]
           ) ?>
           <?= $this->Styling->smallButton(
-            __('full page'),
+            '⛶',
             ButtonColorEnum::PRIMARY,
             ['id' => 'show-full-page-button']
           ) ?>
