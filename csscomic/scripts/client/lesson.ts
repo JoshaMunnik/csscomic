@@ -145,6 +145,10 @@ class Lesson {
 
   private m_downloadUrl: string = '';
 
+  private m_contentWidth: number = 0;
+
+  private m_contentHeight: number = 0;
+
   // endregion
 
   // region public methods
@@ -292,7 +296,8 @@ class Lesson {
   private applyScale(contentWidth: number, contentHeight: number) {
     // set raw iframe size to content size so scaling reproduces correct aspect
     this.m_outputFrame.style.width = contentWidth + 'px';
-    this.m_outputFrame.style.height = contentHeight + 'px';
+    // Google Chrome needs extra height to prevent scrollbars
+    this.m_outputFrame.style.height = (contentHeight + 15) + 'px';
     // get available space in wrapper
     const wrapperWidth = this.m_outputOuterContainer.clientWidth
       - this.m_innerPaddingLeft - this.m_innerPaddingRight;
@@ -319,8 +324,8 @@ class Lesson {
     scale = Math.min(scale, parseFloat(this.m_scaleSlider.max) / 100);
     this.m_outputFrame.style.transform = `scale(${scale})`;
     // set inner frame dimension to the scaled dimension of the iframe
-    this.m_outputInnerContainer.style.width = (contentWidth * scale) + 'px';
-    this.m_outputInnerContainer.style.height = (contentHeight * scale) + 'px';
+    this.m_outputInnerContainer.style.width = Math.ceil(contentWidth * scale) + 'px';
+    this.m_outputInnerContainer.style.height = Math.ceil(contentHeight * scale) + 'px';
     // update slider
     const percentage = scale * 100;
     this.m_scaleSlider.value = percentage.toString();
@@ -328,17 +333,20 @@ class Lesson {
   }
 
   private rescaleOutput() {
+    this.applyScale(this.m_contentWidth, this.m_contentHeight);
+  }
+
+  private calculateContentSize(): boolean {
     try {
       const doc = this.m_outputFrame.contentWindow!.document;
-      // use min, since body sometimes extends beyond html
-      const contentWidth = Math.min(doc.documentElement.scrollWidth, doc.body.scrollWidth);
-      // should normally be the same values, but just in case
-      const contentHeight = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
-      this.applyScale(contentWidth, contentHeight);
+      this.m_contentWidth = Math.max(doc.documentElement.scrollWidth, doc.body.scrollWidth);
+      this.m_contentHeight = Math.min(doc.documentElement.scrollHeight, doc.body.scrollHeight);
       return true;
     } catch (error) {
       // should never happen, but just in case
       console.error('Could not access output document:', error);
+      this.m_contentHeight = 100;
+      this.m_contentWidth = 100;
       return false;
     }
   }
@@ -417,7 +425,6 @@ class Lesson {
       changes: {from: 0, to: this.m_editor!.state.doc.length, insert: codeBlock}
     });
     this.saveCodeToStorage(codeBlock);
-    setTimeout(() => this.rescaleOutput(), 10);
   }
 
   private showFullPage() {
@@ -560,6 +567,7 @@ class Lesson {
   }
 
   private handleOutputFrameLoad() {
+    this.calculateContentSize();
     this.rescaleOutput();
   }
 
