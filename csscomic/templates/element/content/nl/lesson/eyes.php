@@ -30,7 +30,7 @@ $code = '
     attribute van de karakter <code>&lt;div&gt;</code>.
   </p>
   <p>
-    Dese stijlen werken zowel voor Batman als voor Robin.
+    Deze stijlen werken zowel voor Batman als voor Robin.
   </p>
   <p>
     In deze les gaat het om de verschillende oog stijlen.
