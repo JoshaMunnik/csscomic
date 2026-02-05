@@ -32,7 +32,8 @@ use App\View\ApplicationView;
     <li>
       Rechtsonder staat de uitvoer van de verwerkte HTML code. Met de buttons erboven kan je in- en
       uitzoomen. De meeste rechter button kan je gebruiken om de uitvoer over de gehele pagina
-      te tonen. Gebruik de download button om een HTML bestand te downloaden van de uitvoer.
+      te tonen. Gebruik de <code>download</code> button om een HTML bestand te downloaden van de
+      uitvoer.
     </li>
   </ul>
   <p>
