@@ -2,25 +2,32 @@
  * Configuration
  */
 :root {
-  --cc-color-primary-100: hsl(0, 0%, 10%);
-  --cc-color-primary-200: hsl(0, 0%, 40%);
-  --cc-color-primary-300: hsl(0, 0%, 50%);
-  --cc-color-primary-400: hsl(0, 0%, 60%);
-  --cc-color-primary-500: hsl(0, 0%, 70%);
-  --cc-color-primary-600: hsl(0, 0%, 92%);
-  --cc-color-primary-700: hsl(0, 0%, 96%);
-  --cc-color-primary-800: hsl(0, 0%, 98%);
-  --cc-color-primary-900: hsl(0, 0%, 100%);
-  --cc-color-danger: darkred;
+  --cc-color-text: hsl(0, 0%, 10%);
+  --cc-color-background: hsl(0, 0%, 100%);
+  --cc-color-border: hsl(0, 0%, 60%);
+  --cc-color-code-background: hsl(0, 0%, 96%);
+  --cc-color-icon: hsl(0, 0%, 50%);
+  --cc-color-button-background: hsl(0, 0%, 92%);
+  --cc-color-button-text: var(--cc-color-text);
+  --cc-color-button-icon: var(--cc-color-icon);
+  --cc-color-button-border: var(--cc-color-border);
+  --cc-color-button-disabled-background: hsl(0, 0%, 96%);
+  --cc-color-button-disabled-text: hsl(0, 0%, 70%);
+  --cc-color-button-disabled-icon: var(--cc-color-button-disabled-text);
+  --cc-color-message-background: hsl(0, 0%, 96%);
+  --cc-color-table-odd: hsl(0, 0%, 98%);
+  --cc-color-table-border: hsl(0, 0%, 90%);
+  --cc-color-popup-border: hsl(0, 0%, 50%);
   --cc-color-danger-text: hsl(0, 50%, 35%);
   --cc-color-danger-icon: hsl(0, 50%, 60%);
   --cc-color-danger-background: hsl(10, 60%, 90%);
-  --cc-color-success: darkgreen;
-  --cc-color-warning: #bb6600;
-  --cd-color-warning-text: hsl(39, 100%, 25%);
-  --cd-color-warning-icon: hsl(39, 100%, 35%);
-  --cd-color-warning-background: hsl(39, 100%, 85%);
-  --cc-color-focus: #3399ff;
+  --cc-color-success-text: hsl(120, 50%, 35%);
+  --cc-color-success-icon: hsl(120, 50%, 60%);
+  --cc-color-success-background: hsl(120, 60%, 90%);
+  --cc-color-warning-text: hsl(39, 100%, 25%);
+  --cc-color-warning-icon: hsl(39, 100%, 35%);
+  --cc-color-warning-background: hsl(39, 100%, 85%);
+  --cc-color-focus: hsl(210, 100%, 50%);
   --cc-gap-small: 0.2rem;
   --cc-gap-normal: 1rem;
   --cc-gap-large: 2rem;
@@ -33,13 +40,6 @@
 /*
 @media (prefers-color-scheme: dark) {
   :root {
-    --cc-color-dark: #fff;
-    --cc-color-half-dark: #eee;
-    --cc-color-light: #222;
-    --cc-color-half-light: #888;
-    --cc-color-danger: red;
-    --cc-color-success: green;
-    --cc-color-warning: orange;
   }
 }
 */
@@ -58,8 +58,8 @@ html, body {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  background: var(--cc-color-primary-900);
-  color: var(--cc-color-primary-100);
+  background: var(--cc-color-background);
+  color: var(--cc-color-text);
   line-height: 1.3;
 }
 
@@ -83,6 +83,7 @@ p, ul {
   margin: 0;
   max-width: 60em;
   line-height: 1.5;
+  text-wrap: pretty;
 }
 
 a {
@@ -94,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-  color: var(--cc-color-primary-600);
+  color: var(--cc-color-border);
 }
 
 form {
@@ -102,7 +103,7 @@ form {
 }
 
 code {
-  background-color: var(--cc-color-primary-700);
+  background-color: var(--cc-color-code-background);
   display: inline-block;
   padding: 0 0.2rem;
 }
@@ -125,7 +126,7 @@ Header
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--cc-color-text);
 }
 
 .cc-header__start {
@@ -148,10 +149,10 @@ Header
   flex-direction: row;
   gap: 0.2rem;
   text-decoration: none;
-  color: var(--cc-color-primary-100);
+  color: var(--cc-color-text);
 
   &:visited {
-    color: var(--cc-color-primary-100);
+    color: var(--cc-color-text);
   }
 }
 
@@ -187,7 +188,7 @@ Header
     transform: translateY(-50%);
     pointer-events: none;
     font-size: 0.65em;
-    color: var(--cc-color-primary-500);
+    color: var(--cc-color-icon);
   }
 }
 
@@ -220,7 +221,7 @@ Main
   align-items: center;
   width: 100%;
   height: 100%;
-  background: var(--cc-color-primary-900);
+  background: var(--cc-color-background);
   z-index: 9999;
   font-size: 1.4rem;
 }
@@ -383,7 +384,7 @@ Text
 }
 
 .cc-text--is-success {
-  color: var(--cc-color-success);
+  color: var(--cc-color-success-text);
 }
 
 .cc-text--is-danger {
@@ -391,7 +392,7 @@ Text
 }
 
 .cc-text--is-warning {
-  color: var(--cc-color-warning);
+  color: var(--cc-color-warning-text);
 }
 
 .cc-text--is-strong {
@@ -402,6 +403,8 @@ Text
 Buttons
  */
 .cc-button__normal {
+  background: var(--cc-color-button-background);
+  color: var(--cc-color-button-text);
   padding: 0.5rem 1rem;
   text-decoration: none;
   border: none;
@@ -418,7 +421,9 @@ Buttons
 }
 
 .cc-button__normal--is-icon {
+  --cc-button-icon-color: var(--cc-color-button-icon);
   padding: 0.5rem 0.75rem;
+  color: var(--cc-button-icon-color);
 
   &:hover {
     text-decoration: none;
@@ -447,34 +452,40 @@ Buttons
 }
 
 .cc-button__normal--is-primary {
-  background-color: var(--cc-color-primary-600);
-  color: var(--cc-color-primary-100);
+  color: var(--cc-color-button-text);
+  background: var(--cc-color-button-background);
+  --cc-button-icon-color: var(--cc-color-button-icon);
 }
 
 .cc-button__normal--is-secondary {
-  background-color: var(--cc-color-primary-900);
-  color: var(--cc-color-primary-100);
-  border: 1px solid var(--cc-color-primary-400);
+  color: var(--cc-color-button-text);
+  background: var(--cc-color-background);
+  border: 1px solid var(--cc-color-button-border);
+  --cc-button-icon-color: var(--cc-color-button-icon);
 }
 
 .cc-button__normal--is-success {
-  background-color: var(--cc-color-success);
-  color: var(--cc-color-primary-900);
+  background: var(--cc-color-success-background);
+  color: var(--cc-color-success-text);
+  --cc-button-icon-color: var(--cc-color-success-icon);
 }
 
 .cc-button__normal--is-danger {
-  background-color: var(--cc-color-danger-background);
+  background: var(--cc-color-danger-background);
   color: var(--cc-color-danger-text);
+  --cc-button-icon-color: var(--cc-color-danger-icon);
 }
 
 .cc-button__normal--is-warning {
-  background-color: var(--cc-color-warning);
-  color: var(--cc-color-primary-900);
+  background: var(--cc-color-warning-background);
+  color: var(--cc-color-warning-text);
+  --cc-button-icon-color: var(--cc-color-warning-icon);
 }
 
 .cc-button__normal--is-disabled, .cc-button__normal:disabled {
-  background-color: var(--cc-color-primary-700);
-  color: var(--cc-color-primary-500);
+  background: var(--cc-color-button-disabled-background);
+  color: var(--cc-color-button-disabled-text);
+  --cc-button-icon-color: var(--cc-color-button-disabled-icon);
   cursor: default;
   text-decoration: none;
 
@@ -487,7 +498,7 @@ Buttons
   border: none;
   background: none;
   text-decoration: underline;
-  color: var(--cc-color-primary-100);
+  color: var(--cc-color-text);
   cursor: pointer;
   padding: 0;
 
@@ -541,17 +552,22 @@ Messages
 .cc-message {
   padding: var(--cc-gap-normal);
   width: 100%;
-  background: var(--cc-color-primary-700);
+  background: var(--cc-color-message-background);
 }
 
 .cc-message--is-success {
+  color: var(--cc-color-success-text);
+  background: var(--cc-color-success-background);
 }
 
 .cc-message--is-error {
-  color: var(--cc-color-danger);
+  color: var(--cc-color-danger-text);
+  background: var(--cc-color-danger-background);
 }
 
 .cc-message--is-warning {
+  color: var(--cc-color-warning-text);
+  background: var(--cc-color-warning-background);
 }
 
 .cc-message--is-information {
@@ -607,7 +623,7 @@ Forms
 }
 
 .cc-form__error {
-  color: var(--cc-color-danger);
+  color: var(--cc-color-danger-text);
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -619,17 +635,17 @@ Forms
 .cc-form__single-line {
   padding: 0.75rem;
   border-radius: var(--cc-border-radius);
-  border: 1px solid var(--cc-color-primary-300);
+  border: 1px solid var(--cc-color-border);
 }
 
 .cc-form__filter {
   padding: 0 0.75rem;
-  color: var(--cc-color-primary-100);
-  background: var(--cc-color-primary-900);
-  border: 1px solid var(--cc-color-primary-100);
+  color: var(--cc-color-text);
+  background: var(--cc-color-background);
+  border: 1px solid var(--cc-color-border);
 
   &::placeholder {
-    color: var(--cc-color-primary-500);
+    color: var(--cc-color-button-background);
   }
 }
 
@@ -647,8 +663,8 @@ Forms
 
 .cc-form__drop-down {
   padding: 0.75rem;
-  background: var(--cc-color-primary-900);
-  border: 1px solid var(--cc-color-primary-300);
+  background: var(--cc-color-background);
+  border: 1px solid var(--cc-color-border);
   border-radius: var(--cc-border-radius);
 }
 
@@ -675,7 +691,7 @@ Forms
   position: relative;
   width: 2.5rem;
   height: 1.3rem;
-  background: var(--cc-color-primary-500);
+  background: var(--cc-color-button-background);
   border-radius: 0.75rem;
 
   &:after {
@@ -686,18 +702,18 @@ Forms
     height: calc(1.3rem - 6px);
     width: calc(1.3rem - 6px);
     border-radius: 50%;
-    background: var(--cc-color-primary-900);
+    background: var(--cc-color-background);
   }
 }
 
 .cc-form__toggle-label-checked {
-  color: var(--cc-color-primary-100);
+  color: var(--cc-color-text);
   display: none;
   text-transform: uppercase;
 }
 
 .cc-form__toggle-label-unchecked {
-  color: var(--cc-color-primary-500);
+  color: var(--cc-color-button-background);
   display: inline;
   text-transform: uppercase;
 }
@@ -715,7 +731,8 @@ Forms
     }
 
     & ~ .cc-form__toggle-span {
-      background-color: var(--cc-color-success);
+      background-color: var(--cc-color-success-background);
+      color: var(--cc-color-success-text);
 
       &:after {
         left: unset;
@@ -736,7 +753,7 @@ Language
   font-size: 1rem;
   border: none;
   border-radius: var(--cc-border-radius);
-  background: var(--cc-color-primary-600);
+  background: var(--cc-color-button-background);
 }
 
 /**
@@ -761,23 +778,22 @@ Table
 }
 
 .cc-table__row--is-header {
-  color: var(--cc-color-primary-100);
+  color: var(--cc-color-text);
   background: none;
-  border-bottom: 1px solid var(--cc-color-primary-600);
+  border-bottom: 1px solid var(--cc-color-table-border);
 }
 
 .cc-table__row--is-data {
   &:nth-child(odd) {
-    background-color: var(--cc-color-primary-800);
+    background-color: var(--cc-color-table-odd);
   }
 }
 
 .cc-table__row--is-participant {
-  background-color: var(--cc-color-primary-900);
+  background-color: var(--cc-color-background);
 }
 
 .cc-table__row--is-active {
-
 }
 
 .cc-table__cell {
@@ -905,12 +921,13 @@ Tabs
   grid-row-start: 1;
   grid-row-end: 2;
   cursor: pointer;
-  border: 1px solid var(--cc-color-primary-100);
+  border: 1px solid var(--cc-color-border);
   margin-right: 0.5rem;
   margin-bottom: -1px;
   z-index: 10;
   margin-left: 0.5rem;
-  background-color: var(--cc-color-primary-700);
+  background-color: var(--cc-color-button-background);
+  color: var(--cc-color-button-text);
   border-radius: var(--cc-border-radius) var(--cc-border-radius) 0 0;
 
   &:hover {
@@ -920,8 +937,8 @@ Tabs
 
 .cc-tabs__tab-radio:checked + .cc-tabs__title {
   cursor: default;
-  border-bottom-color: var(--cc-color-primary-900);
-  background-color: var(--cc-color-primary-900);
+  border-bottom-color: var(--cc-color-background);
+  background-color: var(--cc-color-background);
 
   &:hover {
     text-decoration: none;
@@ -936,8 +953,8 @@ Tabs
   padding-top: var(--cc-gap-form);
   padding-bottom: var(--cc-gap-form);
   grid-column: 1 / -1;
-  border-bottom: 1px solid var(--cc-color-primary-500);
-  border-top: 1px solid var(--cc-color-primary-100);
+  border-bottom: 1px solid var(--cc-color-border);
+  border-top: 1px solid var(--cc-color-border);
 }
 
 .cc-tabs__tab-radio:checked + * + .cc-tabs__content {
@@ -959,7 +976,7 @@ User participant grid
 
 .cc-participant__row {
   grid-column: 1 / -1;
-  border-bottom: 2px solid var(--cc-color-primary-700);
+  border-bottom: 2px solid var(--cc-color-border);
 }
 
 .cc-participant__name {
@@ -996,21 +1013,21 @@ User participant grid
     justify-content: center;
     align-items: center;
     gap: 0;
-    border-top: 2px solid var(--cc-color-primary-700);
+    border-top: 2px solid var(--cc-color-border);
     grid-column: 1 / -1;
   }
 
   .cc-participant__name {
     text-align: left;
-    border-bottom: 2px solid var(--cc-color-primary-700);
+    border-bottom: 2px solid var(--cc-color-border);
     padding: 0.75rem;
-    background: var(--cc-color-primary-700);
+    background: var(--cc-color-button-background);
     grid-column: 1 / -1;
     position: relative;
   }
 
   .cc-participant__first-workshop {
-    border-bottom: 2px solid var(--cc-color-primary-700);
+    border-bottom: 2px solid var(--cc-color-border);
     padding: 0.75rem;
     grid-column: 1 / -1;
   }
@@ -1057,8 +1074,8 @@ User participant grid
 .cc-popup__container {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--cc-color-primary-300);
-  background: var(--cc-color-primary-900);
+  border: 2px solid var(--cc-color-popup-border);
+  background: var(--cc-color-background);
   border-radius: var(--cc-border-radius);
   padding: var(--cc-gap-normal);
   gap: 0.5rem;
@@ -1090,7 +1107,7 @@ User participant grid
   align-items: center;
   width: 100%;
   height: 100%;
-  background: white;
+  background: var(--cc-color-background);
   z-index: 900;
   font-size: 1.2rem;
 }
@@ -1105,7 +1122,7 @@ User participant grid
   gap: 1rem;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--cc-color-border);
 }
 
 .cc-lesson-header__start {
@@ -1131,7 +1148,8 @@ User participant grid
   padding: 0.5rem;
   border: none;
   border-radius: var(--cc-border-radius);
-  background: var(--cc-color-primary-600);
+  color: var(--cc-color-button-text);
+  background: var(--cc-color-button-background);
 }
 
 .cc-lesson-top__container {
@@ -1163,7 +1181,7 @@ User participant grid
   gap: 1rem;
   margin-top: 1rem;
   padding-left: 0.5rem;
-  border-left: 2px solid var(--cc-color-primary-100);
+  border-left: 2px solid var(--cc-color-text);
 }
 
 .cc-lesson-description {
@@ -1260,7 +1278,7 @@ User participant grid
 }
 
 .cc-lesson-output__outer-container {
-  border: 1px solid black;
+  border: 1px solid var(--cc-color-border);
   border-radius: var(--cc-border-radius);
   flex: 1;
   max-height: 100%;
@@ -1282,7 +1300,7 @@ User participant grid
 .cc-lesson-editor__container {
   width: 100%;
   flex: 1;
-  border: 1px solid black;
+  border: 1px solid var(--cc-color-border);
   border-radius: var(--cc-border-radius);
   overflow: hidden;
   outline: 2px solid transparent;
@@ -1294,7 +1312,7 @@ User participant grid
 
 .cc-lesson-code-block__container {
   height: fit-content;
-  border: 1px solid var(--cc-color-primary-300);
+  border: 1px solid var(--cc-color-border);
   border-radius: var(--cc-border-radius);
   padding: 0.5rem;
   position: relative;
@@ -1316,7 +1334,8 @@ User participant grid
 }
 
 .cc-lesson-styles-list__container {
-  border: 1px solid black;
+  border: 1px solid var(--cc-color-border);
+  border-radius: var(--cc-border-radius);
   padding: 0.5rem;
 }
 
