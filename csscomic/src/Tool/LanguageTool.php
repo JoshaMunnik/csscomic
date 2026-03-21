@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tool;
 
-use App\Model\Constant\Language;
 use Cake\I18n\I18n;
 use Closure;
 

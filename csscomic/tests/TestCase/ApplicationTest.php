@@ -14,6 +14,7 @@ declare(strict_types=1);
  * @since         3.3.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\Test\TestCase;
 
 use App\Application;
@@ -30,56 +31,56 @@ use Cake\TestSuite\TestCase;
  */
 class ApplicationTest extends TestCase
 {
-    use IntegrationTestTrait;
+  use IntegrationTestTrait;
 
-    /**
-     * Test bootstrap in production.
-     *
-     * @return void
-     */
-    public function testBootstrap()
-    {
-        Configure::write('debug', false);
-        $app = new Application(dirname(__DIR__, 2) . '/config');
-        $app->bootstrap();
-        $plugins = $app->getPlugins();
+  /**
+   * Test bootstrap in production.
+   *
+   * @return void
+   */
+  public function testBootstrap()
+  {
+    Configure::write('debug', false);
+    $app = new Application(dirname(__DIR__, 2).'/config');
+    $app->bootstrap();
+    $plugins = $app->getPlugins();
 
-        $this->assertTrue($plugins->has('Bake'), 'plugins has Bake?');
-        $this->assertFalse($plugins->has('DebugKit'), 'plugins has DebugKit?');
-        $this->assertTrue($plugins->has('Migrations'), 'plugins has Migrations?');
-    }
+    $this->assertTrue($plugins->has('Bake'), 'plugins has Bake?');
+    $this->assertFalse($plugins->has('DebugKit'), 'plugins has DebugKit?');
+    $this->assertTrue($plugins->has('Migrations'), 'plugins has Migrations?');
+  }
 
-    /**
-     * Test bootstrap add DebugKit plugin in debug mode.
-     *
-     * @return void
-     */
-    public function testBootstrapInDebug()
-    {
-        Configure::write('debug', true);
-        $app = new Application(dirname(__DIR__, 2) . '/config');
-        $app->bootstrap();
-        $plugins = $app->getPlugins();
+  /**
+   * Test bootstrap add DebugKit plugin in debug mode.
+   *
+   * @return void
+   */
+  public function testBootstrapInDebug()
+  {
+    Configure::write('debug', true);
+    $app = new Application(dirname(__DIR__, 2).'/config');
+    $app->bootstrap();
+    $plugins = $app->getPlugins();
 
-        $this->assertTrue($plugins->has('DebugKit'), 'plugins has DebugKit?');
-    }
+    $this->assertTrue($plugins->has('DebugKit'), 'plugins has DebugKit?');
+  }
 
-    /**
-     * testMiddleware
-     *
-     * @return void
-     */
-    public function testMiddleware()
-    {
-        $app = new Application(dirname(__DIR__, 2) . '/config');
-        $middleware = new MiddlewareQueue();
+  /**
+   * testMiddleware
+   *
+   * @return void
+   */
+  public function testMiddleware()
+  {
+    $app = new Application(dirname(__DIR__, 2).'/config');
+    $middleware = new MiddlewareQueue();
 
-        $middleware = $app->middleware($middleware);
+    $middleware = $app->middleware($middleware);
 
-        $this->assertInstanceOf(ErrorHandlerMiddleware::class, $middleware->current());
-        $middleware->seek(1);
-        $this->assertInstanceOf(AssetMiddleware::class, $middleware->current());
-        $middleware->seek(2);
-        $this->assertInstanceOf(RoutingMiddleware::class, $middleware->current());
-    }
+    $this->assertInstanceOf(ErrorHandlerMiddleware::class, $middleware->current());
+    $middleware->seek(1);
+    $this->assertInstanceOf(AssetMiddleware::class, $middleware->current());
+    $middleware->seek(2);
+    $this->assertInstanceOf(RoutingMiddleware::class, $middleware->current());
+  }
 }

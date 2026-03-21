@@ -24,9 +24,9 @@ $registerId = 'register';
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Login')) ?>
+  <?= $this->Styling->Text->title(__('Login')) ?>
   <?= $this->createForm($loginData, AccountController::LOGIN) ?>
-  <?= $this->Styling->beginFormContainer() ?>
+  <?= $this->Styling->Dialog->beginFormContainer() ?>
   <?= $this->Form->control(
     LoginViewModel::EMAIL,
     [
@@ -50,22 +50,22 @@ $registerId = 'register';
       'type' => 'checkbox',
     ],
   ) ?>
-  <?= $this->Styling->beginFormButtons() ?>
+  <?= $this->Styling->Dialog->beginFormButtons() ?>
   <?= $this->Form->button(__('Sign in'), ['type' => 'submit']) ?>
-  <?= $this->Styling->formButtonSpacer() ?>
-  <?= $this->Styling->textButton(
+  <?= $this->Styling->Dialog->formButtonSpacer() ?>
+  <?= $this->Styling->Button->text(
     __('Forgot your password?'),
     [
       HtmlAction::SHOW_DIALOG => '#'.$forgotPasswordId,
     ],
   ) ?>
-  <?= $this->Styling->endFormButtons() ?>
-  <?= $this->Styling->endFormContainer() ?>
+  <?= $this->Styling->Dialog->endFormButtons() ?>
+  <?= $this->Styling->Dialog->endFormContainer() ?>
   <?= $this->Form->end() ?>
   <p>
     <?= __('Don\'t have an account yet? Click:') ?>
   </p>
-  <?= $this->Styling->button(
+  <?= $this->Styling->Button->normal(
     __('Create account'),
     ButtonColorEnum::PRIMARY,
     [

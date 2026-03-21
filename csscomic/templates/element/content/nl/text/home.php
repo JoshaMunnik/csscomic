@@ -26,7 +26,7 @@ use App\View\ApplicationView;
   <p>
     De HTML code die bij elke les wordt ingevoerd, wordt opgeslagen in lokale opslag van de browser.
     Om de data in deze lokale opslag te verwijderen (voor deze website), klik:
-    <?= $this->Styling->button(
+    <?= $this->Styling->Button->normal(
       'Wis opslag', ButtonColorEnum::DANGER, ['onclick' => 'localStorage.clear()']
     ) ?>
   </p>

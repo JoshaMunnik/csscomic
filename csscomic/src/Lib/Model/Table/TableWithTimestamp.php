@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Lib\Model\Table;
 
 use ArrayObject;
@@ -55,14 +57,12 @@ class TableWithTimestamp extends Table
   /**
    * Gets the default alias based on the class name removing the 'Table' text at the end.
    *
-   * Code is based on {@link Table::getAlias()}
-   *
    * @return string|null
    */
   public static function getDefaultAlias(): ?string
   {
-    $alias = namespaceSplit(static::class);
-    return substr(end($alias), 0, -5) ?: null;
+    $className = basename(str_replace('\\','/', static::class));
+    return substr($className, 0, -5) ?: null;
   }
 
   /**

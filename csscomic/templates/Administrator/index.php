@@ -19,33 +19,33 @@ const CHANGE_PASSWORD = 'change-password';
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Home for administrator')) ?>
-  <?= $this->Styling->beginPageButtons() ?>
-  <?= $this->Styling->linkButton(
+  <?= $this->Styling->Text->title(__('Home for administrator')) ?>
+  <?= $this->Styling->Layout->beginPageButtons() ?>
+  <?= $this->Styling->Button->link(
     __('Users'),
     $this->url([UsersController::INDEX]),
     ButtonColorEnum::PRIMARY,
     true,
   ) ?>
-  <?= $this->Styling->linkButton(
+  <?= $this->Styling->Button->link(
     __('Clear caches'),
     $this->url([AdministratorController::CLEAR_CACHE])
   ) ?>
-  <?= $this->Styling->button(
+  <?= $this->Styling->Button->normal(
     __('Edit profile'),
     ButtonColorEnum::PRIMARY,
     [
       HtmlAction::SHOW_DIALOG => '#'.EDIT_PROFILE,
     ],
   ) ?>
-  <?= $this->Styling->button(
+  <?= $this->Styling->Button->normal(
     __('Change password'),
     ButtonColorEnum::PRIMARY,
     [
       HtmlAction::SHOW_DIALOG => '#'.CHANGE_PASSWORD,
     ],
   ) ?>
-  <?= $this->Styling->endPageButtons() ?>
+  <?= $this->Styling->Layout->endPageButtons() ?>
 </div>
 <?= $this->element(
   'dialog/edit_profile', ['data' => $editProfileData, 'id' => EDIT_PROFILE]

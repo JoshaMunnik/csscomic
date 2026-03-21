@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Lib\Model\View;
 
 use App\Lib\Model\Base\ModelBase;
@@ -45,7 +47,7 @@ class ViewModelBase extends ModelBase implements ContextInterface
   {
     return $this->hasProperty($field)
       ? $this->getProperty($field)->getValue($this)
-      : $options['default'];
+      : ($options['default'] ?? null);
   }
 
   /**

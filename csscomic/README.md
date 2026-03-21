@@ -23,3 +23,21 @@ To scan your source code for translatable strings and update your PO files, use:
 ```bash
 bin/cake i18n extract
 ```
+
+## Running tests
+
+This project provides separate test suites for fast unit tests and for integration tests that
+require the full application bootstrap (and may run migrations). Use the unit suite for
+quick feedback and the integration suite when you need database-backed tests.
+
+### Unit tests (fast, no DB / migrations)
+
+```bash
+composer run test:unit
+```
+
+### Integration tests (full bootstrap, runs migrations)
+
+```bash
+composer run test:integration
+```

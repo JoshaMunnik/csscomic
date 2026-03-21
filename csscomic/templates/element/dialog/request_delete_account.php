@@ -12,16 +12,16 @@ use App\View\ApplicationView;
  */
 
 ?>
-<?= $this->Styling->beginFormDialog($id, __('Delete account'), new ViewModelBase(), HomeController::INDEX) ?>
-<?= $this->Styling->textBlock(
+<?= $this->Styling->Dialog->beginFormDialog($id, __('Delete account'), new ViewModelBase(), HomeController::INDEX) ?>
+<?= $this->Styling->Text->textBlock(
   __('Click the button to sent an email with instructions on how to delete your account.')
 ) ?>
-<?= $this->Styling->beginDialogButtons() ?>
-<?= $this->Styling->submitButton(
+<?= $this->Styling->Dialog->beginDialogButtons() ?>
+<?= $this->Styling->Button->submit(
   __('Send email'),
   ButtonColorEnum::PRIMARY,
   ApplicationControllerBase::SUBMIT_REQUEST_DELETE_ACCOUNT,
 ) ?>
-<?= $this->Styling->closeButton(__('Cancel')) ?>
-<?= $this->Styling->endDialogButtons() ?>
-<?= $this->Styling->endFormDialog() ?>
+<?= $this->Styling->Button->close(__('Cancel')) ?>
+<?= $this->Styling->Dialog->endDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormDialog() ?>

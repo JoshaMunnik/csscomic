@@ -96,9 +96,9 @@ readonly class UrlTool
       }
     }
     $url = array_merge($url, $parameters);
-    $processedAction = key_exists(self::ACTION, $url);
+    $processedAction = array_key_exists(self::ACTION, $url);
     // exit with original url if there is both an action and controller key (nothing to do)
-    if ($processedAction && key_exists(self::CONTROLLER, $url)) {
+    if ($processedAction && array_key_exists(self::CONTROLLER, $url)) {
       return $url;
     }
     // copy items, processing values without text key
@@ -139,8 +139,9 @@ readonly class UrlTool
    */
   public static function controllerName(string $className): string
   {
+    $className = basename(str_replace('\\','/', $className));
     // 10 is the number characters of 'Controller'
-    return Inflector::dasherize(substr(namespaceSplit($className)[1], 0, -10));
+    return Inflector::dasherize(substr($className, 0, -10));
   }
 
   #endregion

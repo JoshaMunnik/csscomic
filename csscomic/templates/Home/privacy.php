@@ -8,6 +8,6 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Privacy Policy')) ?>
+  <?= $this->Styling->Text->title(__('Privacy Policy')) ?>
   <?= $this->contentElement('text/privacy') ?>
 </div>

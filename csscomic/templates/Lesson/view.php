@@ -74,7 +74,7 @@ $this->assign('title', Lesson::getName($index));
     <div class="cc-lesson-input">
       <div class="cc-lesson-action__container">
         <div class="cc-lesson-action__right">
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             '<strong>[F9]</strong>&nbsp;'.__('update'),
             ButtonColorEnum::PRIMARY,
             ['id' => 'update-output-button']
@@ -102,24 +102,24 @@ $this->assign('title', Lesson::getName($index));
             </div>
           </div>
           <div class="cc-lesson-action__button-spacer"></div>
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             '100%',
             ButtonColorEnum::PRIMARY,
             ['id' => 'no-scaling-button']
           ) ?>
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             '⟷', //__('full width'),
             ButtonColorEnum::PRIMARY,
             ['id' => 'full-width-button']
           ) ?>
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             __('everything'),
             ButtonColorEnum::PRIMARY,
             ['id' => 'everything-button']
           ) ?>
         </div>
         <div class="cc-lesson-action__right">
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             __('download'),
             ButtonColorEnum::PRIMARY,
             [
@@ -127,12 +127,12 @@ $this->assign('title', Lesson::getName($index));
               'disabled' => 'disabled',
             ]
           ) ?>
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             '⛶',
             ButtonColorEnum::PRIMARY,
             ['id' => 'show-full-page-button']
           ) ?>
-          <?= $this->Styling->smallButton(
+          <?= $this->Styling->Button->small(
             '<strong>[ESC]</strong>&nbsp;'.__('exit full page'),
             ButtonColorEnum::PRIMARY,
             [

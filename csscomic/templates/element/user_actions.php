@@ -18,23 +18,23 @@ const CHANGE_PASSWORD = 'change-password';
 const REQUEST_DELETE_ACCOUNT = 'request-delete-account';
 
 ?>
-<?= $this->Styling->smallTitle(__('To manage your account, click one of the actions:')) ?>
-<?= $this->Styling->beginPageButtons() ?>
-<?= $this->Styling->button(
+<?= $this->Styling->Text->smallTitle(__('To manage your account, click one of the actions:')) ?>
+<?= $this->Styling->Layout->beginPageButtons() ?>
+<?= $this->Styling->Button->normal(
   __('Edit profile'),
   ButtonColorEnum::PRIMARY,
   [
     HtmlAction::SHOW_DIALOG => '#'.EDIT_PROFILE,
   ],
 ) ?>
-<?= $this->Styling->button(
+<?= $this->Styling->Button->normal(
   __('Change password'),
   ButtonColorEnum::PRIMARY,
   [
     HtmlAction::SHOW_DIALOG => '#'.CHANGE_PASSWORD,
   ],
 ) ?>
-<?= $this->Styling->button(
+<?= $this->Styling->Button->normal(
   __('Delete account'),
   ButtonColorEnum::DANGER,
   [
@@ -42,11 +42,11 @@ const REQUEST_DELETE_ACCOUNT = 'request-delete-account';
   ],
 ) ?>
 <?php if ($this->isAdministrator()) : ?>
-  <?= $this->Styling->linkButton(
+  <?= $this->Styling->Button->link(
     __('Administration'), AdministratorController::INDEX, ButtonColorEnum::SECONDARY
   ) ?>
 <?php endif; ?>
-<?= $this->Styling->endPageButtons() ?>
+<?= $this->Styling->Layout->endPageButtons() ?>
 <?= $this->element(
   'dialog/edit_profile',
   [

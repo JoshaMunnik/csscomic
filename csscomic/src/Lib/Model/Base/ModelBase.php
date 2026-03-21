@@ -20,9 +20,9 @@ class ModelBase
   /**
    * Cached validator.
    *
-   * @var Validator
+   * @var Validator|null
    */
-  private Validator $m_validator;
+  private ?Validator $m_validator = null;
 
   /**
    * Errors from the latest validation.
@@ -57,7 +57,7 @@ class ModelBase
     $classType = new ReflectionClass($this);
     $propertyList = $classType->getProperties(ReflectionProperty::IS_PUBLIC);
     $this->m_properties = [];
-    foreach($propertyList as $property) {
+    foreach ($propertyList as $property) {
       $this->m_properties[$property->getName()] = $property;
     }
   }
@@ -78,8 +78,12 @@ class ModelBase
     $valid = $this->isValidData($data);
     foreach ($this->m_properties as $property) {
       $name = $property->getName();
-      if (key_exists($name, $data) && (!key_exists($name, $this->m_errors) || !$skipInvalid)) {
-        if ($property->getType()->getName() === DateTime::class) {
+      if (
+        array_key_exists($name, $data) &&
+        (!array_key_exists($name, $this->m_errors) || !$skipInvalid)
+      ) {
+        $type = $property->getType();
+        if (($type != null) && ($type->getName() === DateTime::class)) {
           try {
             $property->setValue($this, new DateTime($data[$property->getName()]));
           }
@@ -152,7 +156,7 @@ class ModelBase
   public function getError(
     string $fieldName
   ): array {
-    return key_exists($fieldName, $this->m_errors) ? $this->m_errors[$fieldName] : [];
+    return array_key_exists($fieldName, $this->m_errors) ? $this->m_errors[$fieldName] : [];
   }
 
   /**
@@ -218,7 +222,7 @@ class ModelBase
   protected function hasProperty(
     string $name
   ): bool {
-    return key_exists($name, $this->m_properties);
+    return array_key_exists($name, $this->m_properties);
   }
 
   /**
@@ -244,7 +248,7 @@ class ModelBase
    */
   protected function getValidator(): Validator
   {
-    if (empty($this->m_validator)) {
+    if ($this->m_validator === null) {
       $this->m_validator = $this->buildValidator();
     }
     return $this->m_validator;

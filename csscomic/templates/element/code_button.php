@@ -23,7 +23,7 @@ $this->Html->scriptBlock(
 );
 
 ?>
-<?= $this->Styling->smallButton(
+<?= $this->Styling->Button->small(
   $caption,
   ButtonColorEnum::PRIMARY,
   [

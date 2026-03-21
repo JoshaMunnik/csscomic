@@ -11,8 +11,8 @@ use App\View\ApplicationView;
  */
 
 ?>
-<?= $this->Styling->beginFormDialog($id, __('Change your password'), $data) ?>
-<?= $this->Styling->beginFormContainer() ?>
+<?= $this->Styling->Dialog->beginFormDialog($id, __('Change your password'), $data) ?>
+<?= $this->Styling->Dialog->beginFormContainer() ?>
 <?= $this->Form->control(
   ChangePasswordViewModel::CURRENT_PASSWORD,
   [
@@ -40,11 +40,11 @@ use App\View\ApplicationView;
     'id' => false,
   ],
 ) ?>
-<?= $this->Styling->endFormContainer() ?>
-<?= $this->Styling->beginDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormContainer() ?>
+<?= $this->Styling->Dialog->beginDialogButtons() ?>
 <?= $this->Form->submit(
   __('Update'), ['name' => ApplicationControllerBase::SUBMIT_CHANGE_PASSWORD]
 ) ?>
-<?= $this->Styling->closeButton(__('Cancel')) ?>
-<?= $this->Styling->endDialogButtons() ?>
-<?= $this->Styling->endFormDialog() ?>
+<?= $this->Styling->Button->close(__('Cancel')) ?>
+<?= $this->Styling->Dialog->endDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormDialog() ?>

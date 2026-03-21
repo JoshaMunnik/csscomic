@@ -23,7 +23,7 @@ use App\View\ApplicationView;
   <p>
     The HTML code entered in the editor for each lesson is stored in the browsers local storage. To
     remove all the stored data, click:
-    <?= $this->Styling->button(
+    <?= $this->Styling->Button->normal(
       'Clear storage', ButtonColorEnum::DANGER, ['onclick' => 'localStorage.clear()']
     ) ?>
   </p>

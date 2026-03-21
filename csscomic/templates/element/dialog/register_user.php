@@ -23,8 +23,8 @@ $termsLink = $this->Html->link(
 );
 
 ?>
-<?= $this->Styling->beginFormDialog($id, __('Register'), $data) ?>
-<?= $this->Styling->beginFormContainer() ?>
+<?= $this->Styling->Dialog->beginFormDialog($id, __('Register'), $data) ?>
+<?= $this->Styling->Dialog->beginFormContainer() ?>
 <?= $this->Form->control(
   RegistrationViewModel::EMAIL,
   [
@@ -74,11 +74,11 @@ $termsLink = $this->Html->link(
     'escape' => false,
   ],
 ) ?>
-<?= $this->Styling->endFormContainer() ?>
-<?= $this->Styling->beginDialogButtons() ?>
-<?= $this->Styling->submitButton(
+<?= $this->Styling->Dialog->endFormContainer() ?>
+<?= $this->Styling->Dialog->beginDialogButtons() ?>
+<?= $this->Styling->Button->submit(
   __('Register'), ButtonColorEnum::PRIMARY, AccountController::SUBMIT_REGISTER
 ) ?>
-<?= $this->Styling->closeButton(__('Cancel')) ?>
-<?= $this->Styling->endDialogButtons() ?>
-<?= $this->Styling->endFormDialog() ?>
+<?= $this->Styling->Button->close(__('Cancel')) ?>
+<?= $this->Styling->Dialog->endDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormDialog() ?>

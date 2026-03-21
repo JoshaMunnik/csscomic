@@ -25,7 +25,7 @@ $this->Html->scriptBlock(
 
 ?>
 <div class="cc-lesson-code-block__container">
-  <?= $this->Styling->smallButton(
+  <?= $this->Styling->Button->small(
     __('Copy'),
     ButtonColorEnum::PRIMARY,
     [

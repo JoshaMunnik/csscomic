@@ -27,18 +27,18 @@ $account = preg_replace(
       data-uf-popup-content="#<?= USER_POPUP ?>"
       data-uf-popup-position="horizontal"
     >
-      <?= $this->Styling->linkButton(
+      <?= $this->Styling->Button->link(
         __('Home'),
         HomeController::INDEX,
       ) ?>
-      <?= $this->Styling->linkButton(
+      <?= $this->Styling->Button->link(
         __('Sign out'),
         AccountController::LOGOUT,
       ) ?>
     </div>
   <?php else : ?>
     <?php if ($this->getRequest()->getParam('controller') !== $account) : ?>
-      <?= $this->Styling->linkButton(__('Sign in'), AccountController::LOGIN) ?>
+      <?= $this->Styling->Button->link(__('Sign in'), AccountController::LOGIN) ?>
     <?php endif; ?>
   <?php endif; ?>
 </div>

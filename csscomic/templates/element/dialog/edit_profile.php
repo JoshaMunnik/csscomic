@@ -13,8 +13,8 @@ use App\View\ApplicationView;
 
 ?>
 <?=
-$this->Styling->beginFormDialog($id, __('Edit your profile'), $data) ?>
-<?= $this->Styling->beginFormContainer() ?>
+$this->Styling->Dialog->beginFormDialog($id, __('Edit your profile'), $data) ?>
+<?= $this->Styling->Dialog->beginFormContainer() ?>
 <?= $this->Form->control(
   EditProfileViewModel::NAME,
   [
@@ -24,13 +24,13 @@ $this->Styling->beginFormDialog($id, __('Edit your profile'), $data) ?>
     'id' => false,
   ],
 ) ?>
-<?= $this->Styling->endFormContainer() ?>
-<?= $this->Styling->beginDialogButtons() ?>
-<?= $this->Styling->submitButton(
+<?= $this->Styling->Dialog->endFormContainer() ?>
+<?= $this->Styling->Dialog->beginDialogButtons() ?>
+<?= $this->Styling->Button->submit(
   __('Update'),
   ButtonColorEnum::PRIMARY,
   ApplicationControllerBase::SUBMIT_EDIT_PROFILE,
 ) ?>
-<?= $this->Styling->closeButton(__('Cancel')) ?>
-<?= $this->Styling->endDialogButtons() ?>
-<?= $this->Styling->endFormDialog() ?>
+<?= $this->Styling->Button->close(__('Cancel')) ?>
+<?= $this->Styling->Dialog->endDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormDialog() ?>

@@ -8,6 +8,6 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Terms and conditions')) ?>
+  <?= $this->Styling->Text->title(__('Terms and conditions')) ?>
   <?= $this->contentElement('text/terms') ?>
 </div>

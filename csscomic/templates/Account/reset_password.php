@@ -11,9 +11,9 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Reset password')) ?>
+  <?= $this->Styling->Text->title(__('Reset password')) ?>
   <?= $this->Form->create($resetPasswordData, ['templates' => 'form_styles']) ?>
-  <?= $this->Styling->beginFormContainer() ?>
+  <?= $this->Styling->Dialog->beginFormContainer() ?>
   <?= $this->Form->control(
     ResetPasswordViewModel::NEW_PASSWORD,
     [
@@ -31,9 +31,9 @@ use App\View\ApplicationView;
     ],
   ) ?>
   <?= $this->Form->hidden(ResetPasswordViewModel::RESET_TOKEN) ?>
-  <?= $this->Styling->beginFormButtons() ?>
+  <?= $this->Styling->Dialog->beginFormButtons() ?>
   <?= $this->Form->button(__('Update'), ['type' => 'submit']) ?>
-  <?= $this->Styling->endFormButtons() ?>
-  <?= $this->Styling->endFormContainer() ?>
+  <?= $this->Styling->Dialog->endFormButtons() ?>
+  <?= $this->Styling->Dialog->endFormContainer() ?>
   <?= $this->Form->end() ?>
 </div>

@@ -12,11 +12,11 @@ use App\View\ApplicationView;
  */
 
 ?>
-<?= $this->Styling->beginFormDialog($id, __('Forgot password'), $data, AccountController::LOGIN) ?>
-<?= $this->Styling->textBlock(
+<?= $this->Styling->Dialog->beginFormDialog($id, __('Forgot password'), $data, AccountController::LOGIN) ?>
+<?= $this->Styling->Text->textBlock(
   __('Please enter your email address. An email will be sent with instructions on how to reset your password.')
 ) ?>
-<?= $this->Styling->beginFormContainer() ?>
+<?= $this->Styling->Dialog->beginFormContainer() ?>
 <?= $this->Form->control(
   EmailViewModel::EMAIL,
   [
@@ -26,13 +26,13 @@ use App\View\ApplicationView;
     'id' => false,
   ],
 ) ?>
-<?= $this->Styling->endFormContainer() ?>
-<?= $this->Styling->beginDialogButtons() ?>
-<?= $this->Styling->submitButton(
+<?= $this->Styling->Dialog->endFormContainer() ?>
+<?= $this->Styling->Dialog->beginDialogButtons() ?>
+<?= $this->Styling->Button->submit(
   __('Send email'),
   ButtonColorEnum::PRIMARY,
   AccountController::SUBMIT_FORGOT_PASSWORD,
 ) ?>
-<?= $this->Styling->closeButton(__('Cancel')) ?>
-<?= $this->Styling->endDialogButtons() ?>
-<?= $this->Styling->endFormDialog() ?>
+<?= $this->Styling->Button->close(__('Cancel')) ?>
+<?= $this->Styling->Dialog->endDialogButtons() ?>
+<?= $this->Styling->Dialog->endFormDialog() ?>

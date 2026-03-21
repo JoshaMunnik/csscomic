@@ -19,7 +19,7 @@ use Cake\ORM\Locator\LocatorAwareTrait;
  * This class can be used to access the table instances. It uses lazy access, fetching the instance
  * the first time a table instance is accessed.
  */
-class Tables
+final class Tables
 {
   #region traits
 
@@ -34,21 +34,21 @@ class Tables
    *
    * @var Tables|null
    */
-  static ?Tables $s_instance = null;
+  private static ?Tables $s_instance = null;
 
   /**
    * Reference to singleton instance
    *
    * @var UsersTable|null
    */
-  static ?UsersTable $s_users = null;
+  private static ?UsersTable $s_users = null;
 
   /**
    * Reference to singleton instance
    *
    * @var LessonsTable|null
    */
-  static ?LessonsTable $s_lessons = null;
+  private static ?LessonsTable $s_lessons = null;
 
   #endregion
 
@@ -68,7 +68,7 @@ class Tables
 
   #region constructor
 
-  private function __constructor()
+  private function __construct()
   {
   }
 

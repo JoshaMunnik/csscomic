@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Lib\Controller;
@@ -40,9 +41,9 @@ class ApplicationControllerBase extends Controller
    * Form submit actions. These are defined here, since a trait cannot be referenced to access a
    * constant.
    */
-  const SUBMIT_EDIT_PROFILE = 'submit_edit_profile';
-  const SUBMIT_CHANGE_PASSWORD = 'submit_change_password';
-  const SUBMIT_REQUEST_DELETE_ACCOUNT = 'submit_request_delete_account';
+  public const SUBMIT_EDIT_PROFILE = 'submit_edit_profile';
+  public const SUBMIT_CHANGE_PASSWORD = 'submit_change_password';
+  public const SUBMIT_REQUEST_DELETE_ACCOUNT = 'submit_request_delete_account';
 
   #endregion
 

@@ -9,12 +9,12 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Welcome')) ?>
+  <?= $this->Styling->Text->title(__('Welcome')) ?>
   <?= $this->contentElement('text/home') ?>
-  <?= $this->Styling->smallTitle(__('To go to first lesson click:')) ?>
-  <?= $this->Styling->beginButtons() ?>
-  <?= $this->Styling->linkButton(__('First lesson'), $this->url(LessonController::VIEW)) ?>
-  <?= $this->Styling->endButtons() ?>
+  <?= $this->Styling->Text->smallTitle(__('To go to first lesson click:')) ?>
+  <?= $this->Styling->Layout->beginButtons() ?>
+  <?= $this->Styling->Button->link(__('First lesson'), $this->url(LessonController::VIEW)) ?>
+  <?= $this->Styling->Layout->endButtons() ?>
   <?php if ($this->isLoggedIn()): ?>
     <?= $this->element('user_actions') ?>
   <?php endif; ?>

@@ -3,7 +3,7 @@
          colors="true"
          processIsolation="false"
          stopOnFailure="false"
-         bootstrap="tests/bootstrap.php"
+         bootstrap="tests/bootstrap.unit.php"
          cacheDirectory=".phpunit.cache"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.1/phpunit.xsd">
     <php>
@@ -11,12 +11,11 @@
         <ini name="apc.enable_cli" value="1"/>
     </php>
 
-    <!-- Add any additional test suites you want to run here -->
     <testsuites>
-        <testsuite name="app">
-            <directory>tests/TestCase/</directory>
+        <testsuite name="unit-default">
+            <directory>tests/TestCase/Tool</directory>
+            <directory>tests/TestCase/Lib</directory>
         </testsuite>
-        <!-- Add plugin test suites here. -->
     </testsuites>
 
     <!-- Load extension for fixtures -->

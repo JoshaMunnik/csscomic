@@ -24,27 +24,27 @@ const REMOVE_DIALOG = 'remove';
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Users')) ?>
-  <?= $this->Styling->beginPageButtons() ?>
-  <?= $this->Styling->linkButton(__('Add user'), [UsersController::EDIT]) ?>
-  <?= $this->Styling->linkButton(
+  <?= $this->Styling->Text->title(__('Users')) ?>
+  <?= $this->Styling->Layout->beginPageButtons() ?>
+  <?= $this->Styling->Button->link(__('Add user'), [UsersController::EDIT]) ?>
+  <?= $this->Styling->Button->link(
     __('Home'), AdministratorController::INDEX, ButtonColorEnum::SECONDARY
   ) ?>
-  <?= $this->Styling->endPageButtons() ?>
+  <?= $this->Styling->Layout->endPageButtons() ?>
   <?php
   $tabs = [false => __('Normal'), true => __('Administrators')];
-  echo $this->Styling->beginTabsContainer();
+  echo $this->Styling->Layout->beginTabsContainer();
   foreach ($tabs as $administrator => $label) {
-    echo $this->Styling->beginTab($label, !$administrator);
+    echo $this->Styling->Layout->beginTab($label, !$administrator);
     $filteredUsers = array_filter($users, fn($user) => $user->administrator == $administrator);
     if (empty($filteredUsers)) {
-      echo $this->Styling->smallTitle(__('No users'));
+      echo $this->Styling->Text->smallTitle(__('No users'));
     }
     else {
-      echo $this->Styling->beginSortedTable(
+      echo $this->Styling->Table->beginSortedTable(
         $administrator ? HtmlStorageKey::ADMINISTRATORS_TABLE : HtmlStorageKey::USERS_TABLE, true
       );
-      echo $this->Styling->sortedTableHeader([
+      echo $this->Styling->Table->sortedTableHeader([
         [__('Email'), CellDataTypeEnum::TEXT],
         [__('Name'), CellDataTypeEnum::TEXT],
         [__('Language'), CellDataTypeEnum::TEXT, CellStylingEnum::TIGHT],
@@ -55,7 +55,7 @@ const REMOVE_DIALOG = 'remove';
         null,
       ]);
       foreach ($filteredUsers as $user) {
-        echo $this->Styling->sortedTableRow(
+        echo $this->Styling->Table->sortedTableRow(
           [
             $user->email,
             $user->name,
@@ -66,11 +66,11 @@ const REMOVE_DIALOG = 'remove';
             [LessonEntity::getComicCount($user->lessons), ContentPositionEnum::END],
           ],
           [
-            $this->Styling->tableLinkButton(
+            $this->Styling->Button->tableLink(
               __('edit'),
               [UsersController::EDIT, $user->id]
             ),
-            $this->Styling->tableButton(
+            $this->Styling->Button->tableNormal(
               __('remove'),
               ButtonColorEnum::DANGER,
               [
@@ -83,11 +83,11 @@ const REMOVE_DIALOG = 'remove';
           $this->isUser($user)
         );
       }
-      echo $this->Styling->endSortedTable();
+      echo $this->Styling->Table->endSortedTable();
     }
-    echo $this->Styling->endTab();
+    echo $this->Styling->Layout->endTab();
   }
-  echo $this->Styling->endTabsContainer();
+  echo $this->Styling->Layout->endTabsContainer();
   ?>
 </div>
 <?= $this->element(

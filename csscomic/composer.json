@@ -55,6 +55,9 @@
         ],
         "cs-check": "phpcs --colors -p",
         "cs-fix": "phpcbf --colors -p",
-        "test": "phpunit --colors=always"
+        "test": "phpunit --colors=always",
+        "test:unit": "phpunit --colors=always -c phpunit.unit.xml",
+        "test:integration": "phpunit --colors=always -c phpunit.integration.xml",
+        "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon"
     }
 }

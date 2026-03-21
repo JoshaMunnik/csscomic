@@ -11,16 +11,16 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title(__('Delete account')) ?>
+  <?= $this->Styling->Text->title(__('Delete account')) ?>
   <?= $this->Form->create($deleteAccountData, ['templates' => 'form_styles']) ?>
-  <?= $this->Styling->textBlock(
+  <?= $this->Styling->Text->textBlock(
     __('Warning: Deleting your account is permanent and cannot be undone! All your data will be lost.')
   ) ?>
-  <?= $this->Styling->beginFormButtons() ?>
-  <?= $this->Styling->submitButton(
+  <?= $this->Styling->Dialog->beginFormButtons() ?>
+  <?= $this->Styling->Button->submit(
     __('I understand, delete my account'), ButtonColorEnum::DANGER
   ) ?>
-  <?= $this->Styling->endFormButtons() ?>
+  <?= $this->Styling->Dialog->endFormButtons() ?>
   <?= $this->Form->hidden(DeleteAccountViewModel::DELETE_TOKEN) ?>
   <?= $this->Form->end() ?>
 </div>

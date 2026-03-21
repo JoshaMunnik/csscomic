@@ -14,9 +14,9 @@ use App\View\ApplicationView;
 
 ?>
 <div class="cc-main__page">
-  <?= $this->Styling->title($data->isNew() ? __('Create user') : __('Edit user')) ?>
+  <?= $this->Styling->Text->title($data->isNew() ? __('Create user') : __('Edit user')) ?>
   <?= $this->createForm($data) ?>
-  <?= $this->Styling->beginFormContainer() ?>
+  <?= $this->Styling->Dialog->beginFormContainer() ?>
   <?= $this->Form->control(
     EditUserViewModel::EMAIL,
     [
@@ -59,13 +59,13 @@ use App\View\ApplicationView;
       'required' => true
     ]
   ) ?>
-  <?= $this->Styling->beginFormButtons() ?>
+  <?= $this->Styling->Dialog->beginFormButtons() ?>
   <?= $this->Form->button(__('Save')) ?>
-  <?= $this->Styling->linkButton(
+  <?= $this->Styling->Button->link(
     __('Cancel'), UsersController::INDEX, ButtonColorEnum::SECONDARY
   ) ?>
-  <?= $this->Styling->endFormButtons() ?>
-  <?= $this->Styling->endFormContainer() ?>
+  <?= $this->Styling->Dialog->endFormButtons() ?>
+  <?= $this->Styling->Dialog->endFormContainer() ?>
   <?= $this->Form->hidden(IdViewModel::ID) ?>
   <?= $this->Form->end() ?>
 </div>
