@@ -2,6 +2,8 @@
 
 import {EditorView, basicSetup} from "codemirror";
 import {html} from "@codemirror/lang-html";
+import {autocompletion, type CompletionSource} from "@codemirror/autocomplete";
+import {htmlCompletionSource} from "@codemirror/lang-html";
 import {Diagnostic, linter, lintGutter} from "@codemirror/lint";
 import {HTMLHint} from 'htmlhint';
 import {EditorState} from "@codemirror/state";
@@ -10,6 +12,8 @@ import {defaultHighlightStyle, syntaxHighlighting} from "@codemirror/language"
 import {UFHtml} from "@ultraforce/ts-dom-lib";
 import {Hint} from "htmlhint/types";
 import {UFText} from "@ultraforce/ts-general-lib";
+
+// endregion
 
 // endregion
 
@@ -57,6 +61,85 @@ const BUTTON_HIDDEN_CLASS = 'cc-lesson-action__button--is-hidden';
  * Minimal time between saves to server in milliseconds.
  */
 const SAVE_INTERVAL_TIME = 2000;
+
+/**
+ * Tags that can show up for code hinting
+ */
+const ALLOWED_TAGS = new Set([
+  'div',
+  'span',
+  'strong',
+  'em',
+]);
+
+/**
+ * Attributes that can show up for code hinting
+ */
+const ALLOWED_ATTRIBUTES = new Set([
+  'class',
+]);
+
+//
+/**
+ * Very small heuristic to detect whether the cursor is in a tag name or in an attribute.
+ * This is conservative and works for normal editing; for absolute correctness you can
+ *  inspect the syntax tree (syntaxTree) instead.
+ *
+ * @param state
+ * @param pos
+ *
+ * @return {inTag:boolean, atTagName:boolean, atAttribute:boolean}
+ */
+function detectHtmlContext(
+  state: any, pos: number
+): { inTag: boolean, atTagName: boolean, atAttribute: boolean } {
+  const doc = state.doc.toString();
+  const before = doc.slice(0, pos);
+  const lastLt = before.lastIndexOf('<');
+  const lastGt = before.lastIndexOf('>');
+  const inTag = lastLt > lastGt;
+  if (!inTag) {
+    return {inTag: false, atTagName: false, atAttribute: false};
+  }
+  const afterLt = before.slice(lastLt + 1);
+  // right after '<' or typing a tag-name (letters / dash / slash), treat as tag name
+  const atTagName = /^[\/\s]*[A-Za-z0-9-]*$/.test(afterLt);
+  const atAttribute = inTag && !atTagName;
+  return {inTag, atTagName, atAttribute};
+}
+
+/**
+ * The filtered completion source wraps the built-in htmlCompletion and filters options.
+ *
+ * @return any
+ */
+const filteredHtmlCompletion: CompletionSource = (context): any => {
+  const original = htmlCompletionSource(context as any) as any;
+  if (!original) return null;
+  const {inTag, atTagName, atAttribute} = detectHtmlContext(context.state, context.pos);
+  // original.options may contain strings or completion objects
+  const filteredOptions = original.options.filter((option: any) => {
+    const label = typeof option === 'string' ? option : (option.label ?? '');
+    if (!label) return true;
+    const low = label.toLowerCase();
+    if (atTagName) {
+      return ALLOWED_TAGS.has(low);
+    }
+    if (atAttribute) {
+      return ALLOWED_ATTRIBUTES.has(low);
+    }
+    // fallback: keep everything in any other case
+    return true;
+  });
+  return {
+    ...original,
+    options: filteredOptions,
+  };
+};
+
+// endregion
+
+// region local functions
 
 // endregion
 
@@ -201,6 +284,7 @@ class Lesson {
       extensions: [
         basicSetup,
         html(),
+        autocompletion({override: [filteredHtmlCompletion]}),
         this.htmlLinter(),
         lintGutter(),
         EditorView.updateListener.of(update => {
