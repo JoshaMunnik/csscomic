@@ -26,5 +26,9 @@ use App\View\ApplicationView;
       <code>update</code> button om te zien wat er gebeurt. Als het goed is zal de ingevoerde
       tekst in de uitvoer verschijnen.
     </p>
+    <p>
+      <strong>Oefening:</strong> Probeer wat woorden met meerdere spaties of regel overgangen in te
+      voeren. Kijk wat er gebeurt in de uitvoer.
+    </p>
   </div>
 </div>

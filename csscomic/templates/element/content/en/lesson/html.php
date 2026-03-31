@@ -26,5 +26,9 @@ use App\View\ApplicationView;
       <code>update</code> button to see what happens. If everything works correctly, the entered
       text will appear in the output.
     </p>
+    <p>
+      <strong>Exercise:</strong> Try to enter words separated by multiple spaces or new lines and
+      observer what happens in the output.
+    </p>
   </div>
 </div>
