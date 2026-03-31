@@ -12,27 +12,59 @@ use App\View\ApplicationView;
     Welcome to the first lesson. Before we dive into the world of HTML and CSS, we will briefly
     explain how these lesson pages are structured:
   </p>
-  <ul>
+  <div class="cc-screen__container">
+    <div class="cc-screen__section cc-screen__section--is-row">
+      <div class="cc-screen__number">1</div>
+      <div class="cc-screen__description">
+        Lesson selection + navigation
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">2</div>
+      <div class="cc-screen__description">
+        Text + exercises
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">3</div>
+      <div class="cc-screen__description">
+        Help
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">4</div>
+      <div class="cc-screen__description">
+        Code editor
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">5</div>
+      <div class="cc-screen__description">
+        Output
+      </div>
+    </div>
+  </div>
+  <ul class="cc-list__no-prefix">
     <li>
-      In the bar above you can select a lesson with the dropdown on the left.
-      Or you can use the buttons on the right to go to the next or previous lesson.
+      <span class="cc-screen__number cc-screen__number--is-text">4</span>
+      If you don't see a blue border and blinking cursor, click on it first.
     </li>
     <li>
-      The top-left always contains the explanatory text and exercises.
+      <span class="cc-screen__number cc-screen__number--is-text">4</span>
+      Click the <code>update</code> button or use the <code>F9</code>
+      key to process the entered HTML code.
     </li>
     <li>
-      The top-right shows examples and hints to help when entering HTML code.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      With the buttons above the output you can zoom in and out.
     </li>
     <li>
-      At the bottom-left is the code editor. If it has a blue border and you see a
-      blinking <em>cursor</em> you can enter text in it. If not, click it first. After
-      entering code you can press the <code>update</code> button or the <code>F9</code> key
-      to process the HTML code.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      The right-most button you can use to let the output cover the whole page.
     </li>
     <li>
-      The bottom-right shows the output of the processed HTML code. With the buttons above the
-      output you can zoom in and out. You can use the right-most button to let the output cover
-      the whole page. Use the <code>download</code> button to download an HTML file from the output.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      Use the <code>download</code> button to download an HTML file from the output.
     </li>
   </ul>
   <p>

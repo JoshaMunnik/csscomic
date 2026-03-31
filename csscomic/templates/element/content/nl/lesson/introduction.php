@@ -12,28 +12,59 @@ use App\View\ApplicationView;
     Welkom bij de eerste les. Voordat we in de wereld van HTML en CSS duiken, leggen we eerst snel
     uit hoe deze les pagina's zijn opgebouwd:
   </p>
-  <ul>
+  <div class="cc-screen__container">
+    <div class="cc-screen__section cc-screen__section--is-row">
+      <div class="cc-screen__number">1</div>
+      <div class="cc-screen__description">
+        Les selectie + navigatie
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">2</div>
+      <div class="cc-screen__description">
+        Uitleg + opdrachten
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">3</div>
+      <div class="cc-screen__description">
+        Help
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">4</div>
+      <div class="cc-screen__description">
+        Code editor
+      </div>
+    </div>
+    <div class="cc-screen__section">
+      <div class="cc-screen__number">5</div>
+      <div class="cc-screen__description">
+        Uitvoer
+      </div>
+    </div>
+  </div>
+  <ul class="cc-list__no-prefix">
     <li>
-      In balk hierboven kan je met de dropdown aan de linkerkant een bepaalde les kiezen.
-      Of je kan de buttons rechts gebruiken om naar de volgende of vorige les te gaan.
+      <span class="cc-screen__number cc-screen__number--is-text">4</span>
+      Als je geen blauwe rand en knipperde cursor ziet moet je er eerst op klikken.
     </li>
     <li>
-      Linksboven (op deze plek) staat altijd de tekst met uitleg en oefeningen.
+      <span class="cc-screen__number cc-screen__number--is-text">4</span>
+      Klik de <code>update</code> button drukken of gebruik de <code>F9</code>
+      toets om de ingevoerd HTML code te verwerken.
     </li>
     <li>
-      Rechtsboven staan voorbeelden en hints om te helpen bij het invoeren.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      Met de buttons boven de uitvoer kan je in- en uitzoomen.
     </li>
     <li>
-      Linksonder is de code editor. Als deze een blauwe rand heeft en je ziet een
-      <code>cursor</code> knipperen kan je daarin typen. Zo niet dan moet je eerst op de editor
-      klikken. Na het invoeren kan je op de <code>update</code> button drukken of
-      de <code>F9</code> toets gebruiken om de HTML code te verwerken.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      De meest rechter button kan je gebruiken om de uitvoer over de gehele pagina te tonen.
     </li>
     <li>
-      Rechtsonder staat de uitvoer van de verwerkte HTML code. Met de buttons erboven kan je in- en
-      uitzoomen. De meest rechter button kan je gebruiken om de uitvoer over de gehele pagina
-      te tonen. Gebruik de <code>download</code> button om een HTML bestand te downloaden van de
-      uitvoer.
+      <span class="cc-screen__number cc-screen__number--is-text">5</span>
+      Gebruik de <code>download</code> button om een HTML bestand te downloaden van de uitvoer.
     </li>
   </ul>
   <p>
