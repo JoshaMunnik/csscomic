@@ -1375,6 +1375,55 @@ User participant grid
 }
 
 /**
+ * Screen example
+ */
+.cc-screen__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 3px;
+  max-width: 400px;
+}
+
+.cc-screen__section {
+  border: 1px solid var(--cc-color-border);
+  background: var(--cc-color-code-background);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cc-screen__section--is-row {
+  grid-column: 1 / -1;
+  height: 30px;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+}
+
+.cc-screen__number {
+  border-radius: 50%;
+  border: 2px solid var(--cc-color-border);
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 0.80em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.cc-screen__number--is-text {
+  margin-right: 0.1em;
+}
+
+.cc-list__no-prefix {
+  list-style: none;
+  padding: 0;
+}
+
+/**
  * Icons
  */
 .cc-icon__magnify {
