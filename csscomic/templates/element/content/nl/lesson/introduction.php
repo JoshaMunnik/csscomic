@@ -51,8 +51,8 @@ use App\View\ApplicationView;
     </li>
     <li>
       <span class="cc-screen__number cc-screen__number--is-text">4</span>
-      Klik de <code>update</code> button drukken of gebruik de <code>F9</code>
-      toets om de ingevoerd HTML code te verwerken.
+      Klik de <code>update</code> button of gebruik de <code>F9</code> toets om de ingevoerd
+      HTML code te verwerken.
     </li>
     <li>
       <span class="cc-screen__number cc-screen__number--is-text">5</span>
