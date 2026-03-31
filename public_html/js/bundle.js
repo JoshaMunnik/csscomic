@@ -29537,6 +29537,13 @@ function htmlCompletionFor(schema, context) {
     }
 }
 /**
+HTML tag completion. Opens and closes tags and attributes in a
+context-aware way.
+*/
+function htmlCompletionSource(context) {
+    return htmlCompletionFor(Schema.default, context);
+}
+/**
 Create a completion source for HTML extended with additional tags
 or attributes.
 */
@@ -35616,6 +35623,80 @@ const BUTTON_HIDDEN_CLASS = 'cc-lesson-action__button--is-hidden';
  * Minimal time between saves to server in milliseconds.
  */
 const SAVE_INTERVAL_TIME = 2000;
+/**
+ * Tags that can show up for code hinting
+ */
+const ALLOWED_TAGS = new Set([
+    'div',
+    'span',
+    'strong',
+    'em',
+]);
+/**
+ * Attributes that can show up for code hinting
+ */
+const ALLOWED_ATTRIBUTES = new Set([
+    'class',
+]);
+//
+/**
+ * Very small heuristic to detect whether the cursor is in a tag name or in an attribute.
+ * This is conservative and works for normal editing; for absolute correctness you can
+ *  inspect the syntax tree (syntaxTree) instead.
+ *
+ * @param state
+ * @param pos
+ *
+ * @return {inTag:boolean, atTagName:boolean, atAttribute:boolean}
+ */
+function detectHtmlContext(state, pos) {
+    const doc = state.doc.toString();
+    const before = doc.slice(0, pos);
+    const lastLt = before.lastIndexOf('<');
+    const lastGt = before.lastIndexOf('>');
+    const inTag = lastLt > lastGt;
+    if (!inTag) {
+        return { inTag: false, atTagName: false, atAttribute: false };
+    }
+    const afterLt = before.slice(lastLt + 1);
+    // right after '<' or typing a tag-name (letters / dash / slash), treat as tag name
+    const atTagName = /^[\/\s]*[A-Za-z0-9-]*$/.test(afterLt);
+    const atAttribute = inTag && !atTagName;
+    return { inTag, atTagName, atAttribute };
+}
+/**
+ * The filtered completion source wraps the built-in htmlCompletion and filters options.
+ *
+ * @return any
+ */
+const filteredHtmlCompletion = (context) => {
+    const original = htmlCompletionSource(context);
+    if (!original)
+        return null;
+    const { inTag, atTagName, atAttribute } = detectHtmlContext(context.state, context.pos);
+    // original.options may contain strings or completion objects
+    const filteredOptions = original.options.filter((option) => {
+        var _a;
+        const label = typeof option === 'string' ? option : ((_a = option.label) !== null && _a !== void 0 ? _a : '');
+        if (!label)
+            return true;
+        const low = label.toLowerCase();
+        if (atTagName) {
+            return ALLOWED_TAGS.has(low);
+        }
+        if (atAttribute) {
+            return ALLOWED_ATTRIBUTES.has(low);
+        }
+        // fallback: keep everything in any other case
+        return true;
+    });
+    return {
+        ...original,
+        options: filteredOptions,
+    };
+};
+// endregion
+// region local functions
 // endregion
 // region types
 /**
@@ -35716,6 +35797,7 @@ class Lesson {
             extensions: [
                 basicSetup,
                 html(),
+                autocompletion({ override: [filteredHtmlCompletion] }),
                 this.htmlLinter(),
                 lintGutter(),
                 EditorView.updateListener.of(update => {
