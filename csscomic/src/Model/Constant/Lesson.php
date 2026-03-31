@@ -9,10 +9,8 @@ readonly class Lesson
     return [
       'introduction' => __('Introduction'),
       'html' => __('HTML'),
-      'spaces' => __('Multiple spaces'),
       'first_tag' => __('First HTML tag: div'),
       'nesting_tags' => __('Nesting tags'),
-      'spaces_in_tag' => __('Multiple spaces inside tags'),
       'styling_tags' => __('Basic styling with HTML tags'),
       'back_color' => __('Adding background color'),
       'text_color' => __('Adding text color'),
