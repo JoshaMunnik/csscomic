@@ -93,8 +93,8 @@ readonly class HtmlTool
       if ($cssBaseForUrls !== '') {
         $cssContent = preg_replace_callback(
           '/url\(\s*(["\']?)(?!data:|https?:|file:|\/)([^"\')]+)\1\s*\)/i',
-          function ($m) use ($cssBaseForUrls) {
-            $rel = $m[2];
+          function ($matches) use ($cssBaseForUrls) {
+            $rel = $matches[2];
             // Normalize base and join
             $abs = rtrim($cssBaseForUrls, '/').'/'.ltrim($rel, './');
             // If file:// base, keep file://, else keep as URL

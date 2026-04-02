@@ -3,16 +3,14 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\View\Helper\Styling;
 
-use Cake\Http\ServerRequest;
+use App\Test\Support\TestViewWithStyling;
 use Cake\TestSuite\TestCase;
-use Cake\View\View;
 
 class LayoutHelperTest extends TestCase
 {
   public function testBeginEndRowColumn(): void
   {
-    $view = new View(new ServerRequest());
-    $view->loadHelper('Styling');
+    $view = new TestViewWithStyling();
 
     $this->assertStringContainsString('cc-layout__row', $view->Styling->Layout->beginRow());
     $this->assertSame('</div>', $view->Styling->Layout->endRow());
@@ -22,8 +20,7 @@ class LayoutHelperTest extends TestCase
 
   public function testTabsContainerAndTab(): void
   {
-    $view = new View(new ServerRequest());
-    $view->loadHelper('Styling');
+    $view = new TestViewWithStyling();
 
     $html = $view->Styling->Layout->beginTabsContainer();
     $this->assertStringContainsString('cc-tabs__container', $html);

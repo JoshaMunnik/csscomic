@@ -3,19 +3,16 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\View\Helper\Styling;
 
-use App\Lib\Model\Base\ModelBase;
 use App\Lib\Model\View\ViewModelBase;
 use App\Model\Enum\CellDataTypeEnum;
-use Cake\Http\ServerRequest;
+use App\Test\Support\TestViewWithStyling;
 use Cake\TestSuite\TestCase;
-use Cake\View\View;
 
 class TableAndDialogHelperTest extends TestCase
 {
   public function testSortedTableHeaderAndRow(): void
   {
-    $view = new View(new ServerRequest());
-    $view->loadHelper('Styling');
+    $view = new TestViewWithStyling();
 
     $header = $view->Styling->Table->sortedTableHeader([
       [__('Name'), CellDataTypeEnum::TEXT],
@@ -32,10 +29,7 @@ class TableAndDialogHelperTest extends TestCase
 
   public function testDialogBeginEnd(): void
   {
-    $view = new View(new ServerRequest());
-    $view->loadHelper('Styling');
-
-    // Create a dummy model implementing minimal interface
+    $view = new TestViewWithStyling();
     $model = new ViewModelBase();
 
     $html = $view->Styling->Dialog->beginFormDialog('id1', 'Title', $model, null, []);

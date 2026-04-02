@@ -25,10 +25,10 @@ class ModelBaseTest extends TestCase
 
       protected function buildValidator(): Validator
       {
-        $v = new Validator();
-        $v->requirePresence('name')->notEmptyString('name');
-        $v->add('age', 'numeric', ['rule' => 'numeric']);
-        return $v;
+        $validator = new Validator();
+        $validator->requirePresence('name')->notEmptyString('name');
+        $validator->add('age', 'numeric', ['rule' => 'numeric']);
+        return $validator;
       }
     };
 
@@ -53,10 +53,10 @@ class ModelBaseTest extends TestCase
 
       protected function buildValidator(): Validator
       {
-        $v = new Validator();
-        $v->requirePresence('name')->notEmptyString('name');
-        $v->add('age', 'numeric', ['rule' => 'numeric']);
-        return $v;
+        $validator = new Validator();
+        $validator->requirePresence('name')->notEmptyString('name');
+        $validator->add('age', 'numeric', ['rule' => 'numeric']);
+        return $validator;
       }
     };
 
@@ -81,10 +81,10 @@ class ModelBaseTest extends TestCase
 
       protected function buildValidator(): Validator
       {
-        $v = new Validator();
-        $v->requirePresence('name')->notEmptyString('name');
-        $v->add('age', 'numeric', ['rule' => 'numeric']);
-        return $v;
+        $validator = new Validator();
+        $validator->requirePresence('name')->notEmptyString('name');
+        $validator->add('age', 'numeric', ['rule' => 'numeric']);
+        return $validator;
       }
     };
 
