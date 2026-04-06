@@ -66,11 +66,11 @@ const REMOVE_DIALOG = 'remove';
             [LessonEntity::getComicCount($user->lessons), ContentPositionEnum::END],
           ],
           [
-            $this->Styling->Button->tableLink(
+            $this->Styling->Button->linkSmall(
               __('edit'),
               [UsersController::EDIT, $user->id]
             ),
-            $this->Styling->Button->tableNormal(
+            $this->Styling->Button->small(
               __('remove'),
               ButtonColorEnum::DANGER,
               [

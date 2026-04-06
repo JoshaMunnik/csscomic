@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace App\View\Helper\Styling;
 
 use App\Model\Enum\ButtonColorEnum;
-use App\Model\Enum\ButtonIconEnum;
 use App\Tool\UrlTool;
 use Cake\View\Helper;
 use Cake\View\Helper\FormHelper;
@@ -39,6 +38,22 @@ class ButtonHelper extends Helper
     );
   }
 
+  public function linkSmall(
+    string $title,
+    string|array $url,
+    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
+    bool $hideOnMobile = false
+  ): string {
+    return $this->Html->link(
+      $title,
+      UrlTool::Url($url),
+      [
+        'class' => 'cc-button__normal cc-button__normal--is-small '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
+        'escape' => false,
+      ]
+    );
+  }
+
   public function linkText(string $title, string|array $url): string
   {
     return $this->Html->link($title, UrlTool::Url($url),
@@ -53,19 +68,6 @@ class ButtonHelper extends Helper
   ): string {
     return $this->Html->tag('button', $title, $this->mergeAttributes([
       'class' => 'cc-button__normal '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'type' => 'button',
-      'escape' => false,
-    ], $attributes));
-  }
-
-  public function icon(
-    ButtonIconEnum $icon,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('button', $this->getButtonIconHtml($icon), $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-icon '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
       'type' => 'button',
       'escape' => false,
     ], $attributes));
@@ -92,19 +94,6 @@ class ButtonHelper extends Helper
   ): string {
     return $this->Html->tag('button', $title, $this->mergeAttributes([
       'class' => 'cc-button__normal cc-button__normal--is-big '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'type' => 'button',
-      'escape' => false,
-    ], $attributes));
-  }
-
-  public function bigIcon(
-    ButtonIconEnum $icon,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('button', $this->getButtonIconHtml($icon), $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-big cc-button__normal--is-icon '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
       'type' => 'button',
       'escape' => false,
     ], $attributes));
@@ -154,80 +143,6 @@ class ButtonHelper extends Helper
       'escape' => false,
       'name' => $name,
       ...$attributes
-    ]);
-  }
-
-  public function tableNormal(
-    string $title,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('button', $title, $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'type' => 'button',
-      'escape' => false
-    ], $attributes));
-  }
-
-  public function tableStatic(
-    string $title,
-    ButtonColorEnum $color = ButtonColorEnum::DISABLED,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('div', $title, $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'escape' => false
-    ], $attributes));
-  }
-
-  public function tableLink(
-    string $title,
-    string|array $url,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->link($title, UrlTool::Url($url), [
-      'class' => 'cc-button__normal cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'escape' => false
-    ]);
-  }
-
-  public function tableIcon(
-    ButtonIconEnum $icon,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('button', $this->getButtonIconHtml($icon), $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-icon cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'type' => 'button',
-      'escape' => false
-    ], $attributes));
-  }
-
-  public function tableStaticIcon(
-    ButtonIconEnum $icon,
-    ButtonColorEnum $color = ButtonColorEnum::DISABLED,
-    array $attributes = [],
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->tag('div', $this->getButtonIconHtml($icon), $this->mergeAttributes([
-      'class' => 'cc-button__normal cc-button__normal--is-icon cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'escape' => false
-    ], $attributes));
-  }
-
-  public function tableLinkIcon(
-    ButtonIconEnum $icon,
-    string|array $url,
-    ButtonColorEnum $color = ButtonColorEnum::PRIMARY,
-    bool $hideOnMobile = false
-  ): string {
-    return $this->Html->link($this->getButtonIconHtml($icon), UrlTool::Url($url), [
-      'class' => 'cc-button__normal cc-button__normal--is-icon cc-button__normal--is-table '.$this->getButtonColorClass($color).$this->getHideOnMobileCssClass($hideOnMobile),
-      'escape' => false
     ]);
   }
 
@@ -283,18 +198,6 @@ class ButtonHelper extends Helper
       ButtonColorEnum::DANGER => 'cc-button__normal--is-danger',
       ButtonColorEnum::WARNING => 'cc-button__normal--is-warning',
       ButtonColorEnum::DISABLED => 'cc-button__normal--is-disabled',
-    };
-  }
-
-  private function getButtonIconHtml(ButtonIconEnum $icon): string
-  {
-    return match ($icon) {
-      ButtonIconEnum::EDIT => '<i class="fas fa-pen"></i>',
-      ButtonIconEnum::REMOVE => '<i class="fas fa-trash-can"></i>',
-      ButtonIconEnum::PARTICIPANTS => '<i class="fas fa-users"></i>',
-      ButtonIconEnum::WORKSHOP => '<i class="fas fa-computer"></i>',
-      ButtonIconEnum::QR_CODE => '<i class="fas fa-qrcode"></i>',
-      default => '',
     };
   }
 
