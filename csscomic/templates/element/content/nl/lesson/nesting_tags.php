@@ -22,17 +22,19 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Naast een tekst kan een <em>tag</em> ook weer andere <em>tags</em> bevatten. Dit wordt
-    <em>geneste tags</em> genoemd.
+    Zoals je bij vorige lessen al gezien hebt, kan een <em>tag</em> kan een combinatie van tekst
+    en <em>tags</em> bevatten. Het plaatsten van een <em>tag</em> binnen een andere
+    <em>tag</em> wordt <em>geneste tags</em> genoemd.
   </p>
   <p>
     Je kan een tag zien als een soort doos. In de doos kan je tekst stoppen maar ook andere dozen.
     In die dozen kan je ook weer tekst en dozen stoppen. En zo verder.
   </p>
   <p>
-    <strong>Let op:</strong> Het is belangrijk dat elke begintag een bijbehorende eindtag heeft!
-    Anders weet de browser niet waar een tag begint en eindigt en hoe de browser de pagina moet
-    weergeven.
+    <strong>Let op:</strong>
+    <em>Het is belangrijk dat elke begintag een bijbehorende eindtag heeft!</em>
+    Anders weet de browser niet waar een tag eindigt en hoe de browser de pagina op een correcte
+    wijze moet weergeven.
   </p>
   <p>
     Mocht je een fout maken in de html code, dan zal de editor je hierop wijzen. Bij het invoeren

@@ -29,14 +29,14 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    In de afgelopen twee lessen hebben we de <code>class</code> attribuut alleen gebruikt bij de
-    <code>&lt;div&gt;</code> tag. Je kan de <code>class</code> attribuut echter ook in andere
-    tags gebruiken zoals de <code>&lt;strong&gt;</code> en <code>&lt;em&gt;</code> tags.
+    De <code>class</code> attribuut kan je ook bij andere tags gebruiken dan de
+    <code>&lt;div&gt;</code> tag. Zo kan je ook de <code>class</code> attribuut gebruiken met
+    de <code>&lt;strong&gt;</code> en <code>&lt;em&gt;</code> tags.
   </p>
   <p>
     Mocht je alleen de kleur van een stuk tekst willen aanpassen, dan kan je de
-    <code>&lt;span&gt;</code> tag gebruiken. Deze tag heeft geen speciale betekenis, maar is er
-    alleen om een stuk tekst te kunnen stijlen.
+    <code>&lt;span&gt;</code> tag gebruiken. Deze tag heeft geen speciale betekenis, maar kan
+    gebruikt worden om een stuk tekst te stijlen.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

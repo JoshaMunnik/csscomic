@@ -16,14 +16,18 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    HTML composes the elements of a web page. How the elements look and where they are positioned,
-    however, is not handled with HTML tags but with <em>styling</em>.
+    With HTML, you compose the elements of a web page. However, how the elements look and where they
+    are positioned, is not handled with HTML tags but with <em>styling</em>.
   </p>
   <p>
-    The <em>styling</em> consists of a number of style definitions that indicate how a
-    particular element should look and/or where the element should be placed. For these lessons
-    a number of style definitions have already been created that allow you to style HTML elements
-    to create a comic.
+    The <em>styling</em> consists of a number of style definitions. A definition determines how a
+    particular element should look (for example the color or text size). A definition can also
+    determine how the element is positioned within a webpage (for example at the top or at the
+    bottom).
+    </p>
+  <p>
+    For these lessons a number of style definitions have already been created that allow you to
+    style HTML elements to create a comic.
   </p>
   <p>
     To apply a style definition with a certain <em>name</em> to an HTML tag, you must use the

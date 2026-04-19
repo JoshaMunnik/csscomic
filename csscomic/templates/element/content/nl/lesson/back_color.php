@@ -15,14 +15,18 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Met HTML worden de elementen van een webpagina samengesteld. Hoe de elementen er uitzien en
+    Met HTML tags worden de elementen van een webpagina samengesteld. Hoe de elementen er uitzien en
     op welke positie ze staan, gebeurt echter niet met HTML tags maar met <em>styling</em>.
   </p>
   <p>
-    De <em>styling</em> bestaat uit een aantal stijl definities die aangeven hoe een bepaald element
-    eruit moet zien en/of waar het element geplaatst moet worden. Voor deze lessen zijn er al een
-    aantal stijl definities gemaakt waarmee je HTML elementen kan stijlen zodat er een strip
-    ontstaat.
+    De <em>styling</em> bestaat uit een aantal stijl definities. Een definitie bepaalt hoe een
+    HTML element eruit moet zien (bijvoorbeeld kleur of tekst grootte). Een definitie kan ook
+    bepalen waar het HTML element geplaatst moet worden binnen een pagina (bijvoorbeeld bovenaan of
+    juist onderaan).
+  </p>
+  <p>
+    Voor deze lessen zijn er al een aantal stijl definities gemaakt waarmee je HTML elementen kan
+    stijlen zodat er een strip ontstaat.
   </p>
   <p>
     Om een stijl definitie met een bepaalde <em>naam</em> toe te passen op een HTML tag, moet je de
@@ -31,8 +35,8 @@ $code = '
     <code>&lt;<em>tag</em> <strong>class</strong>="<em>naam</em>"&gt;</code>.
   </p>
   <p>
-    <strong>Weetje:</strong> een tag kan meerdere attributen bevatten. Bij deze lessen gebruiken we alleen het
-    <code>class</code> attribuut.
+    <strong>Weetje:</strong> een tag kan meerdere attributen bevatten. Bij deze lessen gebruiken
+    we alleen het <code>class</code> attribuut.
   </p>
   <p>
     Aan de rechterkant zie je een aantal stijl definitie namen waarmee de achtergrondkleur van een

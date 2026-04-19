@@ -22,7 +22,8 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    In addition to text a <em>tag</em> can also contain other <em>tags</em>. This is called
+    As you already saw in previous lessons, in addition to text a <em>tag</em> can also contain
+    other <em>tags</em>. The placing of <em>tags</em> within another <em>tag</em> is called
     <em>nested tags</em>.
   </p>
   <p>
@@ -30,8 +31,9 @@ $code = '
     In those boxes you can again put text and boxes. And so on.
   </p>
   <p>
-    <strong>Note:</strong> It is important that every opening tag has a matching closing tag!
-    Else the browser won't know where a tag starts and ends and how to display the page.
+    <strong>Note:</strong>
+    <em>It is important that every opening tag has a matching closing tag!</em>
+    Else the browser won't know where a tag ends and how to correctly display the page.
   </p>
   <p>
     If you make a mistake in the HTML code, the editor will point it out. While typing an

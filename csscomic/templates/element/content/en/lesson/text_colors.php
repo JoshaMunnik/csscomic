@@ -29,9 +29,9 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    In the previous two lessons we only used the <code>class</code> attribute on the
-    <code>&lt;div&gt;</code> tag. You can, however, also use the <code>class</code> attribute on
-    other tags such as the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags.
+    You can use the <code>class</code> attribute with other tags than the
+    <code>&lt;div&gt;</code> tag. You also use the <code>class</code> attribute
+    with the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags.
   </p>
   <p>
     If you only want to change the color of a piece of text, you can use the
