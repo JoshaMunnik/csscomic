@@ -33,6 +33,11 @@ $code = '
       Someone talking outside the panel.
     </div>
   </div>
+  <div class="paneel">
+    <div class="bubble tail-right tail-off-panel">
+      Someone talking outside the panel from the other side.
+    </div>
+  </div>
 </div>
 ';
 

@@ -32,6 +32,10 @@ $code = '
       <strong>Exercise:</strong> Try different color combinations to see which texts are readable
       and which are not (for example red text on a green background).
     </p>
+    <p>
+      <strong>Exercise:</strong> Try to create a hidden text, by using the same text color as the
+      background.
+    </p>
   </div>
 </div>
 <div class="cc-lesson-top__end">

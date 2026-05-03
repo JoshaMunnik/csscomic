@@ -38,6 +38,11 @@ $code = '
     <code>&lt;span&gt;</code> tag. This tag has no special meaning; it only exists to allow
     styling a piece of text.
   </p>
+  <p>
+    <strong>Note:</strong> The example on the right contains a text that uses multiple lines.
+    This is only done to make the HTML code more clear. In the output the text will be shown
+    on a single line.
+  </p>
   <div class="cc-lesson__exercise-container">
     <p>
       <strong>Exercise:</strong> Change the text color and background color of different pieces of

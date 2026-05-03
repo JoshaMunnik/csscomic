@@ -9,19 +9,19 @@ use App\View\ApplicationView;
 $code = '
 <div class="panels">
   <div class="panel-two">
-    <div class="bubble tail-right pos-x-8">
+    <div class="bubble tail-right pos-x8">
       To the right
     </div>
-    <div class="batman pos-x-10">
+    <div class="batman pos-x10">
     </div>
-    <div class="bubble pos-x-2">
+    <div class="bubble pos-x2">
       To the left
     </div>
-    <div class="robin pos-x-0">
+    <div class="robin pos-x0">
     </div>
   </div>
   <div class="panel">
-    <div class="bubble tail-off-panel pos-y-8">
+    <div class="bubble tail-off-panel pos-y8">
       At the bottom
     </div>
   </div>
@@ -37,21 +37,21 @@ $code = '
   <p>
     To position a character or speech bubble horizontally, add an extra style name to
     the <code>class</code> attribute of the character or bubble <code>&lt;div&gt;</code>. The style
-    names are <code>pos-x-0</code> (far left) through <code>pos-x-10</code> (far right).
+    names are <code>pos-x0</code> (far left) through <code>pos-x10</code> (far right).
   </p>
   <p>
     If you don't add a position style, the character or speech bubble is placed in the center
-    by default.
+    by default (the same as using <code>pos-x5</code>).
   </p>
   <p>
     Characters are always placed at the bottom of the panel. Speech bubbles however can also
     be positioned vertically. You can position a speech bubble vertically by adding an extra style
     name to the <code>class</code> attribute of the bubble <code>&lt;div&gt;</code>. The style names
-    are <code>pos-y-0</code> (top) through <code>pos-y-10</code> (bottom).
+    are <code>pos-y0</code> (top) through <code>pos-y10</code> (bottom).
   </p>
   <p>
     If you don't add a vertical position style, speech bubbles are placed at the top of the panel
-    by default.
+    by default (the same as using <code>pos-y0</code>).
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

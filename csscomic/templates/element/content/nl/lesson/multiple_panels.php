@@ -23,7 +23,7 @@ $code = '
     meerdere <code>&lt;div&gt;</code> tags met de stijl naam <code>paneel</code> toe te voegen.
   </p>
   <p>
-    Er is wel een probleem, elke paneel wordt nu onder elkaar geplaatst. In de volgende les
+    Er is wel een probleem, elk paneel wordt nu onder elkaar geplaatst. In de volgende les
     wordt een oplossing gegeven om panelen naast elkaar te plaatsen.
   </p>
   <div class="cc-lesson__exercise-container">

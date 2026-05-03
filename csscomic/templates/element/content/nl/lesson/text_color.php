@@ -31,6 +31,10 @@ $code = '
       <strong>Oefening:</strong> Probeer verschillende kleur combinaties om te zien welke teksten
       wel goed leesbaar zijn en welke niet (bijvoorbeeld een rode tekst met een groene achtergrond).
     </p>
+    <p>
+      <strong>Oefening:</strong> Probeer een verborgen tekst te maken door de tekstkleur dezelfde
+      te maken als de achtergrond.
+    </p>
   </div>
 </div>
 <div class="cc-lesson-top__end">

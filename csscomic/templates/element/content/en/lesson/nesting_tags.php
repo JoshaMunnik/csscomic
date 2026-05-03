@@ -33,7 +33,7 @@ $code = '
   <p>
     <strong>Note:</strong>
     <em>It is important that every opening tag has a matching closing tag!</em>
-    Else the browser won't know where a tag ends and how to correctly display the page.
+    Else the browser doesn't know where a tag ends and how to correctly display the page.
   </p>
   <p>
     If you make a mistake in the HTML code, the editor will point it out. While typing an

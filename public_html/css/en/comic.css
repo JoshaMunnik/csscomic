@@ -121,199 +121,199 @@ span, em, strong {
   }
 }
 
-.pos-x-0 {
+.pos-x0 {
   position: absolute;
   left: 2%;
   transform: translateX(0%);
 }
 
-.pos-x-1 {
+.pos-x1 {
   position: absolute;
   left: 11.8%;
   transform: translateX(-10%);
 }
 
-.pos-x-2 {
+.pos-x2 {
   position: absolute;
   left: 21.6%;
   transform: translateX(-20%);
 }
 
-.pos-x-3 {
+.pos-x3 {
   position: absolute;
   left: 31.4%;
   transform: translateX(-30%);
 }
 
-.pos-x-4 {
+.pos-x4 {
   position: absolute;
   left: 41.2%;
   transform: translateX(-40%);
 }
 
-.pos-x-5 {
+.pos-x5 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.pos-x-6 {
+.pos-x6 {
   position: absolute;
   left: 59.8%;
   transform: translateX(-60%);
 }
 
-.pos-x-7 {
+.pos-x7 {
   position: absolute;
   left: 69.6%;
   transform: translateX(-70%);
 }
 
-.pos-x-8 {
+.pos-x8 {
   position: absolute;
   left: 79.4%;
   transform: translateX(-80%);
 }
 
-.pos-x-9 {
+.pos-x9 {
   position: absolute;
   left: 89.2%;
   transform: translateX(-90%);
 }
 
-.pos-x-10 {
+.pos-x10 {
   position: absolute;
   left: 98%;
   transform: translateX(-100%);
 }
 
-.pos-y-0 {
+.pos-y0 {
   position: absolute;
   top: 2%;
   transform: translateY(0%);
 }
 
-.pos-y-1 {
+.pos-y1 {
   position: absolute;
   top: 11.8%;
   transform: translateY(-10%);
 }
 
-.pos-y-2 {
+.pos-y2 {
   position: absolute;
   top: 21.6%;
   transform: translateY(-20%);
 }
 
-.pos-y-3 {
+.pos-y3 {
   position: absolute;
   top: 30.4%;
   transform: translateY(-30%);
 }
 
-.pos-y-4 {
+.pos-y4 {
   position: absolute;
   top: 40.2%;
   transform: translateY(-40%);
 }
 
-.pos-y-5 {
+.pos-y5 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.pos-y-6 {
+.pos-y6 {
   position: absolute;
   top: 59.8%;
   transform: translateY(-60%);
 }
 
-.pos-y-7 {
+.pos-y7 {
   position: absolute;
   top: 69.6%;
   transform: translateY(-70%);
 }
 
-.pos-y-8 {
+.pos-y8 {
   position: absolute;
   top: 79.4%;
   transform: translateY(-80%);
 }
 
-.pos-y-9 {
+.pos-y9 {
   position: absolute;
   top: 89.2%;
   transform: translateY(-90%);
 }
 
-.pos-y-10 {
+.pos-y10 {
   position: absolute;
   top: 98%;
   transform: translateY(-100%);
 }
 
-.pos-tail-0 {
+.pos-tail0 {
   &::before {
     left: 0;
   }
 }
 
-.pos-tail-1 {
+.pos-tail1 {
   &::before {
     left: 10%;
   }
 }
 
-.pos-tail-2 {
+.pos-tail2 {
   &::before {
     left: 20%;
   }
 }
 
-.pos-tail-3 {
+.pos-tail3 {
   &::before {
     left: 30%;
   }
 }
 
-.pos-tail-4 {
+.pos-tail4 {
   &::before {
     left: 40%;
   }
 }
 
-.pos-tail-5 {
+.pos-tail5 {
   &::before {
     left: 50%;
   }
 }
 
-.pos-tail-6 {
+.pos-tail6 {
   &::before {
     left: 60%;
   }
 }
 
-.pos-tail-7 {
+.pos-tail7 {
   &::before {
     left: 70%;
   }
 }
 
-.pos-tail-8 {
+.pos-tail8 {
   &::before {
     left: 80%;
   }
 }
 
-.pos-tail-9 {
+.pos-tail9 {
   &::before {
     left: 90%;
   }
 }
 
-.pos-tail-10 {
+.pos-tail10 {
   &::before {
     left: 100%;
   }

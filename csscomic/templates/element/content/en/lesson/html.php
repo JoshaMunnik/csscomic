@@ -10,7 +10,7 @@ use App\View\ApplicationView;
 <div class="cc-lesson-top__start">
   <p>
     When you visit a web page with a browser app (like the one you are using now), it downloads
-    the HTML data from the server and processes the data to display the web page.
+    the HTML data from the server and processes the HTML data to display the web page.
   </p>
   <p>
     The browser can also open an HTML file that is stored on your computer.

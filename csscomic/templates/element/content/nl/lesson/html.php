@@ -10,7 +10,8 @@ use App\View\ApplicationView;
 <div class="cc-lesson-top__start">
   <p>
     Als je een webpagina bezoekt met een browser app (zoals je nu aan het gebruiken bent), download
-    deze de HTML data van de server en verwerkt de data het om de webpagina weer te geven.
+    de browser de HTML data van de server. De browser verwerkt daarna de HTML data om de webpagina
+    weer te geven.
   </p>
   <p>
     De browser kan ook een HTML bestand openen dat op je computer is opgeslagen.

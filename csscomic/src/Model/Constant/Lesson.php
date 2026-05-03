@@ -24,6 +24,7 @@ readonly class Lesson
       'mouth' => __('Characters mouth'),
       'head' => __('Characters head'),
       'speech_bubbles' => __('Speech bubbles'),
+      'talking_characters' => __('Talking characters'),
       'position_in_panel' => __('Positions within a panel'),
       'tail_position' => __('Speech bubble tail positions'),
       'speech_text' => __('Speech bubble text styling'),
@@ -32,11 +33,6 @@ readonly class Lesson
       'create_comic_2' => __('Third css comic'),
       'create_comic_3' => __('Fourth css comic'),
       'create_comic_4' => __('Fifth css comic'),
-      'create_comic_5' => __('Sixth css comic'),
-      'create_comic_6' => __('Seventh css comic'),
-      'create_comic_7' => __('Eighth css comic'),
-      'create_comic_8' => __('Ninth css comic'),
-      'create_comic_9' => __('Tenth css comic'),
     ];
   }
 

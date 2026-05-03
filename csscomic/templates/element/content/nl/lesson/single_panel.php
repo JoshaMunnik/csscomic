@@ -15,8 +15,15 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Tijd voor de eerste stap richting het maken van een strip. Voordat we naar de karakters gaan,
-    moeten we eerst een paneel maken waarin de karakters komen te staan.
+    Tijd voor de eerste stap richting het maken van een strip.
+  </p>
+  <p>
+    Voor deze lessen zijn er al een aantal stijl definities gemaakt waarmee je HTML elementen kan
+    stijlen zodat er een strip ontstaat.
+  </p>
+  <p>
+    Voordat we naar de karakters gaan, moeten we eerst een paneel maken waarin de karakters en
+    hun tekst ballonnen komen te staan.
   </p>
   <p>
     Een paneel maak je eenvoudig in HTML door de stijl naam <code>paneel</code> aan een

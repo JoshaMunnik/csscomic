@@ -15,8 +15,15 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Time for the first step towards creating a comic. Before we move on to the characters,
-    we first need to create a panel where the characters will stand.
+    Time for the first step towards creating a comic.
+  </p>
+  <p>
+    For these lessons a number of style definitions have already been created that allow you to
+    style HTML elements to create a comic.
+  </p>
+  <p>
+    Before we move on to the characters, we first need to create a panel that contain the
+    characters and their speech bubbles.
   </p>
   <p>
     You can easily create a panel in HTML by adding the style name <code>panel</code> to a

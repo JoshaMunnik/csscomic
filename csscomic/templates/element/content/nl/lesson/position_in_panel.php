@@ -9,19 +9,19 @@ use App\View\ApplicationView;
 $code = '
 <div class="panelen">
   <div class="paneel-twee">
-    <div class="ballon staart-rechts pos-x-8">
+    <div class="ballon staart-rechts pos-x8">
       Naar rechts
     </div>
-    <div class="batman pos-x-10">
+    <div class="batman pos-x10">
     </div>
-    <div class="ballon pos-x-2">
+    <div class="ballon pos-x2">
       Naar links
     </div>
-    <div class="robin pos-x-0">
+    <div class="robin pos-x0">
     </div>
   </div>
   <div class="paneel">
-    <div class="ballon staart-buiten pos-y-8">
+    <div class="ballon staart-buiten pos-y8">
       Aan de onderkant.
     </div>
   </div>
@@ -37,22 +37,22 @@ $code = '
   <p>
     Om een karakter of tekstballon horizontaal te positioneren, voeg je een extra stijl naam toe
     aan de <code>class</code> attribute van het karakter of de ballon <code>&lt;div&gt;</code>. De
-    stijl namen zijn <code>pos-x-0</code> (helemaal links) tot en met <code>pos-x-10</code>
+    stijl namen zijn <code>pos-x0</code> (helemaal links) tot en met <code>pos-x10</code>
     (helemaal rechts).
   </p>
   <p>
     Als je geen positie stijl toevoegt, wordt het karakter of de tekstballon standaard in het midden
-    geplaatst.
+    geplaatst (hetzelfde als <code>pos-x5</code>).
   </p>
   <p>
     Karakters staan altijd aan de onderkant van het paneel. Tekstballon kan je ook verticaal
     positioneren. Dit doe je door een extra stijl naam toe te voegen aan de <code>class</code>
-    attribute van de ballon <code>&lt;div&gt;</code>. De stijl namen zijn <code>pos-y-0</code>
-    (helemaal bovenaan) tot en met <code>pos-y-10</code> (helemaal onderaan).
+    attribute van de ballon <code>&lt;div&gt;</code>. De stijl namen zijn <code>pos-y0</code>
+    (helemaal bovenaan) tot en met <code>pos-y10</code> (helemaal onderaan).
   </p>
   <p>
     Als je geen verticale positie stijl toevoegt, worden de tekstballonnen standaard bovenaan het
-    paneel geplaatst.
+    paneel geplaatst (hetzelfde als <code>pos-y0</code>).
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

@@ -54,7 +54,12 @@ $codeSecond = '
     panels appear side by side.
   </p>
   <p>
-    By default there are three panels per row. If you want four panels per row use the style name
+    <strong>Note:</strong> It is important that all <code>&lt;div&gt;</code> tags with the style
+    name <code>panel</code>, are placed within the <code>&lt;div&gt;</code> with the style name
+    <code>panels</code>.
+  </p>
+  <p>
+    By default, there are three panels per row. If you want four panels per row use the style name
     <code>panels-four</code> instead of <code>panels</code>. To get multiple rows you can simply
     add more <code>&lt;div&gt;</code> elements with the style name <code>panel</code>; they will
     automatically wrap to the next row when there is no more space.
@@ -63,6 +68,10 @@ $codeSecond = '
     It is also possible to create wider panels that take up the space of two, three or four panels.
     For that you use the style names <code>panel-two</code>, <code>panel-three</code> and
     <code>panel-four</code> respectively instead of <code>panel</code>.
+  </p>
+  <p>
+    <strong>Note:</strong> make sure that each panel uses their own <code>&lt;div&gt;</code>
+    with an opening and closing tag.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

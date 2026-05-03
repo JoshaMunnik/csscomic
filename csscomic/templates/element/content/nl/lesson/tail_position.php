@@ -9,22 +9,22 @@ use App\View\ApplicationView;
 $code = '
 <div class="panelen">
   <div class="paneel">
-    <div class="ballon pos-staart-0">
+    <div class="ballon pos-staart0">
       Staart aan de linkerkant.
     </div>
   </div>
   <div class="paneel">
-    <div class="ballon pos-staart-10">
+    <div class="ballon pos-staart10">
       Staart aan de rechterkant.
     </div>
   </div>
   <div class="paneel">
-    <div class="ballon staart-buiten pos-staart-1">
+    <div class="ballon staart-buiten pos-staart1">
       Staart aan linkerkant die naar buiten wijst.
     </div>
   </div>
   <div class="paneel">
-    <div class="ballon staart-buiten staart-rechts pos-staart-9">
+    <div class="ballon staart-buiten staart-rechts pos-staart9">
       Staart aan de rechterkant die naar buiten wijst.
     </div>
   </div>
@@ -37,8 +37,8 @@ $code = '
   <p>
     Als je wilt kan je ook de staart van een tekstballon positioneren. Dit doe je door een extra
     stijl naam toe te voegen aan het <code>class</code> attribuut van de ballon
-    <code>&lt;div&gt;</code>. De stijl namen zijn <code>pos-staart-0</code> (helemaal links) tot
-    en met <code>pos-staart-10</code> (helemaal rechts).
+    <code>&lt;div&gt;</code>. De stijl namen zijn <code>pos-staart0</code> (helemaal links) tot
+    en met <code>pos-staart10</code> (helemaal rechts).
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

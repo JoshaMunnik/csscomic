@@ -22,7 +22,7 @@ use App\View\ApplicationView;
     </p>
     <p>
       If you finish a comic and want to make another, choose the next lesson. You can create up to
-      10 different comics.
+      5 different comics.
     </p>
   <?php else : ?>
     <p>

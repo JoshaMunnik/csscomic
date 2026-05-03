@@ -20,14 +20,19 @@ $code = '
     <em>tags</em> genoemd.
   </p>
   <p>
-    Een tag begint altijd met een <code>&lt;</code> (kleiner-dan teken) gevolgd door de naam van de
-    tag en eindigt met een <code>&gt;</code> (groter-dan teken). Bijvoorbeeld:
-    <code>&lt;<em>naam</em>&gt;</code>.
+    Een tag ziet er als volgt uit: <code>&lt;<em>naam</em>&gt;</code>. De <em>naam</em> kan
+    verschillende dingen zijn. De naam van de tag bepaalt de type van de content waardoor. Voor
+    sommige tag namen zal de browser extra acties uitvoeren (zoals het laden van een plaatje).
   </p>
   <p>
-    De meeste tags hebben een begintag en een eindtag. De eindtag lijkt op de begintag, maar heeft een
-    <code>/</code> (schuine streep) direct na de <code>&lt;</code> (kleiner-dan teken).
-    Bijvoorbeeld: <code>&lt;/<em>naam</em>&gt;</code>.
+    De meeste tags bevatten tekst en andere tags. Om dit alles goed weer te kunnen geven moet
+    de browser kunnen bepalen waar de content van een tag eindigt. Hiervoor wordt een eindtag
+    gebruikt. De eindtag lijkt op de begintag en ziet er als volgt uit:
+    <code>&lt;/<em>naam</em>&gt;</code>. Het verschil met de begintag is dat er na de
+    <code>&lt;</code> meteen een <code>/</code> volgt.
+  </p>
+  <p>
+    De content (tekst en/of andere tags) van een tag staat tussen de begintag en eindtag.
   </p>
   <p>
     Een tag die we veel in de lessen zullen gebruiken is de <code>div-tag</code>.
@@ -36,13 +41,8 @@ $code = '
     <code>&lt;/div&gt;</code>.
   </p>
   <p>
-    Als je een tag invoert zul je zien dat de editor deze een andere kleur geeft. Dit heet
-    <em>syntax highlighting</em> en helpt je om de verschillende onderdelen van de code beter
-    te onderscheiden.
-  </p>
-  <p>
-    De editor zal ook de tekst tussen een begintag en eindtag automatisch inspringen. Hiermee
-    wordt een duidelijker structuur binnen de code weergegeven.
+    Je zal je misschien afvragen waarom er een tag gebuikt wordt, de tekst met of zonder tag
+    ziet er precies hetzelfde uit. In de volgende les wordt duidelijk waarom je tags gebruikt.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

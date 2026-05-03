@@ -20,8 +20,8 @@ use App\View\ApplicationView;
       Verder zie je alle tags en stijlen die we in de afgelopen lessen hebben behandeld.
     </p>
   <p>
-    Mocht je een stripverhaal afhebben en er nog een willen maken, kies dan de volgende les. Je kan tot
-    10 verschillende stripverhalen maken.
+    Mocht je een stripverhaal af hebben en er nog eentje willen maken, kies dan de volgende les. Je
+    kan tot 5 verschillende stripverhalen maken.
   </p>
   <?php else : ?>
     <p>

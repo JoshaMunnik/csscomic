@@ -33,6 +33,11 @@ $code = '
       Iemand die buiten het paneel iets zegt.
     </div>
   </div>
+  <div class="paneel">
+    <div class="ballon staart-rechts staart-buiten">
+      Iemand die aan de andere kant buiten het paneel staat.
+    </div>
+  </div>
 </div>
 ';
 
@@ -51,6 +56,10 @@ $code = '
   <p>
     Standaard wijst de staart van de ballon naar links. Er zijn verschillende staart stijlen om
     deze aan te passen.
+  </p>
+  <p>
+    De stijl <code>staart-buiten</code> kan je gebruiken door een tekst te tonen die door iemand
+    buiten het paneel wordt gezegd (bijvoorbeeld omdat het karakter in een andere kamer is).
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

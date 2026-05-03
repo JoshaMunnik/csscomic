@@ -20,15 +20,12 @@ $code = '
     are positioned, is not handled with HTML tags but with <em>styling</em>.
   </p>
   <p>
-    The <em>styling</em> consists of a number of style definitions. A definition determines how a
-    particular element should look (for example the color or text size). A definition can also
-    determine how the element is positioned within a webpage (for example at the top or at the
+    The <em>styling</em> consists of a number of style definitions. A style definition determines
+    how a particular HTML element should look (for example the color, text size or
+    a having a background image). A style definition can also
+    determine how the HTML element is positioned within a webpage (for example at the top or at the
     bottom).
     </p>
-  <p>
-    For these lessons a number of style definitions have already been created that allow you to
-    style HTML elements to create a comic.
-  </p>
   <p>
     To apply a style definition with a certain <em>name</em> to an HTML tag, you must use the
     <code>class</code> attribute. The <code>class</code> attribute is added to the opening tag
@@ -36,12 +33,15 @@ $code = '
     <code>&lt;<em>tag</em> <strong>class</strong>="<em>name</em>"&gt;</code>.
   </p>
   <p>
-    <strong>Info:</strong> A tag can contain multiple attributes. However, in these lessons we only use the
-    <code>class</code> attribute.
+    <strong>Info:</strong> A tag can contain multiple attributes. However, in these lessons
+    we only use the <code>class</code> attribute.
   </p>
   <p>
     On the right you can see a number of style definition names that can be used to change the
     background color of an element.
+  </p>
+  <p>
+    With the next lesson you will also learn how to change the text color.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

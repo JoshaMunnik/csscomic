@@ -38,6 +38,11 @@ $code = '
     <code>&lt;span&gt;</code> tag gebruiken. Deze tag heeft geen speciale betekenis, maar kan
     gebruikt worden om een stuk tekst te stijlen.
   </p>
+  <p>
+    <strong>Let op:</strong> In het voorbeeld aan de rechterkant zie je de tekst meerdere regels
+    gebruiken. Dit is alleen gedaan om de HTML code overzichtelijk te houden. De uitvoer zal de
+    tekst op 1 regel tonen.
+  </p>
   <div class="cc-lesson__exercise-container">
     <p>
       <strong>Oefening:</strong> Pas de tekstkleur en achtergrondkleur aan van verschillende stukken

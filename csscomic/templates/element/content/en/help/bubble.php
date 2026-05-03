@@ -17,16 +17,16 @@ $styles = [
 if (!isset($partial)) {
   $styles = array_merge(
     $styles, [
-      'pos-tail-0',
-      'pos-tail-1',
-      'pos-tail-2',
-      'pos-tail-3',
-      'pos-tail-5',
-      'pos-tail-6',
-      'pos-tail-7',
-      'pos-tail-8',
-      'pos-tail-9',
-      'pos-tail-10',
+      'pos-tail0',
+      'pos-tail1',
+      'pos-tail2',
+      'pos-tail3',
+      'pos-tail5',
+      'pos-tail6',
+      'pos-tail7',
+      'pos-tail8',
+      'pos-tail9',
+      'pos-tail10',
     ]
   );
 }

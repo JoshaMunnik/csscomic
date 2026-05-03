@@ -5,134 +5,134 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2026-01-10 07:57+0000\n"
-"PO-Revision-Date: 2026-01-10 09:00+0100\n"
+"POT-Creation-Date: 2026-05-03 13:37+0000\n"
+"PO-Revision-Date: 2026-05-03 15:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
-#: src/Controller/AccountController.php:186
+#: src/Controller/AccountController.php:188
 msgid "Your account has been created. Please login."
 msgstr "Je account is aangemaakt. Gelieve in te loggen."
 
-#: src/Controller/AccountController.php:189
+#: src/Controller/AccountController.php:191
 msgid "An error occurred with the database, your account has not been created."
 msgstr ""
 "Er is een fout opgetreden met de database, het account is niet aangemaakt."
 
-#: src/Controller/AccountController.php:214
+#: src/Controller/AccountController.php:216
 msgid ""
 "An error occurred with the database, your reset token has not been created."
 msgstr ""
 "Er is een fout opgetreden met de database, het reset-token is niet gemaakt."
 
-#: src/Controller/AccountController.php:221
+#: src/Controller/AccountController.php:223
 msgid ""
 "An email has been sent to you with instructions how to reset your password."
 msgstr ""
 "Er is een e-mail verzonden met instructies om je wachtwoord opnieuw in te "
 "stellen."
 
-#: src/Controller/AccountController.php:238
+#: src/Controller/AccountController.php:240
 msgid "Your password has been reset. Please login."
 msgstr "Je hebt je wachtwoord gewijzigd. Je kan nu inloggen."
 
-#: src/Controller/AccountController.php:241
+#: src/Controller/AccountController.php:243
 msgid "An error occurred with the database, your password has not been reset."
 msgstr ""
 "Er is een fout opgetreden met de database, het wachtwoord is niet ingesteld."
 
-#: src/Controller/AccountController.php:266
+#: src/Controller/AccountController.php:268
 msgid "Your account has been deleted."
 msgstr "Je account is verwijderd."
 
-#: src/Controller/AccountController.php:269
+#: src/Controller/AccountController.php:271
 msgid "An error occurred with the database, your account has not been deleted."
 msgstr ""
 "Er is een fout opgetreden met de database, je account is niet verwijderd."
 
-#: src/Controller/AccountController.php:292
+#: src/Controller/AccountController.php:294
 msgid "Invalid or unknown credentials."
 msgstr "Ongeldige of onbekende inloggegevens."
 
-#: src/Controller/AdministratorController.php:52
+#: src/Controller/AdministratorController.php:54
 msgid "Caches have been cleared."
 msgstr "De caches zijn opgeschoond."
 
-#: src/Controller/LessonController.php:108
+#: src/Controller/LessonController.php:110
 msgid "Invalid request method."
 msgstr "Onbekende request methode."
 
-#: src/Controller/LessonController.php:111
+#: src/Controller/LessonController.php:113
 msgid "Missing and/or invalid form fields."
 msgstr "Er ontbreken of er zijn foutieve form Velden."
 
-#: src/Controller/UsersController.php:69
+#: src/Controller/UsersController.php:71
 msgid "User \"{0}\" has been removed."
 msgstr "Gebruiker \"{0}\" is verwijderd."
 
-#: src/Controller/UsersController.php:107
+#: src/Controller/UsersController.php:109
 msgid "User \"{0}\" has been updated."
 msgstr "Gebruiker \"{0}\" is bijgewerkt."
 
-#: src/Controller/UsersController.php:108
+#: src/Controller/UsersController.php:110
 msgid "User \"{0}\" has been created."
 msgstr "Gebruiker \"{0}\" is aangemaakt."
 
-#: src/Controller/UsersController.php:112
+#: src/Controller/UsersController.php:114
 msgid "Failed to save the user to the database."
 msgstr "Kan de gebruiker niet opslaan in de database."
 
-#: src/Lib/Controller/AdministratorControllerBase.php:25
+#: src/Lib/Controller/AdministratorControllerBase.php:27
 msgid "You must be logged in to access this page."
 msgstr "Je moet ingelogd zijn om toegang te krijgen tot deze pagina."
 
-#: src/Lib/Controller/AdministratorControllerBase.php:30
+#: src/Lib/Controller/AdministratorControllerBase.php:32
 msgid "You do not have the right credentials to access this page."
 msgstr ""
 "U beschikt niet over de authorizatie om toegang te krijgen tot deze pagina."
 
-#: src/Lib/Controller/ApplicationControllerBase.php:247
+#: src/Lib/Controller/ApplicationControllerBase.php:248
 msgid "You are not logged in."
 msgstr "Je bent niet ingelogd."
 
-#: src/Lib/Model/View/ViewModelBase.php:64
+#: src/Lib/Model/View/ViewModelBase.php:66
 msgid "The {0} is required"
 msgstr "De {0} is vereist"
 
-#: src/Lib/Trait/AccountActionsTrait.php:42
+#: src/Lib/Trait/AccountActionsTrait.php:44
 msgid "Your profile has been updated."
 msgstr "Uw profiel is aangepast."
 
-#: src/Lib/Trait/AccountActionsTrait.php:47
+#: src/Lib/Trait/AccountActionsTrait.php:49
 msgid "Your profile could not be saved."
 msgstr "Het profiel kon niet worden opgeslagen."
 
-#: src/Lib/Trait/AccountActionsTrait.php:77
+#: src/Lib/Trait/AccountActionsTrait.php:79
 msgid "Your password has been updated."
 msgstr "Je wachtwoord is bijgewerkt."
 
-#: src/Lib/Trait/AccountActionsTrait.php:80
+#: src/Lib/Trait/AccountActionsTrait.php:82
 msgid "An error occurred with the database, your password has not changed."
 msgstr ""
 "Er is een fout opgetreden met de database, het wachtwoord is niet gewijzigd."
 
-#: src/Lib/Trait/AccountActionsTrait.php:84
+#: src/Lib/Trait/AccountActionsTrait.php:86
 msgid "The current password is invalid."
 msgstr "Het huidige wachtwoord is ongeldig."
 
-#: src/Lib/Trait/AccountActionsTrait.php:113
+#: src/Lib/Trait/AccountActionsTrait.php:115
 msgid ""
 "An error occurred with the database, your delete token has not been created."
 msgstr ""
 "Er is een fout opgetreden met de database, je delete-token is niet "
 "aangemaakt."
 
-#: src/Lib/Trait/AccountActionsTrait.php:119
+#: src/Lib/Trait/AccountActionsTrait.php:121
 msgid ""
 "An email has been sent to you with instructions how to delete your account."
 msgstr ""
@@ -147,124 +147,100 @@ msgid "HTML"
 msgstr "HTML"
 
 #: src/Model/Constant/Lesson.php:12
-msgid "Multiple spaces"
-msgstr "Meerdere spaties"
-
-#: src/Model/Constant/Lesson.php:13
 msgid "First HTML tag: div"
 msgstr "Eerste HTML-tag: div"
 
-#: src/Model/Constant/Lesson.php:14
-msgid "Nesting tags"
-msgstr "Geneste tags"
-
-#: src/Model/Constant/Lesson.php:15
-msgid "Multiple spaces inside tags"
-msgstr "Meerdere spaties binnen tags"
-
-#: src/Model/Constant/Lesson.php:16
-msgid "Basic styling with HTML tags"
-msgstr "Stijlen met HTML tags"
-
-#: src/Model/Constant/Lesson.php:17
+#: src/Model/Constant/Lesson.php:13
 msgid "Adding background color"
 msgstr "Achtergrondkleur toevoegen"
 
-#: src/Model/Constant/Lesson.php:18
+#: src/Model/Constant/Lesson.php:14
 msgid "Adding text color"
 msgstr "Tekstkleur toevoegen"
 
-#: src/Model/Constant/Lesson.php:19
+#: src/Model/Constant/Lesson.php:15
+msgid "Basic styling with HTML tags"
+msgstr "Stijlen met HTML tags"
+
+#: src/Model/Constant/Lesson.php:16
 msgid "Multiple text colors"
 msgstr "Meerdere tekstkleuren"
 
-#: src/Model/Constant/Lesson.php:20
+#: src/Model/Constant/Lesson.php:17
+msgid "Nesting tags"
+msgstr "Geneste tags"
+
+#: src/Model/Constant/Lesson.php:18
 msgid "Single panel"
 msgstr "Enkel paneel"
 
-#: src/Model/Constant/Lesson.php:21
+#: src/Model/Constant/Lesson.php:19
 msgid "Multiple panels"
 msgstr "Meerdere panelen"
 
-#: src/Model/Constant/Lesson.php:22
+#: src/Model/Constant/Lesson.php:20
 msgid "Panels side by side"
 msgstr "Panelen naast elkaar"
 
-#: src/Model/Constant/Lesson.php:23
+#: src/Model/Constant/Lesson.php:21
 msgid "Introducing Batman"
 msgstr "Kennismaking met Batman"
 
-#: src/Model/Constant/Lesson.php:24
+#: src/Model/Constant/Lesson.php:22
 msgid "Introducing Robin"
 msgstr "Kennismaking met Robin"
 
-#: src/Model/Constant/Lesson.php:25
+#: src/Model/Constant/Lesson.php:23
 msgid "Characters eyes"
 msgstr "Personages ogen"
 
-#: src/Model/Constant/Lesson.php:26
+#: src/Model/Constant/Lesson.php:24
 msgid "Characters mouth"
 msgstr "Personages mond"
 
-#: src/Model/Constant/Lesson.php:27
+#: src/Model/Constant/Lesson.php:25
 msgid "Characters head"
 msgstr "Personages hoofd"
 
-#: src/Model/Constant/Lesson.php:28
+#: src/Model/Constant/Lesson.php:26
 msgid "Speech bubbles"
 msgstr "Tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:29
+#: src/Model/Constant/Lesson.php:27
+msgid "Talking characters"
+msgstr "Pratende karakters"
+
+#: src/Model/Constant/Lesson.php:28
 msgid "Positions within a panel"
 msgstr "Posities binnen een panel"
 
-#: src/Model/Constant/Lesson.php:30
+#: src/Model/Constant/Lesson.php:29
 msgid "Speech bubble tail positions"
 msgstr "Posities van de staart van de tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:31
+#: src/Model/Constant/Lesson.php:30
 msgid "Speech bubble text styling"
 msgstr "Tekststijl van tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:32
+#: src/Model/Constant/Lesson.php:31
 msgid "Create your first css comic"
 msgstr "Maak je eerste eigen css strip"
 
-#: src/Model/Constant/Lesson.php:33
+#: src/Model/Constant/Lesson.php:32
 msgid "Second css comic"
 msgstr "Tweede css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:34
+#: src/Model/Constant/Lesson.php:33
 msgid "Third css comic"
 msgstr "Derde css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:35
+#: src/Model/Constant/Lesson.php:34
 msgid "Fourth css comic"
 msgstr "Vierde css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:36
+#: src/Model/Constant/Lesson.php:35
 msgid "Fifth css comic"
 msgstr "Vijfde css stripverhaal"
-
-#: src/Model/Constant/Lesson.php:37
-msgid "Sixth css comic"
-msgstr "Zesde css stripverhaal"
-
-#: src/Model/Constant/Lesson.php:38
-msgid "Seventh css comic"
-msgstr "Zevende css stripverhaal"
-
-#: src/Model/Constant/Lesson.php:39
-msgid "Eighth css comic"
-msgstr "Achtste css stripverhaal"
-
-#: src/Model/Constant/Lesson.php:40
-msgid "Ninth css comic"
-msgstr "Negende css stripverhaal"
-
-#: src/Model/Constant/Lesson.php:41
-msgid "Tenth css comic"
-msgstr "Tiende css stripverhaal"
 
 #: src/Model/View/Account/ChangePasswordViewModel.php:63
 msgid "current password"
@@ -381,15 +357,15 @@ msgstr "beheerder"
 msgid "There is already a user for the email address."
 msgstr "Er is al een gebruiker voor dit e-mailadres."
 
-#: src/Service/EmailService.php:32
+#: src/Service/EmailService.php:34
 msgid "Reset Password for css comic site"
 msgstr "Wachtwoord resetten voor css comic site"
 
-#: src/Service/EmailService.php:57
+#: src/Service/EmailService.php:59
 msgid "Delete account at css comic site"
 msgstr "Verwijder account van de css comic site"
 
-#: src/Service/EmailService.php:81
+#: src/Service/EmailService.php:83
 msgid "Welcome at the css comic site"
 msgstr "Welkom op de css comic site"
 
@@ -524,10 +500,6 @@ msgstr "Laden…"
 msgid "update"
 msgstr "update"
 
-#: templates/Lesson/view.php:111
-msgid "full width"
-msgstr "volledige breedte"
-
 #: templates/Lesson/view.php:116
 msgid "everything"
 msgstr "alles"
@@ -535,10 +507,6 @@ msgstr "alles"
 #: templates/Lesson/view.php:123
 msgid "download"
 msgstr "download"
-
-#: templates/Lesson/view.php:131
-msgid "full page"
-msgstr "voledige pagina"
 
 #: templates/Lesson/view.php:136
 msgid "exit full page"
@@ -711,16 +679,8 @@ msgstr ""
 "account kan verwijderen."
 
 #: templates/element/lesson_navigation.php:17
-msgid "Previous comic"
-msgstr "Vorige stripverhaal"
-
-#: templates/element/lesson_navigation.php:17
 msgid "Previous lesson"
 msgstr "Vorige les"
-
-#: templates/element/lesson_navigation.php:23
-msgid "Next comic"
-msgstr "Volgende stripverhaal"
 
 #: templates/element/lesson_navigation.php:23
 msgid "Next lesson"
@@ -816,6 +776,39 @@ msgstr ""
 #: templates/layout/error.php:28
 msgid "Back"
 msgstr "Terug"
+
+#~ msgid "Multiple spaces"
+#~ msgstr "Meerdere spaties"
+
+#~ msgid "Multiple spaces inside tags"
+#~ msgstr "Meerdere spaties binnen tags"
+
+#~ msgid "Sixth css comic"
+#~ msgstr "Zesde css stripverhaal"
+
+#~ msgid "Seventh css comic"
+#~ msgstr "Zevende css stripverhaal"
+
+#~ msgid "Eighth css comic"
+#~ msgstr "Achtste css stripverhaal"
+
+#~ msgid "Ninth css comic"
+#~ msgstr "Negende css stripverhaal"
+
+#~ msgid "Tenth css comic"
+#~ msgstr "Tiende css stripverhaal"
+
+#~ msgid "full width"
+#~ msgstr "volledige breedte"
+
+#~ msgid "full page"
+#~ msgstr "voledige pagina"
+
+#~ msgid "Previous comic"
+#~ msgstr "Vorige stripverhaal"
+
+#~ msgid "Next comic"
+#~ msgstr "Volgende stripverhaal"
 
 #~ msgid "Introduction to HTML"
 #~ msgstr "Beginnen met HTML"

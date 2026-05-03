@@ -19,14 +19,10 @@ $code = '
     op welke positie ze staan, gebeurt echter niet met HTML tags maar met <em>styling</em>.
   </p>
   <p>
-    De <em>styling</em> bestaat uit een aantal stijl definities. Een definitie bepaalt hoe een
-    HTML element eruit moet zien (bijvoorbeeld kleur of tekst grootte). Een definitie kan ook
-    bepalen waar het HTML element geplaatst moet worden binnen een pagina (bijvoorbeeld bovenaan of
-    juist onderaan).
-  </p>
-  <p>
-    Voor deze lessen zijn er al een aantal stijl definities gemaakt waarmee je HTML elementen kan
-    stijlen zodat er een strip ontstaat.
+    De <em>styling</em> bestaat uit een aantal stijl definities. Een stijl definitie bepaalt hoe een
+    HTML element eruit moet zien (bijvoorbeeld kleur, tekst grootte of een plaatje in de
+    achtergrond). Een stijl definitie kan ook  bepalen waar het HTML element geplaatst moet worden
+    binnen een pagina (bijvoorbeeld bovenaan of juist onderaan).
   </p>
   <p>
     Om een stijl definitie met een bepaalde <em>naam</em> toe te passen op een HTML tag, moet je de
@@ -41,6 +37,9 @@ $code = '
   <p>
     Aan de rechterkant zie je een aantal stijl definitie namen waarmee de achtergrondkleur van een
     element veranderd kan worden.
+  </p>
+  <p>
+    Bij de volgende les leer je hoe je de kleur van de tekst kan aanpassen.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

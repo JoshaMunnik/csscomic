@@ -54,6 +54,11 @@ $codeSecond = '
     Deze stijl zorgt ervoor dat de panelen naast elkaar komen te staan.
   </p>
   <p>
+    <strong>Let op:</strong> Het is belangrijk dat alle <code>&lt;div&gt;</code> tags met
+    de stijl naam <code>paneel</code> binnen de <code>&lt;div&gt;</code> met de stijl naam
+    <code>panelen</code> staan.
+  </p>
+  <p>
     Standaard staan er drie panelen op een rij. Wil je vier panelen op een rij dan gebruik je de
     stijl naam <code>panelen-vier</code> in plaats van <code>panelen</code>. Om meerdere rijen te
     krijgen kan je gewoon meer <code>&lt;div&gt;</code> met de stijl naam <code>paneel</code>
@@ -64,6 +69,10 @@ $codeSecond = '
     Het is ook mogelijk om bredere panelen te maken die de ruimte van twee, drie of vier panelen
     innemen. Hiervoor gebruik je respectievelijk de stijl namen <code>paneel-twee</code>,
     <code>paneel-drie</code> en <code>paneel-vier</code> in plaats van <code>paneel</code>.
+  </p>
+  <p>
+    <strong>Let op:</strong> zorg er voor dat elke paneel zijn eigen <code>&lt;div&gt;</code>
+    gebruikt met een begintag en een eindtag.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

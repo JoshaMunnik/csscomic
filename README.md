@@ -80,6 +80,12 @@ To add a language perform the following steps:
    `/csscomic/template/element/content/` folder.
 7. Copy the all the subfolders from the `/csscomic/template/element/content/en/` folder to the 
    created folder and translate all the files therein. 
+   
+To update the `default.pot` file at `/csscomic/resources/locales/default.pot` run the following 
+from a console at the `csscomic` folder:
+```bash
+bin/cake i18n extract
+```
 
 ## License
 

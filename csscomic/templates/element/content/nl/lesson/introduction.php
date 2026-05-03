@@ -67,7 +67,10 @@ use App\View\ApplicationView;
       Gebruik de <code>download</code> button om een HTML bestand te downloaden van de uitvoer.
     </li>
   </ul>
-  <p>
-    Klik op de <code>volgende les</code> button om te beginnen met de volgende les.
-  </p>
+  <div class="cc-lesson__exercise-container">
+    <p>
+      <strong>Oefening:</strong> Voor deze introductie les is er geen oefening.
+      Klik op de <code>volgende les</code> button rechts boven om verder te gaan.
+    </p>
+  </div>
 </div>
