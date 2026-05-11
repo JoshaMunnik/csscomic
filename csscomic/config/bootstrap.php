@@ -90,9 +90,14 @@ try {
 /*
  * Load an environment local configuration file to provide overrides to your configuration.
  * Notice: For security reasons app_local.php **should not** be included in your git repo.
+ *
+ * app_local.php is only loaded if the host exists of a single name without domain
  */
 if (file_exists(CONFIG . 'app_local.php')) {
-    Configure::load('app_local', 'default');
+  Configure::load('app_local', 'default');
+}
+elseif (file_exists(CONFIG . 'app_local_production.php')) {
+  Configure::load('app_local_production', 'default');
 }
 
 /*

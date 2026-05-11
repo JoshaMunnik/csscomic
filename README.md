@@ -22,7 +22,7 @@ administrator interface to manage the users.
 - Change to `/csscomic/` folder
 - run `composer install`
 - run `npm install`
-- Rename `/csscomic/config/app_local-example.php` to 
+- Rename `/csscomic/config/app_local.example.php` to 
   `/csscomic/config/app_local.php` and update the salt, database, email and other settings.
 - Create the MySql database and import the `/database/csscomic.sql` file to create the tables.
 - Visit the webpage at `/account/login` and register a new user.
@@ -32,6 +32,10 @@ administrator interface to manage the users.
 The folder `/public_html/` must be accessible via the web. To use a different name, rename the 
 folder and update the `/csscomic/config/paths.php` and `/csscomic/rollup.config.mjs` files 
 accordingly.
+
+If there is a separate production and development environment, a second configuration file
+can be created for the production environment: `app_local_production.php`. Make sure only to upload
+`app_local_production.php` to the production environment, not `app_local.php`.
  
 ## Technologies
 
