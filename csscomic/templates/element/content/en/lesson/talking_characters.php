@@ -12,14 +12,14 @@ $code = '
     <div class="bubble">
       Hi, I\'m Batman
     </div>
-    <div class="batman">
+    <div class="batman mouth-talk">
     </div>
   </div>
   <div class="panel">
     <div class="bubble">
       Hi, and I\'m Robin
     </div>
-    <div class="robin">
+    <div class="robin mouth-talk">
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    This with lesson we will combine the speech bubbles with the characters.
+    With this lesson we will combine the speech bubbles with the characters.
   </p>
   <p>
     Both the speech bubble and the character have to use their own <code>&lt;div&gt;</code> tag
@@ -37,8 +37,9 @@ $code = '
     the style name <code>panel</code>.
   </p>
   <p>
-    Pay attention that every <code>&lt;div&gt;</code> also has a matching <code>&lt;/div&gt;</code>.
-    Even if there is no contents (like with the <code>&lt;div&gt;</code> for the characters).
+    <strong>Note:</strong> take care that the <code>div</code> with the <code>bubble</code> is
+    placed next to the <code>div</code> with Batman or Robin, and not inside the <code>div</code>
+    from the character.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

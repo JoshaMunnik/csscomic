@@ -20,24 +20,22 @@ $code = '
     <em>tags</em> genoemd.
   </p>
   <p>
-    Een tag ziet er als volgt uit: <code>&lt;<em>naam</em>&gt;</code>. De <em>naam</em> kan
-    verschillende dingen zijn. De naam van de tag bepaalt de type van de content waardoor. Voor
-    sommige tag namen zal de browser extra acties uitvoeren (zoals het laden van een plaatje).
+    Een <em>tag</em> ziet er als volgt uit: <code>&lt;<em>naam</em>&gt;</code>. De <em>naam</em> kan
+    verschillende dingen zijn.
   </p>
   <p>
-    De meeste tags bevatten tekst en andere tags. Om dit alles goed weer te kunnen geven moet
-    de browser kunnen bepalen waar de content van een tag eindigt. Hiervoor wordt een eindtag
-    gebruikt. De eindtag lijkt op de begintag en ziet er als volgt uit:
-    <code>&lt;/<em>naam</em>&gt;</code>. Het verschil met de begintag is dat er na de
-    <code>&lt;</code> meteen een <code>/</code> volgt.
+    De meeste tags bevatten tekst en andere tags, de zogenaamde <em>content</em> van een tag. Om
+    het einde van de content aan te geven, moet je een eindtag gebruiken:
+    <code>&lt;/<em>naam</em>&gt;</code>.
   </p>
   <p>
-    De content (tekst en/of andere tags) van een tag staat tussen de begintag en eindtag.
+    <strong>Belangrijk:</strong> let er op dat er voor elke begintag er ook een eindtag is; zodat
+    de browser de webpagina goed kan weergeven.
   </p>
   <p>
     Een tag die we veel in de lessen zullen gebruiken is de <code>div-tag</code>.
-    Deze tag wordt gebruikt om een <em>secties</em> in een webpagina aan te geven.
-    De <code>div-tag</code> begint met <code>&lt;div&gt;</code> en eindigt met
+    Deze tag is een algemene tag, die wordt gebruikt om <em>gedeeltes</em> in een webpagina aan
+    te geven. De <code>div-tag</code> begint met <code>&lt;div&gt;</code> en eindigt met
     <code>&lt;/div&gt;</code>.
   </p>
   <p>

@@ -14,15 +14,16 @@ use App\View\ApplicationView;
       Create your first comic!
     </p>
     <p>
-      On the far right there are some buttons you can click to insert a panel layout into the code
-      editor.
+      On the far right, there are some buttons you can click to insert a panel layout into the code
+      editor. Or you can use one of the example buttons to start with a comic, where you only
+      have to update the texts. Of course, you can still add or remove panels.
     </p>
     <p>
       You can also see all the tags and styles we covered in the previous lessons.
     </p>
     <p>
       If you finish a comic and want to make another, choose the next lesson. You can create up to
-      5 different comics.
+      five different comics.
     </p>
   <?php else : ?>
     <p>

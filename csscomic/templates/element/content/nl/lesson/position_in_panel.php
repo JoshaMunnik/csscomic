@@ -4,24 +4,25 @@
  * @var ApplicationView $this
  */
 
+use App\Model\Enum\GapEnum;
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel-twee">
-    <div class="ballon staart-rechts pos-x8">
+<div class="panels">
+  <div class="panel-two">
+    <div class="bubble tail-right pos-x8">
       Naar rechts
     </div>
     <div class="batman pos-x10">
     </div>
-    <div class="ballon pos-x2">
+    <div class="bubble pos-x2">
       Naar links
     </div>
     <div class="robin pos-x0">
     </div>
   </div>
-  <div class="paneel">
-    <div class="ballon staart-buiten pos-y8">
+  <div class="panel">
+    <div class="bubble tail-off-panel pos-y8">
       Aan de onderkant.
     </div>
   </div>
@@ -54,6 +55,12 @@ $code = '
     Als je geen verticale positie stijl toevoegt, worden de tekstballonnen standaard bovenaan het
     paneel geplaatst (hetzelfde als <code>pos-y0</code>).
   </p>
+  <div>
+    <?= $this->Styling->Layout->beginRow(GapEnum::DIALOG) ?>
+    <?= $this->contentElement('help/pos_x_help') ?>
+    <?= $this->contentElement('help/pos_y_help') ?>
+    <?= $this->Styling->Layout->endRow() ?>
+  </div>
   <div class="cc-lesson__exercise-container">
     <p>
       <strong>Oefening:</strong> Creëer een paneel met Batman en Robin, waarbij Batman aan de

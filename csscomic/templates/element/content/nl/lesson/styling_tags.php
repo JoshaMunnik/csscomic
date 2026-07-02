@@ -39,7 +39,7 @@ $code = '
   </p>
   <p>
     Je kan ook tekst zowel sterk als benadrukt maken door beide tags te gebruiken. Let er wel op dat
-    de tags correct genest zijn.
+    de begin- en eindtags in de juiste volgorde staan.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

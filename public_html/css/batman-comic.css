@@ -19,13 +19,6 @@
   box-sizing: border-box;
   background: linear-gradient(#c9c6, #c9c0 80%);
   overflow: hidden;
-
-  & > *,
-  & > *::before,
-  & > *::after {
-    position: absolute;
-    box-sizing: border-box;
-  }
 }
 
 .panels, .panels-four {
@@ -72,9 +65,11 @@
   font-family: 'Comic Neue', 'Comic Sans', 'Comic Sans MS', Helvetica, Arial, sans-serif;
   text-align: center;
   text-wrap: balance;
+  position: absolute;
 
   &::before {
     --pos: 50%;
+    position: absolute;
     content: "";
     width: 2em;
     height: 3em;
@@ -162,6 +157,7 @@
   linear-gradient(var(--logo-color) 0 0) 50% 100% / 40% 5% no-repeat,
   conic-gradient(at 50% -20%, #0000 170deg, var(--suit-color) 170.33deg 189.66deg, #0000 190deg) 50% 100% / 80% 80% no-repeat,
     /* brazos */ radial-gradient(var(--arms-width) 115% at var(--arms-position) 118%, var(--suit-color-dark) 55%, #0000 55.2%);
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0) rotate(var(--rotation));
@@ -172,6 +168,7 @@
   &::before {
     content: "";
     --rotation: 0deg;
+    position: absolute;
     width: 17em;
     height: 12em;
     background: var(--extra),
@@ -196,6 +193,7 @@
 
   &::after {
     --rotation: 0deg;
+    position: absolute;
     content: "";
     width: 17em;
     height: 25%;
@@ -381,6 +379,7 @@
     /* mangas y brazos */ conic-gradient(at 50% 5%, #0000 155deg, var(--shirt-color) 155.5deg 204.75deg, #0000 205deg) 50% 60% / 80% 50% no-repeat,
   radial-gradient(50% 50% at 50.125% 0, var(--shirt-color) 99%, #0000 99%) 50% 84% / 45% 5% no-repeat,
   conic-gradient(at 55% -250%, #0000 170deg, var(--skin-color-dark) 170.25deg 193.75deg, #0000 194deg) 50% 100% / 70% 30% no-repeat;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0) rotate(var(--rotation));
@@ -391,6 +390,7 @@
 
   &::before {
     --rotation: 0deg;
+    position: absolute;
     content: "";
     width: 16em;
     height: 11em;
@@ -413,6 +413,7 @@
 
   &::after {
     --rotation: 0deg;
+    position: absolute;
     content: "";
     width: 80%;
     height: 20%;
@@ -438,7 +439,7 @@
     &::after {
       --rotation: 10deg;
       left: 59%;
-      top: 0%;
+      top: 0;
     }
   }
 
@@ -559,7 +560,7 @@
 /* posiciones personajes */
 
 .width-0 {
-  width: 0%;
+  width: 0;
 }
 
 .width-5 {

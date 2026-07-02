@@ -4,6 +4,7 @@
  * @var ApplicationView $this
  */
 
+use App\Model\Enum\GapEnum;
 use App\View\ApplicationView;
 
 $code = '
@@ -53,6 +54,12 @@ $code = '
     If you don't add a vertical position style, speech bubbles are placed at the top of the panel
     by default (the same as using <code>pos-y0</code>).
   </p>
+  <div>
+    <?= $this->Styling->Layout->beginRow(GapEnum::DIALOG) ?>
+    <?= $this->contentElement('help/pos_x_help') ?>
+    <?= $this->contentElement('help/pos_y_help') ?>
+    <?= $this->Styling->Layout->endRow() ?>
+  </div>
   <div class="cc-lesson__exercise-container">
     <p>
       <strong>Exercise:</strong> Create a panel with Batman and Robin, with Batman on the

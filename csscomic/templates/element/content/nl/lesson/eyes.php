@@ -7,13 +7,13 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
-    <div class="batman ogen-sip">
+<div class="panels">
+  <div class="panel">
+    <div class="batman eyes-sad">
     </div>
   </div>
-  <div class="paneel">
-    <div class="robin ogen-denk">
+  <div class="panel">
+    <div class="robin eyes-think">
     </div>
   </div>
 </div>

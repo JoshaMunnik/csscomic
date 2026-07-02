@@ -7,8 +7,8 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
+<div class="panels">
+  <div class="panel">
     <div class="batman">
     </div>
   </div>
@@ -24,18 +24,12 @@ $code = '
   <p>
     Om Batman toe te voegen, gebruik je een <code>&lt;div&gt;</code> tag met de stijl naam
     <code>batman</code> en plaats je deze in de <code>&lt;div&gt;</code> die een
-    <code>paneel</code> stijl bevat.
+    <code>panel</code> stijl bevat.
   </p>
   <p>
     <strong>Let op:</strong> het is belangrijk dat de <code>&lt;div&gt;</code> met de stijl naam
     <code>batman</code> altijd binnen een <code>&lt;div&gt;</code> met de stijl naam
-    <code>paneel</code> staat. Anders zal Batman niet zichtbaar zijn.
-  </p>
-  <p>
-    De <code>&lt;div&gt;</code> met de stijl naam <code>batman</code> bevat nooit content. Alle
-    aanpassingen zullen via het <code>class</code> attribuut gebeuren. Hoewel er geen content
-    is het wel belangrijk om nog steeds een <code>&lt;/div&gt;</code> te gebruiken. Anders raakt
-    de browser in de war en zal de browser de web pagina niet goed weergeven.
+    <code>panel</code> staat. Anders zal Batman niet zichtbaar zijn.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

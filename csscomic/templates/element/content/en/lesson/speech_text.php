@@ -17,20 +17,25 @@ $code = '
         Second line
       </div>
     </div>
+    <div class="batman">
+    </div>
   </div>
   <div class="panel">
     <div class="bubble">
       Very <strong>strong words</strong> that <em>emphasizes</em>.
+    </div>
+    <div class="robin mouth-to-right">
     </div>
   </div>
   <div class="panel">
     <div class="bubble">
       I am <span class="text-red">angry!</span>
     </div>
+      <div class="batman mouth-angry eyes-angry">
+    </div>
   </div>
 </div>
 ';
-
 
 ?>
 <div class="cc-lesson-top__start">

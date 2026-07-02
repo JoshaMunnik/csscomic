@@ -14,7 +14,9 @@ use App\View\ApplicationView;
       Creëer jouw eerste stripverhaal!
     </p>
     <p>
-      Helemaal rechts staan een aantal buttons om een paneel layout in de code editor te plaatsen.
+      Helemaal rechts staan een aantal buttons om een paneel layout in de code-editor te plaatsen.
+      Of je kan een van de voorbeelden gebruiken als start punt gebruiken. Hier hoef je alleen de
+      teksten aan te passen, maar je kan natuurlijk ook panelen toevoegen of verwijderen.
     </p>
     <p>
       Verder zie je alle tags en stijlen die we in de afgelopen lessen hebben behandeld.

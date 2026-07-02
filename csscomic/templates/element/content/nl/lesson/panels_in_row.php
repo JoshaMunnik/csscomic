@@ -6,69 +6,40 @@
 
 use App\View\ApplicationView;
 
-$codeFirst = '
-<div class="panelen">
-  <div class="paneel">
+$code = '
+<div class="panels">
+  <div class="panel">
   </div>
-  <div class="paneel">
+  <div class="panel">
   </div>
-  <div class="paneel">
+  <div class="panel">
   </div>
-  <div class="paneel-twee">
-  </div>
-  <div class="paneel">
-  </div>
-  <div class="paneel-drie">
+  <div class="panel">
   </div>
 </div>
 ';
-$codeSecond = '
-<div class="panelen-vier">
-  <div class="paneel">
-  </div>
-  <div class="paneel">
-  </div>
-  <div class="paneel">
-  </div>
-  <div class="paneel">
-  </div>
-  <div class="paneel-twee">
-  </div>
-  <div class="paneel-twee">
-  </div>
-  <div class="paneel-drie">
-  </div>
-  <div class="paneel">
-  </div>
-  <div class="paneel-vier">
-  </div>
-</div>
-';
-
 
 ?>
 <div class="cc-lesson-top__start">
   <p>
+    Als je een HTML tag stijlt, dan kan je stijling alleen toepassen op de tag zelf en de content
+    van de tag. Daarom was het niet mogelijk in de vorige les om meerdere panelen naast elkaar
+    te krijgen.
+  </p>
+  <p>
     Om meerdere panelen op een rij te krijgen, moeten ze allen in een <code>&lt;div&gt;</code>
-    geplaatst worden. Deze <code>&lt;div&gt;</code> krijgt de stijl naam <code>panelen</code>.
+    geplaatst worden.<br/> Deze <code>&lt;div&gt;</code> krijgt de stijl naam <code>panels</code>.
     Deze stijl zorgt ervoor dat de panelen naast elkaar komen te staan.
   </p>
   <p>
     <strong>Let op:</strong> Het is belangrijk dat alle <code>&lt;div&gt;</code> tags met
-    de stijl naam <code>paneel</code> binnen de <code>&lt;div&gt;</code> met de stijl naam
-    <code>panelen</code> staan.
+    de stijl naam <code>panel</code> binnen de <code>&lt;div&gt;</code> met de stijl naam
+    <code>panels</code> staan.
   </p>
   <p>
-    Standaard staan er drie panelen op een rij. Wil je vier panelen op een rij dan gebruik je de
-    stijl naam <code>panelen-vier</code> in plaats van <code>panelen</code>. Om meerdere rijen te
-    krijgen kan je gewoon meer <code>&lt;div&gt;</code> met de stijl naam <code>paneel</code>
-    toevoegen; deze worden dan automatisch naar de volgende rij verplaatst als er geen ruimte
-    meer is.
-  </p>
-  <p>
-    Het is ook mogelijk om bredere panelen te maken die de ruimte van twee, drie of vier panelen
-    innemen. Hiervoor gebruik je respectievelijk de stijl namen <code>paneel-twee</code>,
-    <code>paneel-drie</code> en <code>paneel-vier</code> in plaats van <code>paneel</code>.
+    Om meerdere rijen te krijgen kan je gewoon meer <code>&lt;div&gt;</code> met de stijl
+    naam <code>panel</code> toevoegen. De <code>panels</code> stijl zorgt er voor dat deze
+    automatisch naar de volgende rij verplaatst worden als er geen ruimte meer is.
   </p>
   <p>
     <strong>Let op:</strong> zorg er voor dat elke paneel zijn eigen <code>&lt;div&gt;</code>
@@ -78,17 +49,9 @@ $codeSecond = '
     <p>
       <strong>Oefening: </strong>Maak twee rijen met elk drie panelen.
     </p>
-    <p>
-      <strong>Oefening: </strong>Maak twee rijen met panelen, met op de eerste rij een extra breed
-      paneel.
-    </p>
-    <p>
-      <strong>Oefening: </strong>Maak twee rijen met elk vier panelen.
-    </p>
   </div>
 </div>
 <div class="cc-lesson-top__end">
-  <?= $this->contentElement('help/panel') ?>
-  <?= $this->element('code_block', ['code' => $codeFirst]) ?>
-  <?= $this->element('code_block', ['code' => $codeSecond]) ?>
+  <?= $this->contentElement('help/panel', ['simple' => true]) ?>
+  <?= $this->element('code_block', ['code' => $code]) ?>
 </div>

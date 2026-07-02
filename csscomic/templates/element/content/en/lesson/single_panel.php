@@ -18,15 +18,14 @@ $code = '
     Time for the first step towards creating a comic.
   </p>
   <p>
-    For these lessons a number of style definitions have already been created that allow you to
-    style HTML elements to create a comic.
+    As described before, this website uses style definitions you can use to create a comic.
   </p>
   <p>
-    Before we move on to the characters, we first need to create a panel that contain the
+    Before we move on to the characters, we first need to create a panel that contains the
     characters and their speech bubbles.
   </p>
   <p>
-    You can easily create a panel in HTML by adding the style name <code>panel</code> to a
+    You can create a panel in HTML by adding the style name <code>panel</code> to a
     <code>&lt;div&gt;</code> tag.
   </p>
   <div class="cc-lesson__exercise-container">

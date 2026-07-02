@@ -17,10 +17,11 @@ $code = '
 <div class="cc-lesson-top__start">
   <p>
     It is possible to apply multiple style definitions to an HTML element. You do this by
-    using multiple names in the <code>class</code> attribute, separated by a space.
+    using multiple names in the <code>class</code> attribute, separated by a space:
+    &lt;... <strong>class</strong>="<em>style-name1</em> <em>style-name2</em> <em>style-name3</em>"&gt;
   </p>
   <p>
-    On the right you can see a number of new style definition names that allow you to
+    On the right, you can see a number of new style definition names that allow you to
     adjust the text color.
   </p>
   <div class="cc-lesson__exercise-container">
@@ -30,7 +31,7 @@ $code = '
     </p>
     <p>
       <strong>Exercise:</strong> Try different color combinations to see which texts are readable
-      and which are not (for example red text on a green background).
+      and which are not (for example, a red text on a green background).
     </p>
     <p>
       <strong>Exercise:</strong> Try to create a hidden text, by using the same text color as the

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2026-05-03 13:37+0000\n"
-"PO-Revision-Date: 2026-05-03 15:39+0200\n"
+"POT-Creation-Date: 2026-07-02 07:11+0000\n"
+"PO-Revision-Date: 2026-07-02 09:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: nl\n"
@@ -167,8 +167,8 @@ msgid "Multiple text colors"
 msgstr "Meerdere tekstkleuren"
 
 #: src/Model/Constant/Lesson.php:17
-msgid "Nesting tags"
-msgstr "Geneste tags"
+msgid "Debugging tags"
+msgstr "Debugging tags"
 
 #: src/Model/Constant/Lesson.php:18
 msgid "Single panel"
@@ -183,62 +183,66 @@ msgid "Panels side by side"
 msgstr "Panelen naast elkaar"
 
 #: src/Model/Constant/Lesson.php:21
+msgid "Wider panels"
+msgstr "Bredere panelen"
+
+#: src/Model/Constant/Lesson.php:22
 msgid "Introducing Batman"
 msgstr "Kennismaking met Batman"
 
-#: src/Model/Constant/Lesson.php:22
+#: src/Model/Constant/Lesson.php:23
 msgid "Introducing Robin"
 msgstr "Kennismaking met Robin"
 
-#: src/Model/Constant/Lesson.php:23
+#: src/Model/Constant/Lesson.php:24
 msgid "Characters eyes"
 msgstr "Personages ogen"
 
-#: src/Model/Constant/Lesson.php:24
+#: src/Model/Constant/Lesson.php:25
 msgid "Characters mouth"
 msgstr "Personages mond"
 
-#: src/Model/Constant/Lesson.php:25
+#: src/Model/Constant/Lesson.php:26
 msgid "Characters head"
 msgstr "Personages hoofd"
 
-#: src/Model/Constant/Lesson.php:26
+#: src/Model/Constant/Lesson.php:27
 msgid "Speech bubbles"
 msgstr "Tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:27
+#: src/Model/Constant/Lesson.php:28
 msgid "Talking characters"
 msgstr "Pratende karakters"
 
-#: src/Model/Constant/Lesson.php:28
+#: src/Model/Constant/Lesson.php:29
 msgid "Positions within a panel"
 msgstr "Posities binnen een panel"
 
-#: src/Model/Constant/Lesson.php:29
+#: src/Model/Constant/Lesson.php:30
 msgid "Speech bubble tail positions"
 msgstr "Posities van de staart van de tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:30
+#: src/Model/Constant/Lesson.php:31
 msgid "Speech bubble text styling"
 msgstr "Tekststijl van tekstballonnen"
 
-#: src/Model/Constant/Lesson.php:31
+#: src/Model/Constant/Lesson.php:32
 msgid "Create your first css comic"
 msgstr "Maak je eerste eigen css strip"
 
-#: src/Model/Constant/Lesson.php:32
+#: src/Model/Constant/Lesson.php:33
 msgid "Second css comic"
 msgstr "Tweede css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:33
+#: src/Model/Constant/Lesson.php:34
 msgid "Third css comic"
 msgstr "Derde css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:34
+#: src/Model/Constant/Lesson.php:35
 msgid "Fourth css comic"
 msgstr "Vierde css stripverhaal"
 
-#: src/Model/Constant/Lesson.php:35
+#: src/Model/Constant/Lesson.php:36
 msgid "Fifth css comic"
 msgstr "Vijfde css stripverhaal"
 

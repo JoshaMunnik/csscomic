@@ -1405,6 +1405,138 @@ User participant grid
 }
 
 /**
+ * Position help
+ */
+.cc-position__horizontal-container {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-position__horizontal-hint {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cc-position__horizontal-arrow {
+  --line-width: 98%;
+  --line-color: var(--cc-color-focus);
+  --line-thickness: 2px;
+  --arrow-size: 6px;
+
+  display: block;
+  width: var(--line-width);
+  height: var(--line-thickness);
+  background-color: var(--line-color);
+  position: relative;
+  margin: 10px auto;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::before {
+    left: 0;
+    border-width: var(--arrow-size) var(--arrow-size) var(--arrow-size) 0;
+    border-color: transparent var(--line-color) transparent transparent;
+  }
+
+  &::after {
+    right: 0;
+    border-width: var(--arrow-size) 0 var(--arrow-size) var(--arrow-size);
+    border-color: transparent transparent transparent var(--line-color);
+  }
+}
+
+.cc-position__horizontal-values {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.cc-position__vertical-container {
+  width: min-content;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cc-position__vertical-hint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cc-position__vertical-arrow {
+  --line-height: 95%;
+  --line-color: var(--cc-color-focus);
+  --line-thickness: 2px;
+  --arrow-size: 6px;
+
+  display: block;
+  width: var(--line-thickness);
+  height: var(--line-height);
+  background-color: var(--line-color);
+  position: relative;
+  margin: auto 10px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::before {
+    top: 0;
+    border-width: 0 var(--arrow-size) var(--arrow-size) var(--arrow-size);
+    border-color: transparent transparent var(--line-color) transparent;
+  }
+
+  &::after {
+    bottom: 0;
+    border-width: var(--arrow-size) var(--arrow-size) 0 var(--arrow-size);
+    border-color: var(--line-color) transparent transparent transparent ;
+  }
+}
+
+.cc-position__hint {
+  font-size: 0.9rem;
+}
+
+.cc-position__vertical-values {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-end;
+}
+
+.cc-position__main-value {
+  word-break: keep-all;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cc-position__small-value {
+  word-break: keep-all;
+  font-size: 0.7rem;
+  color: var(--cc-color-border);
+}
+
+/**
  * Icons
  */
 .cc-icon__magnify {
@@ -1415,3 +1547,4 @@ User participant grid
   background-position: center;
   background-size: 100% 100%;
 }
+

@@ -31,12 +31,6 @@ $code = '
     <code>batman</code> always is placed within a <code>&lt;div&gt;</code> with the style name
     <code>panel</code>. Else Batman will not be visible.
   </p>
-  <p>
-    The <code>&lt;div&gt;</code> with the style name <code>batman</code> never contains content.
-    Any change will always be done at the <code>class</code> attribute.
-    Although there is no content, it is still important to use a <code>&lt;/div&gt;</code>.
-    Else the browser gets confused and the browser will not display the page correctly.
-  </p>
   <div class="cc-lesson__exercise-container">
     <p>
       <strong>Exercise:</strong> Add Batman to a panel.

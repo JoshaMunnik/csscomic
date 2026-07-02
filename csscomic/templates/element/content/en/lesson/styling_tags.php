@@ -8,7 +8,8 @@ use App\View\ApplicationView;
 
 $code = '
 <div>
-  This is a <strong>strong text</strong>, while this is a <em>emphasized text</em>
+  This is a <strong>strong text</strong>.
+  While this is an <em>emphasized text</em>.
 </div>
 <div>
   This is a <strong><em>strong and emphasized text</em></strong>
@@ -24,11 +25,11 @@ $code = '
   </p>
   <ul>
     <li>
-      <code>&lt;strong&gt;</code> to indicate strong text. This text is usually displayed
+      <code>&lt;strong&gt;</code> to indicate a strong text. This text is usually displayed as
       <strong>bold</strong>.
     </li>
     <li>
-      <code>&lt;em&gt;</code> to indicate emphasized text. This text is usually displayed
+      <code>&lt;em&gt;</code> to indicate an emphasized text. This text is usually displayed as
       <em>italic</em>.
     </li>
   </ul>
@@ -37,8 +38,8 @@ $code = '
     the <em>tags</em> is not displayed on a new line.
   </p>
   <p>
-    You can also make text both strong and emphasized by using both tags. Make sure the tags are
-    correctly nested.
+    You can also make text both strong and emphasized by using both tags. Make sure that the
+    opening- and closing tags are placed in the correct order.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

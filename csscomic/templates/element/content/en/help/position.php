@@ -9,7 +9,7 @@ use App\View\ApplicationView;
 echo $this->element('styles_list', [
   'title' => 'Position',
   'styles' => [
-    'pos-x0',
+    'pos-x0 (left)',
     'pos-x1',
     'pos-x2',
     'pos-x3',
@@ -19,8 +19,8 @@ echo $this->element('styles_list', [
     'pos-x7',
     'pos-x8',
     'pos-x9',
-    'pos-x10',
-    'pos-y0',
+    'pos-x10 (right)',
+    'pos-y0 (top)',
     'pos-y1',
     'pos-y2',
     'pos-y3',
@@ -30,6 +30,6 @@ echo $this->element('styles_list', [
     'pos-y7',
     'pos-y8',
     'pos-y9',
-    'pos-y10',
+    'pos-y10 (bottom)',
   ],
 ]);

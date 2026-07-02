@@ -3,24 +3,31 @@
 /**
  * @var ApplicationView $this
  * @var bool|null $partial
+ * @var bool|null $simple
  */
 
 use App\View\ApplicationView;
 
 $styles = [
-  'paneel',
+  'panel',
 ];
 
-if (!isset($partial)) {
+if (isset($simple) && $simple) {
+  $styles = [
+    'panel',
+    'panels',
+  ];
+}
+else if (!isset($partial)) {
   $styles = array_merge(
     [
-      'panelen',
-      'panelen-vier',
+      'panels',
+      'panels-four',
     ],
     $styles, [
-      'paneel-twee',
-      'paneel-drie',
-      'paneel-vier',
+      'panel-two',
+      'panel-three',
+      'panel-four',
     ]
   );
 }

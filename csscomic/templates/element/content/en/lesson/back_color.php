@@ -16,16 +16,15 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    With HTML, you compose the elements of a web page. However, how the elements look and where they
-    are positioned, is not handled with HTML tags but with <em>styling</em>.
+    A webpage exists of a number of HTML tags. How these tags look (for example, color or text size)
+    and how they are positioned (for example, at the top or at the bottom) is done
+    through <em>styling</em>.
   </p>
   <p>
-    The <em>styling</em> consists of a number of style definitions. A style definition determines
-    how a particular HTML element should look (for example the color, text size or
-    a having a background image). A style definition can also
-    determine how the HTML element is positioned within a webpage (for example at the top or at the
-    bottom).
-    </p>
+    The <em>styling</em> consists of a number of style definitions. Each website has their own
+    set of style definitions. This website has style definitions that can be used to build a comic.
+    The style definitions normally use their own <em>CSS</em> (Cascading Style Sheets) file.
+  </p>
   <p>
     To apply a style definition with a certain <em>name</em> to an HTML tag, you must use the
     <code>class</code> attribute. The <code>class</code> attribute is added to the opening tag
@@ -38,7 +37,7 @@ $code = '
   </p>
   <p>
     On the right you can see a number of style definition names that can be used to change the
-    background color of an element.
+    background color of the tag's content.
   </p>
   <p>
     With the next lesson you will also learn how to change the text color.

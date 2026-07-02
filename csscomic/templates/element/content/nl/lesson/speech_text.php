@@ -7,9 +7,9 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
-    <div class="ballon">
+<div class="panels">
+  <div class="panel">
+    <div class="bubble">
       <div>
         Eerste regel
       </div>
@@ -17,15 +17,21 @@ $code = '
         Tweede regel
       </div>
     </div>
-  </div>
-  <div class="paneel">
-    <div class="ballon">
-      Erg <strong>sterke woorden</strong> die <em>benadrukken</em>.
+    <div class="batman">
     </div>
   </div>
-  <div class="paneel">
-    <div class="ballon">
-      Ik ben <span class="tekst-rood">boos!</span>
+  <div class="panel">
+    <div class="bubble">
+      Erg <strong>sterke woorden</strong> die <em>benadrukken</em>.
+    </div>
+    <div class="robin mouth-to-right">
+    </div>
+  </div>
+  <div class="panel">
+    <div class="bubble">
+      Ik ben <span class="text-red">boos!</span>
+    </div>
+    <div class="batman mouth-angry eyes-angry">
     </div>
   </div>
 </div>
@@ -36,7 +42,7 @@ $code = '
 <div class="cc-lesson-top__start">
   <p>
     De tekst binnen een tekstballon kan je stijlen met HTML tags (zoals <code>strong</code>) en
-    stijlen (zoals <code>tekst-rood</code>) die je bij eerdere lessen geleerd hebt.
+    stijlen (zoals <code>text-red</code>) die je bij eerdere lessen geleerd hebt.
   </p>
   <p>
     Als de tekst te lang is, zal deze automatisch over meerdere regels verdeeld worden. Om kortere

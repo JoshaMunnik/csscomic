@@ -7,19 +7,19 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
-    <div class="ballon">
+<div class="panels">
+  <div class="panel">
+    <div class="bubble">
       Hallo, ik ben Batman
     </div>
-    <div class="batman">
+    <div class="batman mouth-talk">
     </div>
   </div>
-  <div class="paneel">
-    <div class="ballon">
+  <div class="panel">
+    <div class="bubble">
       Hallo, en ik ben Robin
     </div>
-    <div class="robin">
+    <div class="robin mouth-talk">
     </div>
   </div>
 </div>
@@ -34,11 +34,12 @@ $code = '
   <p>
     Zowel de ballon als een karakter moet een eigen <code>&lt;div&gt;</code> gebruiken met
     ieder de correct stijl namen. Beide tags moeten beide binnen een <code>&lt;div&gt;</code>
-    met de stijl naam <code>paneel</code> staan.
+    met de stijl naam <code>panel</code> staan.
   </p>
   <p>
-    Let op dat elke <code>&lt;div&gt;</code> een <code>&lt;/div&gt;</code> bevat. Ook al is er geen
-    content (zoals bij de <code>&lt;div&gt;</code> voor de karakters).
+    <strong>Let op:</strong> zorg ervoor dat de <code>div</code> met de <code>bubble</code> naast
+    de <code>div</code> staat met Batman of Robin en niet binnen de <code>div</code> met het
+    karakter.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

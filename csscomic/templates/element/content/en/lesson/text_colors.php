@@ -30,18 +30,18 @@ $code = '
 <div class="cc-lesson-top__start">
   <p>
     You can use the <code>class</code> attribute with other tags than the
-    <code>&lt;div&gt;</code> tag. You also use the <code>class</code> attribute
+    <code>&lt;div&gt;</code> tag. You can also use the <code>class</code> attribute
     with the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags.
   </p>
   <p>
-    If you only want to change the color of a piece of text, you can use the
-    <code>&lt;span&gt;</code> tag. This tag has no special meaning; it only exists to allow
-    styling a piece of text.
+    If you only want to change the color of a some text (without making it strong or emphasize it),
+    you can use the <code>&lt;span&gt;</code> tag. This tag has no special meaning; it only
+    exists to allow styling a piece of text.
   </p>
   <p>
-    <strong>Note:</strong> The example on the right contains a text that uses multiple lines.
-    This is only done to make the HTML code more clear. In the output the text will be shown
-    on a single line.
+    <strong>Note:</strong> The example on the right contains HTML code that uses multiple lines.
+    This is only done to make the HTML code easier to understand. In the output the text will be
+    shown as a single line.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

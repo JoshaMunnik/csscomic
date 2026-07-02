@@ -7,21 +7,21 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="achter-geel">
-  <span class="tekst-groen">
+<div class="back-yellow">
+  <span class="text-green">
     Groene tekst
   </span>
    en
-   <span class="tekst-blauw achter-oranje">
+   <span class="text-blue back-orange">
      blauwe tekst met oranje achtergrond
    </span>
    met gele achtergrond voor de rest.
 </div>
 <div>
-  Dit is een <strong class="tekst-rood">Boze Tekst!</strong>
+  Dit is een <strong class="text-red">Boze Tekst!</strong>
 </div>
 <div>
-  Ik voel mij <em class="achter-paars tekst-wit">zo paars</em>
+  Ik voel mij <em class="back-purple text-white">zo paars</em>
 </div>
 ';
 

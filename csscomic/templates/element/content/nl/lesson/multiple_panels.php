@@ -7,11 +7,11 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="paneel">
+<div class="panel">
 </div>
-<div class="paneel">
+<div class="panel">
 </div>
-<div class="paneel">
+<div class="panel">
 </div>
 ';
 
@@ -20,7 +20,7 @@ $code = '
 <div class="cc-lesson-top__start">
   <p>
     Een strip bestaat natuurlijk niet uit één paneel. Meerdere panelen kan je maken door
-    meerdere <code>&lt;div&gt;</code> tags met de stijl naam <code>paneel</code> toe te voegen.
+    meerdere <code>&lt;div&gt;</code> tags met de stijl naam <code>panel</code> toe te voegen.
   </p>
   <p>
     Er is wel een probleem, elk paneel wordt nu onder elkaar geplaatst. In de volgende les

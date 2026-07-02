@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2026-05-03 13:37+0000\n"
+"POT-Creation-Date: 2026-07-02 07:11+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -151,7 +151,7 @@ msgid "Multiple text colors"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:17
-msgid "Nesting tags"
+msgid "Debugging tags"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:18
@@ -167,62 +167,66 @@ msgid "Panels side by side"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:21
-msgid "Introducing Batman"
+msgid "Wider panels"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:22
-msgid "Introducing Robin"
+msgid "Introducing Batman"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:23
-msgid "Characters eyes"
+msgid "Introducing Robin"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:24
-msgid "Characters mouth"
+msgid "Characters eyes"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:25
-msgid "Characters head"
+msgid "Characters mouth"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:26
-msgid "Speech bubbles"
+msgid "Characters head"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:27
-msgid "Talking characters"
+msgid "Speech bubbles"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:28
-msgid "Positions within a panel"
+msgid "Talking characters"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:29
-msgid "Speech bubble tail positions"
+msgid "Positions within a panel"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:30
-msgid "Speech bubble text styling"
+msgid "Speech bubble tail positions"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:31
-msgid "Create your first css comic"
+msgid "Speech bubble text styling"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:32
-msgid "Second css comic"
+msgid "Create your first css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:33
-msgid "Third css comic"
+msgid "Second css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:34
-msgid "Fourth css comic"
+msgid "Third css comic"
 msgstr ""
 
 #: ./src/Model/Constant/Lesson.php:35
+msgid "Fourth css comic"
+msgstr ""
+
+#: ./src/Model/Constant/Lesson.php:36
 msgid "Fifth css comic"
 msgstr ""
 

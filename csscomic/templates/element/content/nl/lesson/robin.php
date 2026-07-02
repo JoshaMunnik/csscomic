@@ -7,12 +7,12 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
+<div class="panels">
+  <div class="panel">
     <div class="batman">
     </div>
   </div>
-  <div class="paneel">
+  <div class="panel">
     <div class="robin">
     </div>
   </div>
@@ -28,7 +28,7 @@ $code = '
   <p>
     Het toevoegen van Robin gaat op dezelfde manier als Batman. Je gebruikt
     een <code>&lt;div&gt;</code> tag met de stijl naam <code>robin</code> en
-    plaatst deze in een <code>&lt;div&gt;</code> die een <code>paneel</code> stijl bevat.
+    plaatst deze in een <code>&lt;div&gt;</code> die een <code>panel</code> stijl bevat.
   </p>
   <div class="cc-lesson__exercise-container">
     <p>

@@ -22,7 +22,7 @@ $template = '
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson Output</title>
-    '.$this->Html->css(['normalize.min', $language.'/batman-comic', $language.'/comic']).'
+    '.$this->Html->css(['normalize.min', 'batman-comic', 'comic']).'
   </head>
   <body>
     $body$

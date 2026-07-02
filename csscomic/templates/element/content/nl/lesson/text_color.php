@@ -7,7 +7,7 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="achter-geel tekst-groen">
+<div class="back-yellow text-green">
   Groene tekst met gele achtergrond
 </div>
 ';
@@ -15,8 +15,9 @@ $code = '
 ?>
 <div class="cc-lesson-top__start">
   <p>
-    Het is mogelijk om meerdere stijl definities toe te passen op een HTML element. Dit doe je door
-    meerdere namen in het <code>class</code> attribuut te gebruiken, gescheiden door een spatie.
+    Het is mogelijk om meerdere stijl definities toe te passen op een HTML tag. Dit doe je door
+    meerdere namen in het <code>class</code> attribuut te gebruiken, gescheiden door een spatie:
+    &lt;... <strong>class</strong>="<em>stijl-naam1</em> <em>stijl-naam2</em> <em>stijl-naam3</em>"&gt;
   </p>
   <p>
     Aan de rechterkant zie je een aantal nieuwe stijl definitie namen waarmee je de tekstkleur kan

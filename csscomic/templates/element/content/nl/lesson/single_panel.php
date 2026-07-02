@@ -7,7 +7,7 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="paneel">
+<div class="panel">
 </div>
 ';
 
@@ -18,15 +18,15 @@ $code = '
     Tijd voor de eerste stap richting het maken van een strip.
   </p>
   <p>
-    Voor deze lessen zijn er al een aantal stijl definities gemaakt waarmee je HTML elementen kan
-    stijlen zodat er een strip ontstaat.
+    Zoals al eerder beschreven gebruikt deze website speciale stijl definities waarmee je HTML tags
+    kan stijlen zodat er een strip ontstaat.
   </p>
   <p>
-    Voordat we naar de karakters gaan, moeten we eerst een paneel maken waarin de karakters en
-    hun tekst ballonnen komen te staan.
+    Het eerst wat we nodig hebben is een paneel, waarin de karakters en hun tekst ballonnen komen
+    te staan.
   </p>
   <p>
-    Een paneel maak je eenvoudig in HTML door de stijl naam <code>paneel</code> aan een
+    Een paneel maak je in HTML door de stijl naam <code>panel</code> aan een
     <code>&lt;div&gt;</code> tag toe te voegen.
   </p>
   <div class="cc-lesson__exercise-container">

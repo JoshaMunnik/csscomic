@@ -12,96 +12,96 @@ body {
   width: inherit;
 }
 
-span, strong, em {
+span, em, strong {
   display: inline-block;
   vertical-align: unset;
 }
 
-.tekst-wit {
+.text-white {
   color: white;
 }
 
-.tekst-zwart {
+.text-black {
   color: black;
 }
 
-.tekst-rood {
+.text-red {
   color: red;
 }
 
-.tekst-blauw {
+.text-blue {
   color: blue;
 }
 
-.tekst-groen {
+.text-green {
   color: green;
 }
 
-.tekst-geel {
+.text-yellow {
   color: yellow;
 }
 
-.tekst-roze {
+.text-pink {
   color: pink;
 }
 
-.tekst-paars {
+.text-purple {
   color: purple;
 }
 
-.tekst-oranje {
+.text-orange {
   color: orange;
 }
 
-.tekst-grijs {
+.text-gray {
   color: gray;
 }
 
-.tekst-bruin {
+.text-brown {
   color: brown;
 }
 
-.achter-wit {
+.back-white {
   background-color: white;
 }
 
-.achter-zwart {
+.back-black {
   background-color: black;
 }
 
-.achter-rood {
+.back-red {
   background-color: red;
 }
 
-.achter-blauw {
+.back-blue {
   background-color: blue;
 }
 
-.achter-groen {
+.back-green {
   background-color: green;
 }
 
-.achter-geel {
+.back-yellow {
   background-color: yellow;
 }
 
-.achter-roze {
+.back-pink {
   background-color: pink;
 }
 
-.achter-paars {
+.back-purple {
   background-color: purple;
 }
 
-.achter-oranje {
+.back-orange {
   background-color: orange;
 }
 
-.achter-grijs {
+.back-gray {
   background-color: gray;
 }
 
-.achter-bruin {
+.back-brown {
   background-color: brown;
 }
 
@@ -111,7 +111,7 @@ span, strong, em {
   transform: translate(var(--transform-x), var(--transform-y)) rotate(var(--rotation));
 }
 
-.ballon {
+.bubble {
   --transform-x: -50%;
   --transform-y: 0%;
   position: absolute;
@@ -121,7 +121,6 @@ span, strong, em {
   max-width: 98%;
   width: max-content;
   text-wrap: unset;
-
 
   &::before {
     left: 50%;
@@ -265,67 +264,67 @@ span, strong, em {
   --transform-y: -100%;
 }
 
-.pos-staart0 {
+.pos-tail0 {
   &::before {
     left: 0;
   }
 }
 
-.pos-staart1 {
+.pos-tail1 {
   &::before {
     left: 10%;
   }
 }
 
-.pos-staart2 {
+.pos-tail2 {
   &::before {
     left: 20%;
   }
 }
 
-.pos-staart3 {
+.pos-tail3 {
   &::before {
     left: 30%;
   }
 }
 
-.pos-staart4 {
+.pos-tail4 {
   &::before {
     left: 40%;
   }
 }
 
-.pos-staart5 {
+.pos-tail5 {
   &::before {
     left: 50%;
   }
 }
 
-.pos-staart6 {
+.pos-tail6 {
   &::before {
     left: 60%;
   }
 }
 
-.pos-staart7 {
+.pos-tail7 {
   &::before {
     left: 70%;
   }
 }
 
-.pos-staart8 {
+.pos-tail8 {
   &::before {
     left: 80%;
   }
 }
 
-.pos-staart9 {
+.pos-tail9 {
   &::before {
     left: 90%;
   }
 }
 
-.pos-staart10 {
+.pos-tail10 {
   &::before {
     left: 100%;
   }

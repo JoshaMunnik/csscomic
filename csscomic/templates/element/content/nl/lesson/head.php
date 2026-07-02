@@ -7,17 +7,17 @@
 use App\View\ApplicationView;
 
 $code = '
-<div class="panelen">
-  <div class="paneel">
-    <div class="batman bloos">
+<div class="panels">
+  <div class="panel">
+    <div class="batman blush">
     </div>
   </div>
-  <div class="paneel">
-    <div class="robin bang">
+  <div class="panel">
+    <div class="robin scare">
     </div>
   </div>
-  <div class="paneel">
-    <div class="batman bloos draai-hoofd-rechts">
+  <div class="panel">
+    <div class="batman blush rotate-head-right">
     </div>
   </div>
 </div>

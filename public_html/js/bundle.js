@@ -35620,7 +35620,7 @@ const LintRuleset = {
 const FULL_PAGE_CLASS = 'cc-lesson-output--show-full-page';
 const BUTTON_HIDDEN_CLASS = 'cc-lesson-action__button--is-hidden';
 /**
- * Minimal time between saves to server in milliseconds.
+ * Minimal time between saves to the server in milliseconds.
  */
 const SAVE_INTERVAL_TIME = 2000;
 /**
@@ -35642,7 +35642,7 @@ const ALLOWED_ATTRIBUTES = new Set([
 /**
  * Very small heuristic to detect whether the cursor is in a tag name or in an attribute.
  * This is conservative and works for normal editing; for absolute correctness you can
- *  inspect the syntax tree (syntaxTree) instead.
+ * inspect the syntax tree (syntaxTree) instead.
  *
  * @param state
  * @param pos
@@ -35834,10 +35834,12 @@ class Lesson {
                 doc: codeBlock,
                 parent: contentContainer,
                 extensions: [
-                    html(),
+                    html({ matchClosingTags: false }),
                     lineNumbers(),
                     syntaxHighlighting(defaultHighlightStyle),
+                    linter(() => []),
                     EditorState.readOnly.of(true),
+                    EditorView.editable.of(false),
                 ],
             });
             this.m_codeBlockEditors.push(editor);

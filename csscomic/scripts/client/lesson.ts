@@ -58,7 +58,7 @@ const FULL_PAGE_CLASS = 'cc-lesson-output--show-full-page';
 const BUTTON_HIDDEN_CLASS = 'cc-lesson-action__button--is-hidden';
 
 /**
- * Minimal time between saves to server in milliseconds.
+ * Minimal time between saves to the server in milliseconds.
  */
 const SAVE_INTERVAL_TIME = 2000;
 
