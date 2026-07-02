@@ -63,13 +63,13 @@ files using `rollup` and place them in the `/public_html/js/` folder.
 
 ## Localization
 
-To add a new language some knowledge about php is required. There is no need to change the code, 
+To add a new language, some knowledge about php is required. There is no need to change the code, 
 but some texts are placed into php strings or contain small php code snippets.
 
 The localization is split into two parts: a `.po`/`.pot` file for short sentences and words. And
-php files for longer texts.
+PHP files for longer texts.
 
-To add a language perform the following steps:
+To add a language, perform the following steps:
 1. Add a new entry to the `LANGUAGES` array in the `Language` class, found at 
    `/csscomic/src/Model/Constant/Language.php`.
 2. Create a folder using the iso code of the language in the 
@@ -77,12 +77,9 @@ To add a language perform the following steps:
 3. Add a `default.po` file to the created folder using the 
    `/csscomic/resources/locales/default.pot`. To create a `po` file, one can 
    use [Poedit](https://poedit.net/). When translating, do keep the `{0}` and `**` unchanged in the texts.
-4. Create a folder using the iso code of the language in the `/public_html/css/` folder.
-5. Copy the css files from the `/public_html/css/en/` folder to the created folder. Translate the
-   style names (optional).
-6. Create a folder using the iso code of the language in the 
+4. Create a folder using the iso code of the language in the 
    `/csscomic/template/element/content/` folder.
-7. Copy the all the subfolders from the `/csscomic/template/element/content/en/` folder to the 
+5. Copy all the subfolders from the `/csscomic/template/element/content/en/` folder to the 
    created folder and translate all the files therein. 
    
 To update the `default.pot` file at `/csscomic/resources/locales/default.pot` run the following 
